@@ -30,6 +30,11 @@ let respecConfig = {
   editors:
     [
       {
+        name: "Robert Melskens",
+        company: "VNG Realisatie",
+        companyURL: "https://vng.nl/artikelen/vng-realisatie",
+      },
+      {
         name: "Johan Boer",
         company: "VNG Realisatie",
         companyURL: "https://vng.nl/artikelen/vng-realisatie",

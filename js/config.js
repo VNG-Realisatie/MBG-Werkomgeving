@@ -19,18 +19,18 @@ let respecConfig = {
   
   title: "MBG - Metamodel BerichtstructuurGegevens",
 //  subtitle: "",
-//  authors:
-//    [
-//      {
-//        name: "Robert Melskens",
-//        company: "VNG Realisatie",
-//        companyURL: "https://vng.nl/artikelen/vng-realisatie",
-//      }
-//    ],
-  editors:
+  authors:
     [
       {
         name: "Robert Melskens",
+        company: "VNG Realisatie",
+        companyURL: "https://vng.nl/artikelen/vng-realisatie",
+      }
+    ],
+  editors:
+    [
+      {
+        name: "Johan Boer",
         company: "VNG Realisatie",
         companyURL: "https://vng.nl/artikelen/vng-realisatie",
       }

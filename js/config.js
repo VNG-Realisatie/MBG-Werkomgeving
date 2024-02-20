@@ -2,24 +2,23 @@ let respecConfig = {
 //  useLogo: true,
 //  useLabel: true,
 //  license: "eupl",
-  shortName: "Respec-template",
+  shortName: "mbg",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
-  specType: "HR",
+  specType: "ST",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "IG",
-  publishDate: "2024-1-10",
-  publishVersion: "0.1.0",
+  specStatus: "WV",
+  publishDate: "2024-02020",
+  publishVersion: "0.9.0",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
-  previousMaturity: "IG",
-  previousPublishDate: "2022-06-24",
-  previousPublishVersion: "0.0.4",
+//  previousMaturity: "IG",
+//  previousPublishDate: "2022-06-24",
+//  previousPublishVersion: "0.0.4",
   
-  title: "Respec documentatie generatie",
-  subtitle: "Tevens een voorbeeld van een gegenereerd Respec document",
-  content: {"mermaid": "", "ch01": "informative", "ch02": ""},
+  title: "MBG - Metamodel BerichtstructuurGegevens",
+//  subtitle: "",
 //  authors:
 //    [
 //      {
@@ -36,7 +35,7 @@ let respecConfig = {
         companyURL: "https://vng.nl/artikelen/vng-realisatie",
       }
     ],
-  github: "https://github.com/VNG-Realisatie/VNG-R-Respec-Template",
+  github: "https://github.com/VNG-Realisatie/MBG-Werkomgeving",
 
 //  maxTocLevel: 2,
   
@@ -44,16 +43,16 @@ let respecConfig = {
   alternateFormats: [
       {
           label: "pdf",
-          uri: "snapshot.pdf",
+          uri: "MBG.pdf",
       },
     ],
   localBiblio: {
         "MIM": {
-           "href": "https://docs.geostandaarden.nl/mim/mim/",
+           "href": "https://docs.geostandaarden.nl/mim/def-st-mim-20220217/",
            "publisher": "Geonovum",
            "title": "MIM - Metamodel Informatie Modellering",
-            date: "Oktober 2013",
-            rawDate: "2023"
+            date: "17 Februari 2022",
+            rawDate: "2022"
         },
     },
 };

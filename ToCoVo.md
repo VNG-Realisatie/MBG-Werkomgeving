@@ -5,6 +5,7 @@
 Aan de totstandkoming van deze versie van dit metamodel hebben de volgende inhoudelijke experts op het gebied van informatiemodellering meegewerkt:
 
 | Naam | Organisatie | Rol en achtergrond |
+| --- | --- | --- |
 | Robert Melskens | VNG | Imvertor Gebruikersgroep. Imvertor ontwikkelaar.<br/>MIM expertgroep. |
 | Johan Boer | VNG | MIM expertgroep. Adviseur standaarden. |
 

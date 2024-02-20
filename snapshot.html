@@ -3,6 +3,19 @@
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
 <meta name="generator" content="ReSpec 34.1.4">
 <style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
+.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
+<style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
@@ -276,18 +289,21 @@ ul.index code{color:inherit}
       "publisher": "Geonovum",
       "title": "MIM - Metamodel Informatie Modellering",
       "date": "17 Februari 2022",
-      "rawDate": "2022"
+      "rawDate": "2022",
+      "id": "mim"
     },
     "OMG": {
       "title": "Object Management Group Unified Modeling Language TM",
       "href": "http://www.omg.org/spec/UML/2.5",
       "version": "2.5",
       "status": "BG-FINAL",
-      "publisher": "Object Management Group (OMG)"
+      "publisher": "Object Management Group (OMG)",
+      "id": "omg"
     },
     "UML": {
       "title": "Unified Modeling Language (UML).",
-      "href": "http://uml.org"
+      "href": "http://uml.org",
+      "id": "uml"
     }
   },
   "shortName": "mbg",
@@ -382,7 +398,7 @@ ul.index code{color:inherit}
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Metamodel voor het beschrijven van Berichtgegevens (MBG), versie <strong>0.9</strong>.</p>
 <p>Met MBG, het Metamodel voor BerichtstructuurGegevens, wordt een metamodel beschreven waarmee berichten kunnen worden gemodelleerd in de vorm van Berichtstructuurmodellen. Het beschrijft de metaklassen, metastructuur en metagegevens als grondslag voor alle onderdelen van een bericht. Doel hiervan is het vastleggen van de methode van het modelleren van berichten zodat dit op een eenduidige gebeurd en de gemeenschappelijke tooling deze modellen ook kan verwerken. Vooralsnog wordt ingezet op het definiëren van een metamodel voor het beschrijven van OAS specificaties voor REST API’s maar het is tevens bedoeld als basis voor verbetering en doorontwikkeling van dit metamodel.</p>
 </section>
-  <div id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></div><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  <div id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></div><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#gebruikswijzer"><bdi class="secno">1.4 </bdi>Gebruikswijzer</a></li><li class="tocline"><a class="tocxref" href="#wat-is-een-bsm"><bdi class="secno">1.5 </bdi>Wat is een BSM</a></li><li class="tocline"><a class="tocxref" href="#typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</a></li><li class="tocline"><a class="tocxref" href="#wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</a></li><li class="tocline"><a class="tocxref" href="#uitdrukken-in-uml"><bdi class="secno">1.8 </bdi>Uitdrukken in UML</a></li><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">1.9 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">1.10 </bdi>Normreferenties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
   <div><section><h2 id="colofon-en-voorwoord">Colofon en Voorwoord</h2>
 <section><h3 id="colofon">Colofon</h3>
 <p>Aan de totstandkoming van deze versie van dit metamodel hebben de volgende inhoudelijke experts op het gebied van informatiemodellering meegewerkt:</p>
@@ -415,8 +431,79 @@ Structuur Model (BSM) vervaardigd waarbinnen het UGM gebruikt wordt om de inhoud
 formeel te beschrijven. Onderliggend document is daarvan het resultaat. Het dient als basis voor verbeteringen en 
 uitbreidingen waaraan binnen de Imvertor Gebruikersgroep gewerkt zal worden.</p>
 </section></section></div>
-
-  <section id="conformance"><h2 id="x1-conformiteit"><bdi class="secno">1. </bdi>Conformiteit</h2><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="inleiding"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2>
+<p>Het onderliggende document bevat het Metamodel voor BerichtstructuurGegevens (MBG), voor het beschrijven van Berichtstructuurmodellen. 
+VNG Realisatie heeft er voor gekozen dit metamodel als een extensie op het MUG (Metamodel UitwisselingsGegevens) te definiëren. In theorie is het ook mogelijk om het MBG als een extensie op het MIM te definiëren. In beide gevallen vormen ze tezamen de basis voor een Bericht Structuur Model (BSM). Het metamodel beschrijft de modellering zoals toegepast bij VNG Realisatie en Kennisnet bij het modelleren van API-specificaties. Het dient als basis voor de doorontwikkeling daarvan binnen de Imvertor community zodat het ook voor andere organisaties en op mogelijke andersoortige specificaties toepasbaar wordt. Het model bevat duidelijke afspraken over het vastleggen van berichtgegevensspecificaties.</p>
+<p>Dit document is opgesteld met kennis aanwezig bij VNG Realisatie.</p>
+<section id="toepassingsgebied"><h3 id="x1-1-toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</h3>
+<p>Het metamodel biedt de modelleringstaal waarmee het bericht-technische deel van een BSM gemaakt, gelezen en begrepen kan worden. Het doel hiervan is:
+*	de leesbaarheid en eenduidigheid van BSM’s te vergroten;
+*	een basis te leggen voor het aanbrengen van verbeteringen en uitbreidingen van dit metamodel en de gerelateerde BSM’s;
+*	tooling te kunnen (door)ontwikkelen en (her)gebruiken voor resp. door alle partijen die kiezen voor dit metamodel;
+*	en in het verlengde hiervan, om op een meer geautomatiseerde werkwijze sneller en beter voorspelbaar uitwisselingsstandaarden op te kunnen stellen.</p>
+<p>Voor BSM’s die op basis van dit metamodel zijn beschreven geldt:
+*	ze zijn eenduidig te interpreteren en goed te vergelijken;
+*	er kan documentatie mee worden opgesteld of gegenereerd welke geschikt is voor publicatie;
+*	er kunnen specificaties mee worden gegenereerd die direct geschikt zijn om bijv. als OAS voor een API-standaard in te zetten.</p>
+</section><section id="doelgroep"><h3 id="x1-2-doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</h3>
+<p>Dit document is primair bestemd voor berichtontwerpers die BSM’s maken, mensen die model-driven verder werken op basis van informatiemodellen 
+die zijn vervaardigd op basis van [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>]. Kennis van informatiemodelleringen middels [<cite><a class="bibref" data-link-type="biblio" href="#bib-uml" title="Unified Modeling Language (UML).">UML</a></cite>] is een vereiste. Dit metamodel richt zich in 
+het bijzonder op de informatievoorziening binnen het overheidsdomein, al is het ook in bredere context inzetbaar.</p>
+<p>Daarnaast is dit document ook bruikbaar voor ontwikkelaars van tooling die de, op basis van de met dit metamodel vervaardigde, BSM’s als input nemen.</p>
+</section><section id="leeswijzer"><h3 id="x1-3-leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</h3>
+<p>Het metamodel beschrijven we in 3 hoofdstukken en enkele bijlages.</p>
+<p>Lees de <a href="#inleiding">Inleiding</a> verder voor inzicht in wat we onder een BSM en onder een metamodel verstaan, hoe deze modellen zich verhouden tot UML en de vier lagen metamodel architectuur van de Object Management Group [<cite><a class="bibref" data-link-type="biblio" href="#bib-omg" title="Object Management Group Unified Modeling Language TM">OMG</a></cite>], </p>
+<p>Het hoofdstuk <a href="#metamodel-algemeen">Metamodel Algemeen</a> bevat de beschrijving van alle bouwstenen c.q. de modelelementen van het MBG metamodel, in de vorm van definities en specificaties. De betekenis en toelichting van de modelelementen van het metamodel vormt het materiaal waarmee een uitputtende modelspecificatie kan worden opgesteld. </p>
+<p>Het hoofdstuk <a href="#metamodel-in-uml">Metamodel in UML</a> beschrijft hoe de implementatie van het MBG in [<cite><a class="bibref" data-link-type="biblio" href="#bib-uml" title="Unified Modeling Language (UML).">UML</a></cite>] er uit ziet. In dit hoofdstuk wordt beschreven hoe het MBG metamodel zich verhoudt tot het UML metamodel, welke uitbreidingen c.q. verbijzonderingen van het UML metamodel zijn aangebracht.</p>
+<p>In het hoofdstuk <a href="#afspraken-regels">Afspraken &amp; Regels</a> ........
+In de bijlage <a href="#diagrammen">Diagrammen</a> vind je een aantal diagrammen die betrekking hebben op het MBG metamodel. Bijlage <a href="#metamodel-UitwisselingsGegevens-mug">Metamodel UitwisselingsGegevens (MUG)</a> beschrijft het MUG metamodel, een metamodel dat nagenoeg 1 op 1 te mappen is op het MIM en alleen qua naamgeving van de modelelementen en qua metagegevens afwijkt van het MIM metamodel. Om die reden hebben we dit niet in een apart document beschreven. Tenslotte vind je in de bijlagen <a href="#specifieke-mbg-metagegevens-voor-imvertor">Specifieke MBG metagegevens voor Imvertor</a> en <a href="#specifieke-mug-metagegevens-voor-imvertor">Specifieke MUG metagegevens voor Imvertor</a> nog de specifiek voor Imvertor gedefinieerde metagegevens.</p>
+</section><section id="gebruikswijzer"><h3 id="x1-4-gebruikswijzer"><bdi class="secno">1.4 </bdi>Gebruikswijzer</h3>
+<p>Met de bouwstenen oftewel de modelelementen die in dit metamodel beschreven zijn is het bericht-technische deel van een BSM te maken. Om zo'n BSM te maken volstaat het veelal om het hoofdstuk <a href="#metamodel-algemeen">Metamodel Algemeen</a> en bijlage <a href="#specifieke-mbg-metagegevens-voor-imvertor">Specifieke MBG metagegevens voor Imvertor</a> door te nemen. Voor het maken van een UGM kun je terugvallen op de bijlagen <a href="#metamodel-UitwisselingsGegevens-mug">Metamodel UitwisselingsGegevens (MUG)</a> en <a href="#specifieke-mug-metagegevens-voor-imvertor">Specifieke MUG metagegevens voor Imvertor</a>.</p>
+<p>De andere hoofdstukken kan je behandelen als naslagwerk, voor als er tijdens het modelleren vragen ontstaan. Neem vervolgens je favoriete modelleertool en ga aan de slag. Voor Enterprise Architect zijn er hulpmiddelen gemaakt waarmee de modelelementen aangemaakt kunnen worden door erop te klikken en bijvoorbeeld naar een diagram te slepen. Ook kan je daarmee valideren of je model correct het MBG volgt (wat automatisch gaat als je de hulpmiddelen gebruikt). Tot slot is het mogelijk om naar BSM’s te kijken van organisaties die al een op het MBG gebaseerd BSM hebben gepubliceerd.</p>
+</section><section id="wat-is-een-bsm"><h3 id="x1-5-wat-is-een-bsm"><bdi class="secno">1.5 </bdi>Wat is een BSM</h3>
+<p>Een BSM is een gegevensmodel waarin alle componenten van een bericht worden gemodelleerd, de bericht-technische objecten maar ook objecten die gaan over de inhoud van een domein. Het gaat dus om informatie over datgene wat uitgewisseld wordt maar ook om hoe het wordt uitgewisseld. De scope van een BSM is dus breder dan dat van het Metamodel voor Berichtgegevens (MBG).</p>
+<p>In een BSM worden zoals gezegd ook objecten gemodelleerd die gaan over de inhoud van een domein. Van alle objecten wordt vastgelegd welke kenmerken/eigenschappen deze hebben, of deze kenmerken/eigenschappen in het beschouwde domein verplicht of optioneel zijn, hoe de objecten aan elkaar gerelateerd zijn, enzovoorts. Voor de vastlegging van deze objecten, kenmerken en eigenschappen wordt geen gebruik gemaakt van het MBG metamodel maar van het MUG metamodel. Wel is er in het MBG metamodel voorzien in een relatie met het MUG metamodel.
+ </p>
+</section><section id="typering-van-modellen-en-scope-van-deze-standaard"><h3 id="x1-6-typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</h3>
+<p>Bij het modelleren van een domein zijn er een aantal beschouwingsniveaus, variërend van een zo getrouw mogelijke beschrijving van de betekenis en bedoeling van de woorden en termen die mensen gebruiken als ze het ergens over hebben tot een specificatie van de wijze van registratie en uitwisseling van data. In het [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>] vind je een uitgebreide beschrijving van deze niveau’s.</p>
+<p>Een BSM is een extensie op het logisch informatie- of gegevensmodel (niveau 3) en is dus een model op niveau 4. Het modelleert de bericht-technische componenten benodigd voor de uitwisseling van de met het logisch informatie- of gegevensmodel gedefinieerde informatie en koppelt deze daaraan. Waar de objecten, kenmerken en eigenschappen in een logisch informatie- of gegevensmodel techniek onafhankelijk zijn geldt dat voor de componenten in een BSM slechts deels. De componenten in een BSM kunnen nog op allerlei manieren geserialiseerd worden maar tegelijkertijd wordt er bij de modellering van de bericht-technische componenten al voorgesorteerd op de wijze waarop de specificatie zal worden gegenereerd, bijv. OAS. De bericht-technische componenten hebben dus elk een tegenhanger in de specificaties. Het component ‘Padtype’ bijvoorbeeld is specifiek in het leven geroepen voor het definiëren van een OAS specificatie. En hoewel niet uitgesloten mag worden dat dit component ook bij andersoortige specificaties een rol heeft of gaat krijgen, had het bij het modelleren van StUF berichten nooit een functie. Ook de enumeratie voor de naam van de ‘EntiteitRelatie’ hangt natuurlijk erg sterk samen met REST API’s.</p>
+<p>Een BSM kan, zoals hierboven reeds geschetst, geserialiseerd worden in verschillende soorten technische datamodellen en schema's (zoals XML, JSON of specifieke invullingen hiervan). Deze serialisaties zijn wat we in MBG niveau 4 noemen. De focus van het MBG ligt niet op dit niveau 4 en valt dan ook buiten scope. Wel staat het MBG een model-gedreven werkwijze voor waarbij de modellen van niveau 4 gegenereerd kunnen worden vanuit niveau 3.
+De aangegeven niveaus zijn vooral bedoeld om de scope van MBG duidelijk aan geven, te weten niveau 3.</p>
+</section><section id="wat-is-het-metamodel-voor-berichtstructuurmodellering"><h3 id="x1-7-wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</h3>
+<p>Een metamodel is een model van een model. Het definieert een verzameling van modelleerconstructies in de vorm van bouwstenen, oftewel modelelementen zoals een Berichttype, Entiteitrelatie en Padtype, met bijbehorende betekenis en met bijbehorende afspraken omtrent hoe deze toe te passen. Hiermee kan vervolgens een informatiemodel of in dit geval specifiek een BSM gemaakt worden. Het metamodel is daarmee de modelleertaal waarin een informatiemodel is uitgedrukt. Deze metataal beschrijft als het ware de grammatica en de syntax van de modelleertaal.  </p>
+<p>Vaak zie je dat het metamodel niet expliciet beschreven is en dat het metamodel een onderdeel van de domeinkennis is geworden. Bij domein overstijgende harmonisatie wordt het dan moeilijk om modellen met elkaar te vergelijken en op basis daarvan gegevens uit te wisselen.
+Bij een BSM is dat aspect echter van minder belang. Belangrijker is dat er duidelijkheid is over de betekenis van de modelelementen en de toepassing daarvan zodat het definiëren van een BSM eenvoudiger wordt en deze ook eenvoudiger door andere organisaties kan worden toegepast. Het is ook een voorwaarde voor de doorontwikkeling van dit metamodel, bijv. voor andere berichtspecificatietalen.</p>
+<p>Met de in een metamodel opgenomen set van modelleerconstructies worden informatiemodellen gemaakt. Door het schrijven van modelleertalen (zoals [<cite><a class="bibref" data-link-type="biblio" href="#bib-uml" title="Unified Modeling Language (UML).">UML</a></cite>]) in een metataal (zoals MOF) wordt gegarandeerd dat alle toepassingen van die talen op een standaard manier zijn opgebouwd en daardoor alom te begrijpen zijn. De metataal beschrijft als het ware de grammatica van de modelleertaal. Het metamodel in dit document is uitgewerkt voor modellering met UML.</p>
+</section><section id="uitdrukken-in-uml"><h3 id="x1-8-uitdrukken-in-uml"><bdi class="secno">1.8 </bdi>Uitdrukken in UML</h3>
+<p>Zowel het metamodel als informatiemodellen zoals het BSM kunnen worden uitgedrukt in [<cite><a class="bibref" data-link-type="biblio" href="#bib-uml" title="Unified Modeling Language (UML).">UML</a></cite>]. Aangezien het belangrijk is dat de lezer begrijpt wat we onder een informatiemodel en een metamodel verstaan verwijzen we naar paragraaf 1.8 van het [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>]. Daarin worden de modellen tevens in de juiste context geplaatst aan de hand van de vier lagen metamodel architectuur van de Object Management Group [<cite><a class="bibref" data-link-type="biblio" href="#bib-omg" title="Object Management Group Unified Modeling Language TM">OMG</a></cite>]. </p>
+<p>Verwar de daarin besproken vier lagen metamodel architectuur overigens niet met de in paragraaf 1.6 geschetste typering van modellen. Die typering van 4 lagen wijkt fundamenteel af van de in het [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>] beschreven typering van 4 lagen (M0 t/m M3). De in paragraaf 1.6 geschetste lagen zijn geen instantie van de daarboven gelegen laag waar dat in het OMG model wel het geval is.</p>
+<p>Het onderliggende Metamodel BerichtstructuurGegevens (MBG) is een voorbeeld van een model op de M2 laag. Een BSM is een instantie van het MBG en bevindt zich dan ook op de M1 laag.</p>
+</section><section id="beheer"><h3 id="x1-9-beheer"><bdi class="secno">1.9 </bdi>Beheer</h3>
+<p>Het beheer van dit metamodel vindt plaats door ….</p>
+</section><section id="normreferenties"><h3 id="x1-10-normreferenties"><bdi class="secno">1.10 </bdi>Normreferenties</h3>
+<table class="simple">
+<thead>
+<tr>
+<th>#</th>
+<th>Naam</th>
+<th>Referentie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1.</td>
+<td>Unified Modeling Language (UML)</td>
+<td>[<cite><a class="bibref" data-link-type="biblio" href="#bib-uml" title="Unified Modeling Language (UML).">UML</a></cite>]</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>OMG Unified Modeling Language TM versie 2.5</td>
+<td>[<cite><a class="bibref" data-link-type="biblio" href="#bib-omg" title="Object Management Group Unified Modeling Language TM">OMG</a></cite>]</td>
+</tr>
+</tbody></table>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Noot</span><span class="issue-label">: Versienummer normreferenties</span></div><aside class="">
+De versies van de genoemde referenties zijn bewust niet opgenomen, zodat het mogelijk is om gebruik te maken van nieuwere versies van deze referenties. Wanneer er nieuwe versies uitkomen van de genoemde normreferenties dan wordt er gecheckt of MBG hier nog mee in lijn is. Wanneer dit niet zo is, dan wordt er aan gewerkt om dit weer met elkaar in lijn te brengen, zodat MBG 'upward compatible' is en blijft.
+</aside></div></section></section>
+  <section id="conformance"><h2 id="x2-conformiteit"><bdi class="secno">2. </bdi>Conformiteit</h2><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
   <section id="tof"></section>
   <section id="index" class="appendix"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><section id="index-defined-here">
     <h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3>
@@ -432,7 +519,16 @@ uitbreidingen waaraan binnen de Imvertor Gebruikersgroep gewerkt zal worden.</p>
 
 
 
-<p role="navigation" id="back-to-top">
+<section id="references" class="appendix"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><section id="normatieve-referenties">
+    <h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3>
+    <dl class="bibliography"><dt id="bib-mim">[MIM]</dt><dd>
+      <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/"><cite>MIM - Metamodel Informatie Modellering</cite></a>.  Geonovum. 17 Februari 2022. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/">https://docs.geostandaarden.nl/mim/def-st-mim-20220217/</a>
+    </dd><dt id="bib-omg">[OMG]</dt><dd>
+      <a href="http://www.omg.org/spec/UML/2.5"><cite>Object Management Group Unified Modeling Language TM</cite></a>.  Object Management Group (OMG). BG-FINAL. URL: <a href="http://www.omg.org/spec/UML/2.5">http://www.omg.org/spec/UML/2.5</a>
+    </dd><dt id="bib-uml">[UML]</dt><dd>
+      <a href="http://uml.org"><cite>Unified Modeling Language (UML).</cite></a>. URL: <a href="http://uml.org">http://uml.org</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
   </p><script id="respec-dfn-panel">(() => {
 // @ts-check

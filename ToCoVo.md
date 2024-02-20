@@ -1,4 +1,14 @@
-# Voorwoord
+# Colofon en Voorwoord 
+
+## Colofon
+
+Aan de totstandkoming van deze versie van dit metamodel hebben de volgende inhoudelijke experts op het gebied van informatiemodellering meegewerkt:
+
+| Naam | Organisatie | Rol en achtergrond |
+| Robert Melskens | VNG | Imvertor Gebruikersgroep. Imvertor ontwikkelaar.<br/>MIM expertgroep. |
+| Johan Boer | VNG | MIM expertgroep. Adviseur standaarden. |
+
+## Voorwoord
 
 Bij de VNG en Kennisnet worden de Conceptuele InformatieModellen (CIM) die op basis van het MIM worden vervaardigd 
 en die een beeld geven van de informatiebehoefte binnen een domein op conceptueel niveau omgezet naar Uitwisselings 

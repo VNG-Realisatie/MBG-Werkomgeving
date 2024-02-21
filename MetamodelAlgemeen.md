@@ -48,8 +48,8 @@ De modelelementen zijn verdeeld over een tweetal diagrammen, die elk een eigen v
 view toont een aantal van de modelelementen, inclusief hun onderlinge samenhang.
 
 Alle views samen vormen het metamodel als geheel:
-•	[KERN](#kern), met de belangrijkste modelelementen in onderlinge samenhang;
-•	[GROEPERING](#groepering) modelelementen. 
+*	[KERN](#kern), met de belangrijkste modelelementen in onderlinge samenhang;
+*	[GROEPERING](#groepering) modelelementen. 
 
 Elk modelelement heeft een MBG metaclass met een naam. Hieraan is elk modelelement te herkennen in alle diagrammen en in de tekst 
 en in elke specificatietaal die een uitdrukking is van dit metamodel.

@@ -8,7 +8,7 @@ let respecConfig = {
   specType: "ST",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "WV",
+  specStatus: "CV",
   publishDate: "2024-02020",
   publishVersion: "0.9.0",
   
@@ -19,18 +19,23 @@ let respecConfig = {
   
   title: "MBG - Metamodel BerichtstructuurGegevens",
 //  subtitle: "",
-//  authors:
-//    [
-//      {
-//        name: "Robert Melskens",
-//        company: "VNG Realisatie",
-//        companyURL: "https://vng.nl/artikelen/vng-realisatie",
-//      }
-//    ],
+  authors:
+    [
+      {
+        name: "Robert Melskens",
+        company: "VNG Realisatie",
+        companyURL: "https://vng.nl/artikelen/vng-realisatie",
+      }
+    ],
   editors:
     [
       {
         name: "Robert Melskens",
+        company: "VNG Realisatie",
+        companyURL: "https://vng.nl/artikelen/vng-realisatie",
+      },
+      {
+        name: "Johan Boer",
         company: "VNG Realisatie",
         companyURL: "https://vng.nl/artikelen/vng-realisatie",
       }
@@ -53,6 +58,17 @@ let respecConfig = {
            "title": "MIM - Metamodel Informatie Modellering",
             date: "17 Februari 2022",
             rawDate: "2022"
+        },
+        "OMG": {
+            title: "Object Management Group Unified Modeling Language TM",
+            href: "http://www.omg.org/spec/UML/2.5",
+            version: "2.5",
+            status: "BG-FINAL",
+            publisher: "Object Management Group (OMG)",
+        },
+        "UML": {
+            title: "Unified Modeling Language (UML).",
+            href: "http://uml.org",
         },
     },
 };

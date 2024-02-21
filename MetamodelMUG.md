@@ -62,7 +62,7 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
 | <span style="color:#BCBCBC;">Alias</span> | - | - | - | - |
 | Afkorting | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
-| <span style="grey">Datum opname</span> | - | - | - | - |
+| <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment. | Notes |
 | <span style="grey">Herkomst</span> | - | - | - | - |
 | <span style="grey">Herkomst definitie</span> | - | - | - | - |
@@ -126,18 +126,18 @@ Domein packages hebben de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Naam	1	Algemeen metagegeven. De naam van het domein package.	name van de metaclass Namedelement	Name
+| Naam | 1 | Algemeen metagegeven. De naam van het domein package. | name van de metaclass Namedelement | Name |
 | Alias | - | - | - | - |
-| Afkorting	0..1	Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.		Tagged value
+| Afkorting | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
 | Datum opname | - | - | - | - |
-| Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes
+| Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
 | Herkomst | - | - | - | - |
 | Herkomst definitie | - | - | - | - |
-| Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value
-| Ref-release	0..1	???		Tagged value
-| Ref-version	0..1	???		Tagged value
-| Release	1 Datum waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». 	Tagged value
-| Versie ID	0..1	De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem.		Tagged value
+| Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
+| Ref-release | 0..1 | ??? |  | Tagged value |
+| Ref-version | 0..1 | ??? |  | Tagged value |
+| Release | 1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
+| Versie ID | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
 
 #### Metagegevens voor «Element»
 
@@ -145,33 +145,33 @@ Elementen hebben de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
+| Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
 | Alias | - | - | - | - |
 | Begrip | - | - | - | - |
 | Datum opname | - | - | - | - |
-| Definitie	0..1	De beschrijving van de betekenis van de construct	Body van de metaclass Comment	Notes
-| Example	0..1	Voorbeeldwaarde van een property.	 	Tagged value
-| Formeel patroon	0..1	Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element.		Tagged value
+| Definitie | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | Notes |
+| Example | 0..1 | Voorbeeldwaarde van een property. |  | Tagged value |
+| Formeel patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | Tagged value |
 | Herkomst | - | - | - | - |
 | Herkomst definitie | - | - | - | - |
-| Identificerend	0..1	Algemeen metagegeven	isID bij de metaclass Property	isID
+| Identificerend | 0..1 | Algemeen metagegeven | isID bij de metaclass Property | isID |
 | Authentiek | - | - | - | - |
-| Indicatie authentiek	0..1	Aanduiding of het een authentiek gegeven (element) betreft.	 	Tagged value
+| Indicatie authentiek | 0..1 | Aanduiding of het een authentiek gegeven (element) betreft. |  | Tagged value |
 | Indicatie classificerend | - | - | - | - |
 | Indicatie afleidbaar | - | - | - | - |
-| Indicatie in onderzoek	0..1	De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde.	 -	Tagged value
-| Indicatie materiële historie	0..1	Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie.		Tagged value
-| Indicatie formele historie	0..1	Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie.		Tagged value
-| Kardinaliteit	1	Algemeen metagegeven	lowerValue en upperValue van de metaclass Multiplicity Element	Multiplicity
-| Lengte	0..1	De maximale lengte die een attribuut kan hebben.		Tagged value
-| Maximum waarde (inclusief)	0..1	De maximale waarde (inclusief) dat een attribuut mag hebben.	 	Tagged value
-| Minimum lengte	0..1	De minimale lengte die een attribuut moet hebben.	 	Tagged value
-| Minimum waarde (inclusief)	0..1	De minimale waarde (inclusief) dat een attribuut moet hebben.		Tagged value
-| Mogelijk geen waarde	0..1	Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben.		Tagged value
-| Patroon	0..1	Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie.		Tagged value
-| Regels	0..1	Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen.		Tagged value
-| Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value
-| Heeft datatype	1	Binding aan een datatype.	datatype = UML-datatype	type = datatype
+| Indicatie in onderzoek | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | Tagged value |
+| Indicatie materiële historie | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
+| Indicatie formele historie | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
+| Kardinaliteit | 1 | Algemeen metagegeven | lowerValue en upperValue van de metaclass Multiplicity Element | Multiplicity |
+| Lengte | 0..1 | De maximale lengte die een attribuut kan hebben. |  | Tagged value |
+| Maximum waarde (inclusief) | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | Tagged value |
+| Minimum lengte | 0..1 | De minimale lengte die een attribuut moet hebben. |  | Tagged value |
+| Minimum waarde (inclusief) | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben. |  | Tagged value |
+| Mogelijk geen waarde | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | Tagged value |
+| Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | Tagged value |
+| Regels | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
+| Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
+| Heeft datatype | 1 | Binding aan een datatype. | datatype = UML-datatype | type = datatype |
  
 #### Metagegevens voor «Entiteittype»
 

@@ -198,7 +198,7 @@ met dezelfde naam. Meerdere berichten mogen gebruik maken van hetzelfde Padtype 
 
 Classes van dit type hebben 1 verplichte relatie van het type 'Padrelatie'.
 
-2.2.3 Interface
+### Interface
 
 <aside class="definition">
   <dfn data-lt="objecten">Interface</dfn>Een Interface definieert een berichttype op een hoger abstractie niveau.
@@ -210,14 +210,14 @@ Een interface definieert eigenschappen (metagegevens, attribuutsoorten en/of rel
 Een interface kan d.m.v. een generalisatie relatie gekoppeld worden aan een specifiek berichttype waarmee deze de eigenschappen van die 
 interface overerft.
 
-2.3 Relaties
+## Relaties
 
 Verbanden met betekenis, die gelegd zijn tussen modelelementen van het type Berichttype naar het type Entiteittype of van het type 
 Berichttype naar het type Padtype.
 
 Diagram: [Kern](#kern)
 
-2.3.1 Generalisatie
+### Generalisatie
 
 <aside class="definition">
   <dfn data-lt="objecten">Generalisatie tussen Berichttype en Interface</dfn>De typering van het hiërarchische verband tussen een meer 
@@ -229,7 +229,7 @@ _Toelichting:_
 
 De generalisatie relatie geeft aan dat bepaalde eigenschappen van een interface (metagegevens) ook gelden voor de gerelateerde berichttypen.
  
-2.3.2 EntiteitRelatie
+### EntiteitRelatie
 
 <aside class="definition">
   <dfn data-lt="objecten">EntiteitRelatie</dfn>Modelelement waarmee verschillende relaties tussen de berichtdefinitie en de resource waar 
@@ -244,7 +244,7 @@ EntiteitRelatie. Een Berichttype kan, afhankelijk van het type, 1 of 2 EntiteitR
 en 1 Entiteittype verbonden zijn maar een Entiteittype kan wel meerdere EntiteitRelaties hebben. De naam van deze relatie kan alleen ‘request’, 
 ‘requestbody’ of ‘response’ zijn.
 
-2.3.2 PadRelatie
+### PadRelatie
 
 <aside class="definition">
   <dfn data-lt="objecten">PadRelatie</dfn>Modelelement waarmee de relatie tussen de berichtdefinitie en het Padtype dat het bericht identificeert 
@@ -257,7 +257,7 @@ Elk Berichttype moet aan een relatief path worden gekoppeld. Het modelleren van 
 metaklasse PadRelatie. Elk berichttype kan maar aan 1 PadType worden gekoppeld maar meerdere Berichttypes kunnen wel hetzelfde PadType hebben. Deze 
 relatie heeft altijd de naam ‘pad’.
 
-2.4 Packages
+## Packages
 
 <aside class="definition">
   <dfn data-lt="objecten">Package</dfn>Een package is een benoemde en begrensde verzameling/groepering van modelelementen.

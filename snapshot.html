@@ -1302,25 +1302,25 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Grouping	0..1	Indicatie waarmee wordt aangegeven of de response meerdere resultaten kan teruggeven (collection) of slechts 1 resultaat (resource).		Tagged value</td>
+<td>Grouping</td>
+<td>0..1</td>
+<td>Indicatie waarmee wordt aangegeven of de response meerdere resultaten kan teruggeven (collection) of slechts 1 resultaat (resource).</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 <tr>
-<td>Page	0..1	Indicatie waarmee wordt aangegeven of de response geschikt moet zijn voor hal+json pagination. Natuurlijk alleen van toepassing als de serialisatie ook hal+json is.		Tagged value</td>
+<td>Page</td>
+<td>0..1</td>
+<td>Indicatie waarmee wordt aangegeven of de response geschikt moet zijn voor hal+json pagination. Natuurlijk alleen van toepassing als de serialisatie ook hal+json is.</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 <tr>
-<td>Sort	0..1	Indicatie waarmee wordt aangegeven of de request parameter 'Sort' moet worden opgenomen in het bericht.	 	Tagged value</td>
+<td>Sort</td>
+<td>0..1</td>
+<td>Indicatie waarmee wordt aangegeven of de request parameter 'Sort' moet worden opgenomen in het bericht.</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-voor-padtype"><h5 id="x3-2-1-3-specificatie-voor-padtype"><bdi class="secno">3.2.1.3 </bdi>Specificatie voor «Padtype»</h5>
@@ -1336,32 +1336,25 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
 </tr>
 <tr>
-<td>heeft</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>heeft padrelatie</td>
+<td>1</td>
+<td>Binding aan een PadRelatie.</td>
+<td>owned element = UML-Relationship</td>
+<td>association</td>
 </tr>
 <tr>
-<td>padrelatie	1	Binding aan een PadRelatie.	owned element = UML-Relationship	association</td>
+<td>custom_path_facet</td>
+<td>0..1</td>
+<td>Het deel van de messagepath dat niet uit het model afgeleid kan worden.</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>custom_path_facet	0..1	Het deel van de messagepath dat niet uit het model afgeleid kan worden.	 	Tagged value</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-voor-interface"><h5 id="x3-2-1-4-specificatie-voor-interface"><bdi class="secno">3.2.1.4 </bdi>Specificatie voor «Interface»</h5>
@@ -1377,11 +1370,11 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
 </tr>
 </tbody></table>
 </section></section><section id="specificatie-metagegevens-voor-relaties"><h4 id="x3-2-2-specificatie-metagegevens-voor-relaties"><bdi class="secno">3.2.2 </bdi>Specificatie metagegevens voor relaties</h4>
@@ -1398,18 +1391,18 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
 </tr>
 <tr>
-<td>positie	0..1	Indien het voor de serialisatie van belang is kan hiermee de positie van het modelelement in de serialisatie gestuurd worden.	 	Tagged value</td>
+<td>positie</td>
+<td>0..1</td>
+<td>Indien het voor de serialisatie van belang is kan hiermee de positie van het modelelement in de serialisatie gestuurd worden.</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-voor-padrelatie"><h5 id="x3-2-2-2-specificatie-voor-padrelatie"><bdi class="secno">3.2.2.2 </bdi>Specificatie voor «PadRelatie»</h5>
@@ -1425,18 +1418,11 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Naam	1	Algemeen metagegeven.</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Heeft altijd de waarde ‘pad’.	name van de metaclass Named element	Name</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.<br>Heeft altijd de waarde ‘pad’.</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-voor-generalisatie-tussen-berichttypes-en-interfaces"><h5 id="x3-2-2-3-specificatie-voor-generalisatie-tussen-berichttypes-en-interfaces"><bdi class="secno">3.2.2.3 </bdi>Specificatie voor «Generalisatie» tussen berichttypes en interfaces</h5>
@@ -1452,16 +1438,51 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Subtype	1	De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De bron kant van deze generalisatie relatie specificeert een berichttype die een subtype/specialisatie is van het via deze generalisatie relatie aangegeven supertype (zie verwijst naar supertype). Kortweg, het subtype is een specialisatie van het supertype. Het berichttype dat het subtype is van deze generalisatie is verbonden met deze generalisatie.	/source: related Element bij Relationship Element	Source</td>
+<td>Subtype</td>
+<td>1</td>
+<td>De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De bron kant van deze generalisatie</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>relatie specificeert een berichttype die een subtype/specialisatie is van het via deze generalisatie relatie aangegeven supertype (zie verwijst naar supertype). Kortweg,</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>verwijst naar supertype	1	Binding van deze generalisatie aan een interface. De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De doel kant van deze generalisatie relatie specificeert een interface die het supertype/de generalisatie is van het via deze generalisatie aangegeven subtype. Kortweg, het supertype is een generalisatie van het subtype.	/target: related Element bij Relationship Element = UML-Class	Target</td>
+<td>het subtype is een specialisatie van het supertype. Het berichttype dat het subtype is van deze generalisatie is verbonden met deze generalisatie.</td>
+<td>/source: related Element</td>
 <td></td>
 <td></td>
+<td></td>
+</tr>
+<tr>
+<td>bij Relationship Element</td>
+<td>Source</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verwijst naar supertype</td>
+<td>1</td>
+<td>Binding van deze generalisatie aan een interface. De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kant (target) van de relatie. De doel kant van deze generalisatie relatie specificeert een interface die het supertype de generalisatie is van het via deze generalisatie</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>aangegeven subtype. Kortweg, het supertype is een generalisatie van het subtype.</td>
+<td>/target: related Element bij Relationship Element = UML-Class</td>
+<td>Target</td>
 <td></td>
 <td></td>
 </tr>
@@ -1480,53 +1501,53 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
 </tr>
 <tr>
-<td>Definitie	0..1	Algemeen metagegeven.	Body van de metaclass Comment	Notes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Definitie</td>
+<td>0..1</td>
+<td>Algemeen metagegeven.</td>
+<td>Body van de metaclass Comment</td>
+<td>Notes</td>
 </tr>
 <tr>
-<td>beheerder-email	0..1	Het e-Mailadres van de persoon of organisatie die het koppelvlak beheert.		Tagged value</td>
+<td>beheerder-email</td>
+<td>0..1</td>
+<td>Het e-Mailadres van de persoon of organisatie die het koppelvlak beheert.</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 <tr>
-<td>Koppelvlak-naam	0..1	Volledige naam van het koppelvlak		Tagged value</td>
+<td>Koppelvlak-naam</td>
+<td>0..1</td>
+<td>Volledige naam van het koppelvlak</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 <tr>
-<td>project_url	0..1	Url van de bij het koppelvlak horende project repository		Tagged value</td>
+<td>project_url</td>
+<td>0..1</td>
+<td>Url van de bij het koppelvlak horende project repository</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 <tr>
-<td>release	1	Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak.		Tagged value</td>
+<td>release</td>
+<td>1</td>
+<td>Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak.</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 <tr>
-<td>Serialisatie	1	Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden.		Tagged value</td>
+<td>Serialisatie</td>
+<td>1</td>
+<td>Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden.</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Tagged value</td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-voor-domein"><h5 id="x3-2-3-2-specificatie-voor-domein"><bdi class="secno">3.2.3.2 </bdi>Specificatie voor «Domein»</h5>
@@ -1542,11 +1563,11 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
 </tr>
 <tr>
 <td></td>
@@ -1569,11 +1590,11 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 </tr>
 </thead>
 <tbody><tr>
-<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
 </tr>
 </tbody></table>
 </section></section></section><section id="uml-tooling"><h3 id="x3-3-uml-tooling"><bdi class="secno">3.3 </bdi>UML Tooling</h3>

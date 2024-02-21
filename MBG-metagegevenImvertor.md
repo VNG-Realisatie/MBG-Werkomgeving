@@ -89,32 +89,32 @@ _Toepassing:_ Koppelvlak (optioneel)
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value
+| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Specificatie voor «Padtype»
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value
+| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Specificatie voor « EntiteitRelatie »
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value
+| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Specificatie voor «PadRelatie»
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value
+| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Specificatie voor «Koppelvlak»
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Supplier-name | 0..1 | Naam van het model waar het BSM model van is afgeleid. |  | Tagged value
-| Supplier-project | 0..1 | Projecttype van het model waar het BSM model van is afgeleid. |  | Tagged value
-| Supplier-release | 0..1 | Waarde van het metadatgegeven ‘release’ van het model waar het BSM model van is afgeleid. |  | Tagged value
-| toelichting opnemen vanaf | 0..1 | Het hoogste modelniveau op basis waarvan de documentatie wordt gegenereerd. |  | Tagged value
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value
+| Supplier-name | 0..1 | Naam van het model waar het BSM model van is afgeleid. |  | Tagged value |
+| Supplier-project | 0..1 | Projecttype van het model waar het BSM model van is afgeleid. |  | Tagged value |
+| Supplier-release | 0..1 | Waarde van het metadatgegeven ‘release’ van het model waar het BSM model van is afgeleid. |  | Tagged value |
+| toelichting opnemen vanaf | 0..1 | Het hoogste modelniveau op basis waarvan de documentatie wordt gegenereerd. |  | Tagged value |
+| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |

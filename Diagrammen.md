@@ -1,10 +1,10 @@
-# Diagrammen
+## Diagrammen
 
-## Overzicht toegepaste UML metaclasses
+### Overzicht toegepaste UML metaclasses
 
 **Voeg diagram toe**
   
-## Modelelementen en metagegevens als diagram
+### Modelelementen en metagegevens als diagram
 
 Deze bijlage bevat alle modelelementen en metagegevens in één diagram.
 

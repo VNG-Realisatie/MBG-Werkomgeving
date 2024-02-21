@@ -1,4 +1,4 @@
-# Colofon en Voorwoord 1
+# Colofon en Voorwoord
 
 ## Colofon
 

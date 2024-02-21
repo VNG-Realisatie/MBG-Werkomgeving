@@ -28,7 +28,8 @@ div.illegal-example {
 /*Add string "DEFINITIE" and counter to dfn block*/
 dfn:before {
     /*call the counter*/
-    content:"DEFINITIE " counter(dfn-counter) ": ";
+    /*content:"DEFINITIE " counter(dfn-counter) ": ";*/
+    content:"DEFINITIE : ";
     /*overide w3c font-weight*/
     font-weight: normal;
 }

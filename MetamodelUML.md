@@ -38,8 +38,8 @@ Alle modelelementen hebben een UML-metaclass (UML 2.5) als basis, deze is aangeg
 
 ### Kern
 
-<figure id="MBGKernmetdetailszonderMUG">
-  <img src="media/MBG Kern met details zonder MUG.jpg" alt="" />
+<figure id="MBGKernzonderdetailsenMUG">
+  <img src="media/MBG Kern zonder details en MUG.jpg" alt="" />
   <figcaption>Diagram: Kern zonder Metagegevens</figcaption>
 </figure>
 

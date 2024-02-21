@@ -269,6 +269,7 @@ Het MBG metamodel kent een aantal packages. Al deze packages zijn afgeleid van d
 nooit in een BSM voorkomen.
 
 De verschillende modelelementen van het type package zijn:
+
 *	Koppelvlak
 *	Domein
 *	Bericht
@@ -276,13 +277,14 @@ De verschillende modelelementen van het type package zijn:
 In een Koppelvlak package komen Bericht packes voor en kunnen Domein packages opgenomen worden.
 
 In een Bericht package mogen de volgende MBG-elementen worden opgenomen:
+
 *	Getberichttype
 *	Postberichttype
 *	Putberichttype
 *	Patchberichttype
 *	Deleteberichttype
 *	Padtype
-*	
+
 en alle modelelementen van het Metamodel Uitwisselings Gegevens (MUG).
 
 In een Domein package mogen alleen modelelementen van het Metamodel Uitwisselings Gegevens (MUG) worden opgenomen.

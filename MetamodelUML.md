@@ -38,7 +38,7 @@ Alle modelelementen hebben een UML-metaclass (UML 2.5) als basis, deze is aangeg
 
 ### Kern
 
-<figure id="KernZonderUML">
+<figure id="MBGKernmetdetailszonderMUG">
   <img src="media/MBG Kern met details zonder MUG.jpg" alt="" />
   <figcaption>Diagram: Kern zonder Metagegevens</figcaption>
 </figure>
@@ -58,7 +58,7 @@ Alle modelelementen hebben een UML-metaclass (UML 2.5) als basis, deze is aangeg
 
 ### Groepering
  
-<figure id="KernZonderUML">
+<figure id="MBGPackageszonderdetails2">
   <img src="media/MBG Packages zonder details 2.jpg" alt="" />
   <figcaption>Diagram: Groepering</figcaption>
 </figure>

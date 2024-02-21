@@ -2,7 +2,9 @@
 
 ### Overzicht toegepaste UML metaclasses
 
-**Voeg diagram toe**
+<figure id="MBGKernzonderdetailsenMUG">
+  <img src="media/MBG Kern zonder details en MUG.jpg" alt="" />
+</figure>
   
 ### Modelelementen en metagegevens als diagram
 
@@ -10,8 +12,12 @@ Deze bijlage bevat alle modelelementen en metagegevens in één diagram.
 
 Kern 
 
-**Voeg diagram toe**
+<figure id="MBGKernmetdetailszonderMUG">
+  <img src="media/MBG Kern met details zonder MUG.jpg" alt="" />
+</figure>
   
 Packages
  
-**Voeg diagram toe**
+<figure id="MBGPackagesmetdetails">
+  <img src="media/MBG Packages met details.jpg" alt="" />
+</figure>

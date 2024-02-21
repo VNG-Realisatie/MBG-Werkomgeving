@@ -411,7 +411,7 @@ ul.index code{color:inherit}
 <p>Metamodel voor het beschrijven van Berichtgegevens (MBG), versie <strong>0.9</strong>.</p>
 <p>Met MBG, het Metamodel voor BerichtstructuurGegevens, wordt een metamodel beschreven waarmee berichten kunnen worden gemodelleerd in de vorm van Berichtstructuurmodellen. Het beschrijft de metaklassen, metastructuur en metagegevens als grondslag voor alle onderdelen van een bericht. Doel hiervan is het vastleggen van de methode van het modelleren van berichten zodat dit op een eenduidige gebeurd en de gemeenschappelijke tooling deze modellen ook kan verwerken. Vooralsnog wordt ingezet op het definiëren van een metamodel voor het beschrijven van OAS specificaties voor REST API’s maar het is tevens bedoeld als basis voor verbetering en doorontwikkeling van dit metamodel.</p>
 </section></div>
-  <div id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></div><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#gebruikswijzer"><bdi class="secno">1.4 </bdi>Gebruikswijzer</a></li><li class="tocline"><a class="tocxref" href="#wat-is-een-bsm"><bdi class="secno">1.5 </bdi>Wat is een BSM</a></li><li class="tocline"><a class="tocxref" href="#typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</a></li><li class="tocline"><a class="tocxref" href="#wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</a></li><li class="tocline"><a class="tocxref" href="#uitdrukken-in-uml"><bdi class="secno">1.8 </bdi>Uitdrukken in UML</a></li><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">1.9 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">1.10 </bdi>Normreferenties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-algemeen"><bdi class="secno">2. </bdi>Metamodel Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel"><bdi class="secno">2.1 </bdi>Structuur metamodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern"><bdi class="secno">2.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering"><bdi class="secno">2.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#objecten"><bdi class="secno">2.2 </bdi>Objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#berichttypes"><bdi class="secno">2.2.1 </bdi>Berichttypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#getberichttype"><bdi class="secno">2.2.1.1 </bdi>Getberichttype</a></li><li class="tocline"><a class="tocxref" href="#postberichttype"><bdi class="secno">2.2.1.2 </bdi>Postberichttype</a></li><li class="tocline"><a class="tocxref" href="#putberichttype"><bdi class="secno">2.2.1.3 </bdi>Putberichttype</a></li><li class="tocline"><a class="tocxref" href="#patchberichttype"><bdi class="secno">2.2.1.4 </bdi>Patchberichttype</a></li><li class="tocline"><a class="tocxref" href="#deleteberichttype"><bdi class="secno">2.2.1.5 </bdi>Deleteberichttype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#padtype"><bdi class="secno">2.2.2 </bdi>Padtype</a></li><li class="tocline"><a class="tocxref" href="#koppelvlak"><bdi class="secno">2.2.3 </bdi>Koppelvlak</a></li><li class="tocline"><a class="tocxref" href="#domein"><bdi class="secno">2.2.4 </bdi>Domein</a></li><li class="tocline"><a class="tocxref" href="#bericht"><bdi class="secno">2.2.5 </bdi>Bericht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens"><bdi class="secno">2.3 </bdi>Specificatie metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-packages"><bdi class="secno">2.3.1 </bdi>Specificatie metagegevens Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam"><bdi class="secno">2.3.1.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-beheerder-email"><bdi class="secno">2.3.1.2 </bdi>Metagegeven: beheerder-email</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-koppelvlak-naam"><bdi class="secno">2.3.1.3 </bdi>Metagegeven: Koppelvlak-naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-project_url"><bdi class="secno">2.3.1.4 </bdi>Metagegeven: project_url</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-release"><bdi class="secno">2.3.1.5 </bdi>Metagegeven: release</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-serialisatie"><bdi class="secno">2.3.1.6 </bdi>Metagegeven: Serialisatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelementen"><bdi class="secno">2.3.2 </bdi>Specificatie metagegevens modelelementen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam-0"><bdi class="secno">2.3.2.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-berichtcode"><bdi class="secno">2.3.2.2 </bdi>Metagegeven: berichtcode</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-tag"><bdi class="secno">2.3.2.3 </bdi>Metagegeven: tag</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-servicename"><bdi class="secno">2.3.2.4 </bdi>Metagegeven: servicename</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-custom_path_facet"><bdi class="secno">2.3.2.5 </bdi>Metagegeven: custom_path_facet</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-positie"><bdi class="secno">2.3.2.6 </bdi>Metagegeven: Positie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelement-bindingen"><bdi class="secno">2.3.3 </bdi>Specificatie metagegevens modelelement bindingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-padrelatie"><bdi class="secno">2.3.3.1 </bdi>Metagegeven: heeft padrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-entiteitrelatie"><bdi class="secno">2.3.3.2 </bdi>Metagegeven: heeft entiteitrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-verwijst-naar-supertype"><bdi class="secno">2.3.3.3 </bdi>Metagegeven: verwijst naar supertype</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toegestane-waarden-voor-bepaalde-metagegevens"><bdi class="secno">2.4 </bdi>Toegestane waarden voor (bepaalde) metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardebereik-metagegevens"><bdi class="secno">2.4.1 </bdi>Waardebereik metagegevens</a></li><li class="tocline"><a class="tocxref" href="#defaultwaarden-voor-metagegevens-modelelementen"><bdi class="secno">2.4.2 </bdi>Defaultwaarden voor metagegevens modelelementen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <div id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></div><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#gebruikswijzer"><bdi class="secno">1.4 </bdi>Gebruikswijzer</a></li><li class="tocline"><a class="tocxref" href="#wat-is-een-bsm"><bdi class="secno">1.5 </bdi>Wat is een BSM</a></li><li class="tocline"><a class="tocxref" href="#typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</a></li><li class="tocline"><a class="tocxref" href="#wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</a></li><li class="tocline"><a class="tocxref" href="#uitdrukken-in-uml"><bdi class="secno">1.8 </bdi>Uitdrukken in UML</a></li><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">1.9 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">1.10 </bdi>Normreferenties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-algemeen"><bdi class="secno">2. </bdi>Metamodel Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel"><bdi class="secno">2.1 </bdi>Structuur metamodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern"><bdi class="secno">2.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering"><bdi class="secno">2.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#objecten"><bdi class="secno">2.2 </bdi>Objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#berichttypes"><bdi class="secno">2.2.1 </bdi>Berichttypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#getberichttype"><bdi class="secno">2.2.1.1 </bdi>Getberichttype</a></li><li class="tocline"><a class="tocxref" href="#postberichttype"><bdi class="secno">2.2.1.2 </bdi>Postberichttype</a></li><li class="tocline"><a class="tocxref" href="#putberichttype"><bdi class="secno">2.2.1.3 </bdi>Putberichttype</a></li><li class="tocline"><a class="tocxref" href="#patchberichttype"><bdi class="secno">2.2.1.4 </bdi>Patchberichttype</a></li><li class="tocline"><a class="tocxref" href="#deleteberichttype"><bdi class="secno">2.2.1.5 </bdi>Deleteberichttype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#padtype"><bdi class="secno">2.2.2 </bdi>Padtype</a></li><li class="tocline"><a class="tocxref" href="#interface"><bdi class="secno">2.2.3 </bdi>Interface</a></li></ol></li><li class="tocline"><a class="tocxref" href="#relaties"><bdi class="secno">2.3 </bdi>Relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generalisatie"><bdi class="secno">2.3.1 </bdi>Generalisatie</a></li><li class="tocline"><a class="tocxref" href="#entiteitrelatie"><bdi class="secno">2.3.2 </bdi>EntiteitRelatie</a></li><li class="tocline"><a class="tocxref" href="#padrelatie"><bdi class="secno">2.3.3 </bdi>PadRelatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#packages"><bdi class="secno">2.4 </bdi>Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#koppelvlak"><bdi class="secno">2.4.1 </bdi>Koppelvlak</a></li><li class="tocline"><a class="tocxref" href="#domein"><bdi class="secno">2.4.2 </bdi>Domein</a></li><li class="tocline"><a class="tocxref" href="#bericht"><bdi class="secno">2.4.3 </bdi>Bericht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens"><bdi class="secno">2.5 </bdi>Specificatie metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-packages"><bdi class="secno">2.5.1 </bdi>Specificatie metagegevens Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam"><bdi class="secno">2.5.1.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-beheerder-email"><bdi class="secno">2.5.1.2 </bdi>Metagegeven: beheerder-email</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-koppelvlak-naam"><bdi class="secno">2.5.1.3 </bdi>Metagegeven: Koppelvlak-naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-project_url"><bdi class="secno">2.5.1.4 </bdi>Metagegeven: project_url</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-release"><bdi class="secno">2.5.1.5 </bdi>Metagegeven: release</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-serialisatie"><bdi class="secno">2.5.1.6 </bdi>Metagegeven: Serialisatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelementen"><bdi class="secno">2.5.2 </bdi>Specificatie metagegevens modelelementen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam-0"><bdi class="secno">2.5.2.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-berichtcode"><bdi class="secno">2.5.2.2 </bdi>Metagegeven: berichtcode</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-tag"><bdi class="secno">2.5.2.3 </bdi>Metagegeven: tag</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-servicename"><bdi class="secno">2.5.2.4 </bdi>Metagegeven: servicename</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-custom_path_facet"><bdi class="secno">2.5.2.5 </bdi>Metagegeven: custom_path_facet</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-positie"><bdi class="secno">2.5.2.6 </bdi>Metagegeven: Positie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelement-bindingen"><bdi class="secno">2.5.3 </bdi>Specificatie metagegevens modelelement bindingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-padrelatie"><bdi class="secno">2.5.3.1 </bdi>Metagegeven: heeft padrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-entiteitrelatie"><bdi class="secno">2.5.3.2 </bdi>Metagegeven: heeft entiteitrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-verwijst-naar-supertype"><bdi class="secno">2.5.3.3 </bdi>Metagegeven: verwijst naar supertype</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toegestane-waarden-voor-bepaalde-metagegevens"><bdi class="secno">2.6 </bdi>Toegestane waarden voor (bepaalde) metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardebereik-metagegevens"><bdi class="secno">2.6.1 </bdi>Waardebereik metagegevens</a></li><li class="tocline"><a class="tocxref" href="#defaultwaarden-voor-metagegevens-modelelementen"><bdi class="secno">2.6.2 </bdi>Defaultwaarden voor metagegevens modelelementen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
   <div><section><h2 id="colofon-en-voorwoord">Colofon en Voorwoord</h2>
 <section><h3 id="colofon">Colofon</h3>
 <p>Aan de totstandkoming van deze versie van dit metamodel hebben de volgende inhoudelijke experts op het gebied van informatiemodellering meegewerkt:</p>
@@ -704,7 +704,7 @@ naam van een Padtype start altijd met een slash (/) en mag templates bevatten. D
 startend met een open accolade ({) en eindigend met een sluit accolade (}). Binnen een model mogen niet meerdere Padtypes voorkomen 
 met dezelfde naam. Meerdere berichten mogen gebruik maken van hetzelfde Padtype zolang deze maar niet van hetzelfde Berichttype zijn.</p>
 <p>Classes van dit type hebben 1 verplichte relatie van het type 'Padrelatie'.</p>
-<p>2.2.3 Interface</p>
+</section><section id="interface"><h4 id="x2-2-3-interface"><bdi class="secno">2.2.3 </bdi>Interface</h4>
 <aside class="definition">
   <dfn data-lt="objecten|Interface" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-4" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Interface</dfn>Een Interface definieert een berichttype op een hoger abstractie niveau.
 </aside>
@@ -713,11 +713,11 @@ met dezelfde naam. Meerdere berichten mogen gebruik maken van hetzelfde Padtype 
 <p>Een interface definieert eigenschappen (metagegevens, attribuutsoorten en/of relaties) die een groep van berichttypes gemeen hebben. 
 Een interface kan d.m.v. een generalisatie relatie gekoppeld worden aan een specifiek berichttype waarmee deze de eigenschappen van die 
 interface overerft.</p>
-<p>2.3 Relaties</p>
+</section></section><section id="relaties"><h3 id="x2-3-relaties"><bdi class="secno">2.3 </bdi>Relaties</h3>
 <p>Verbanden met betekenis, die gelegd zijn tussen modelelementen van het type Berichttype naar het type Entiteittype of van het type 
 Berichttype naar het type Padtype.</p>
 <p>Diagram: <a href="#kern">Kern</a></p>
-<p>2.3.1 Generalisatie</p>
+<section id="generalisatie"><h4 id="x2-3-1-generalisatie"><bdi class="secno">2.3.1 </bdi>Generalisatie</h4>
 <aside class="definition">
   <dfn data-lt="objecten|Generalisatie tussen Berichttype en Interface" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-5" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Generalisatie tussen Berichttype en Interface</dfn>De typering van het hiërarchische verband tussen een meer 
  generiek en een meer specifiek modelelement van hetzelfde soort, waarbij het meer specifieke modelelement eigenschappen van het meer 
@@ -726,8 +726,8 @@ Berichttype naar het type Padtype.</p>
 
 <p><em>Toelichting:</em></p>
 <p>De generalisatie relatie geeft aan dat bepaalde eigenschappen van een interface (metagegevens) ook gelden voor de gerelateerde berichttypen.
- 
-2.3.2 EntiteitRelatie</p>
+ </p>
+</section><section id="entiteitrelatie"><h4 id="x2-3-2-entiteitrelatie"><bdi class="secno">2.3.2 </bdi>EntiteitRelatie</h4>
 <aside class="definition">
   <dfn data-lt="objecten|EntiteitRelatie" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-6" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">EntiteitRelatie</dfn>Modelelement waarmee verschillende relaties tussen de berichtdefinitie en de resource waar 
  het bericht betrekking op heeft kunnen worden gemodelleerd.
@@ -739,7 +739,7 @@ uitgevoerd. Het modelleren van de relatie tussen het Berichttype en het Entiteit
 EntiteitRelatie. Een Berichttype kan, afhankelijk van het type, 1 of 2 EntiteitRelaties hebben. Een EntiteitRelatie kan maar met 1 Berichttype 
 en 1 Entiteittype verbonden zijn maar een Entiteittype kan wel meerdere EntiteitRelaties hebben. De naam van deze relatie kan alleen ‘request’, 
 ‘requestbody’ of ‘response’ zijn.</p>
-<p>2.3.2 PadRelatie</p>
+</section><section id="padrelatie"><h4 id="x2-3-3-padrelatie"><bdi class="secno">2.3.3 </bdi>PadRelatie</h4>
 <aside class="definition">
   <dfn data-lt="objecten|PadRelatie" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-7" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">PadRelatie</dfn>Modelelement waarmee de relatie tussen de berichtdefinitie en het Padtype dat het bericht identificeert 
  kan worden gemodelleerd.
@@ -749,7 +749,7 @@ en 1 Entiteittype verbonden zijn maar een Entiteittype kan wel meerdere Entiteit
 <p>Elk Berichttype moet aan een relatief path worden gekoppeld. Het modelleren van de relatie tussen een Berichttype en het PadType gebeurd m.b.v. de 
 metaklasse PadRelatie. Elk berichttype kan maar aan 1 PadType worden gekoppeld maar meerdere Berichttypes kunnen wel hetzelfde PadType hebben. Deze 
 relatie heeft altijd de naam ‘pad’.</p>
-<p>2.4 Packages</p>
+</section></section><section id="packages"><h3 id="x2-4-packages"><bdi class="secno">2.4 </bdi>Packages</h3>
 <aside class="definition">
   <dfn data-lt="objecten|Package" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-8" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Package</dfn>Een package is een benoemde en begrensde verzameling/groepering van modelelementen.
 </aside>
@@ -777,7 +777,7 @@ nooit in een BSM voorkomen.</p>
 <p>In een Domein package mogen alleen modelelementen van het Metamodel Uitwisselings Gegevens (MUG) worden opgenomen.</p>
 <p>In beide gevallen is de volgorde daarbij niet van belang.</p>
 <p>De drie package-typen worden hieronder uitgelegd.</p>
-</section><section id="koppelvlak"><h4 id="x2-2-3-koppelvlak"><bdi class="secno">2.2.3 </bdi>Koppelvlak</h4>
+<section id="koppelvlak"><h4 id="x2-4-1-koppelvlak"><bdi class="secno">2.4.1 </bdi>Koppelvlak</h4>
 <aside class="definition">
   <dfn data-lt="objecten|Koppelvlak" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-9" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Koppelvlak</dfn>De groepering van alle modelelementen waaruit het Koppelvlak is opgebouwd. Het Koppelvlak als geheel.
 </aside>
@@ -787,7 +787,7 @@ Het Koppelvlak is een package, te weten het hoofdpackage van het koppelvlak, waa
 Domein en Bericht, vallen. Het koppelvlak wordt verder beschreven met metadata, zoals de serialisatie waarin het koppelvlak moet worden uitgedrukt 
 (‘json’ of ‘hal+json’) en de naam van het koppelvlak.
  </p>
-</section><section id="domein"><h4 id="x2-2-4-domein"><bdi class="secno">2.2.4 </bdi>Domein</h4>
+</section><section id="domein"><h4 id="x2-4-2-domein"><bdi class="secno">2.4.2 </bdi>Domein</h4>
 <p>Een koppelvlak kan optioneel een aantal Domein packages hebben als subpackage, waarbij aangegeven wordt dat deze de modellering van de gegevens 
 van het domein bevatten.</p>
 <aside class="definition">
@@ -799,7 +799,7 @@ berichten kunnen worden uitgewisseld.
 Een Domein package bevat die modelelementen die met het koppelvlak uitgewisseld worden, zoals het Entiteittype ‘Persoon’ en het Entiteittype ‘Adres’ 
 en impliciet ook relaties als ‘gehuwdMet’. In ieder geval alleen modelelementen uit het Metamodel Uitwisselings Gegevens (MUG). Deze modelelementen 
 kunnen 1 op 1 overgenomen zijn van een Uitwisselingsgegevensmodel (UGM) maar kunnen ook bewerkingen daarvan zijn.</p>
-</section><section id="bericht"><h4 id="x2-2-5-bericht"><bdi class="secno">2.2.5 </bdi>Bericht</h4>
+</section><section id="bericht"><h4 id="x2-4-3-bericht"><bdi class="secno">2.4.3 </bdi>Bericht</h4>
 <p>Een koppelvlak bevat een of meer Bericht packages als subpackage.</p>
 <aside class="definition">
   <dfn data-lt="objecten|Bericht" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-11" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Bericht</dfn>Een groepering van constructies die de modelelementen van een of meerdere gerelateerde berichten clustert.
@@ -811,14 +811,14 @@ kunnen bij elkaar in één Bericht package worden geplaatst. Met ‘dezelfde Ent
 In een bericht mogen dus meerdere entiteittype klassen van dezelfde Entiteittype worden opgenomen zolang de naam maar uniek blijft binnen het koppelvlak.</p>
 <p>Een Bericht package bevat i.i.g. de voor de berichten benodigde modelelementen van een set van gerelateerde berichten maar kan ook alle modelelementen bevatten 
 die in een ‘Domein’ package mogen worden opgenomen.</p>
-</section></section><section id="specificatie-metagegevens"><h3 id="x2-3-specificatie-metagegevens"><bdi class="secno">2.3 </bdi>Specificatie metagegevens</h3>
+</section></section><section id="specificatie-metagegevens"><h3 id="x2-5-specificatie-metagegevens"><bdi class="secno">2.5 </bdi>Specificatie metagegevens</h3>
 <p>Bij de modelelementen in een koppelvlak kunnen metagegevens, zoals 'naam' of 'berichtcode' van een modelelement, worden bijgehouden. Dit zijn geen eigenschappen 
 van een object en worden daarom niet als bijvoorbeeld een EntiteitRelatie van een Berichttype gemodelleerd.</p>
 <p>In de volgende paragrafen worden de metagegevens in tekst beschreven. Bij elk metagegeven is de definitie opgenomen, een toelichting en de toepassing ervan bij 
 modelelementen en soms een voorbeeld.</p>
-<section id="specificatie-metagegevens-packages"><h4 id="x2-3-1-specificatie-metagegevens-packages"><bdi class="secno">2.3.1 </bdi>Specificatie metagegevens Packages</h4>
+<section id="specificatie-metagegevens-packages"><h4 id="x2-5-1-specificatie-metagegevens-packages"><bdi class="secno">2.5.1 </bdi>Specificatie metagegevens Packages</h4>
 <p>We onderkennen een aantal specifieke metagegevens op het niveau van de packages. Deze staan beschreven in deze paragaaf.</p>
-<section id="metagegeven-naam"><h5 id="x2-3-1-1-metagegeven-naam"><bdi class="secno">2.3.1.1 </bdi>Metagegeven: Naam</h5>
+<section id="metagegeven-naam"><h5 id="x2-5-1-1-metagegeven-naam"><bdi class="secno">2.5.1.1 </bdi>Metagegeven: Naam</h5>
 <aside class="definition">
   <dfn data-lt="objecten|Naam" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-12" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Naam</dfn>Korte identificatie van een koppelvlak of beschrijving van een package als definitie van diens functie of inhoud.
 </aside>
@@ -828,7 +828,7 @@ Korte identificerende naam van een Koppelvlak package of definitie van een Domei
 voor inhoud het heeft of kan worden opgenomen.</p>
 <p><em>Bijvoorbeeld:</em> Enumeraties.</p>
 <p><em>Toepassing:</em> Alle packages (verplicht)</p>
-</section><section id="metagegeven-beheerder-email"><h5 id="x2-3-1-2-metagegeven-beheerder-email"><bdi class="secno">2.3.1.2 </bdi>Metagegeven: beheerder-email</h5>
+</section><section id="metagegeven-beheerder-email"><h5 id="x2-5-1-2-metagegeven-beheerder-email"><bdi class="secno">2.5.1.2 </bdi>Metagegeven: beheerder-email</h5>
 <aside class="definition">
   <dfn data-lt="objecten|beheerder-email" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-13" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">beheerder-email</dfn>Het e-Mail adres van de persoon of organisatie die het koppelvlak beheert.
 </aside>
@@ -838,7 +838,7 @@ voor inhoud het heeft of kan worden opgenomen.</p>
 is hoe ze middels e-Mail contact op kunnen nemen met de beherende persoon of organisatie.</p>
 <p><em>Toepassing:</em> Koppelvlak (optioneel)
  </p>
-</section><section id="metagegeven-koppelvlak-naam"><h5 id="x2-3-1-3-metagegeven-koppelvlak-naam"><bdi class="secno">2.3.1.3 </bdi>Metagegeven: Koppelvlak-naam</h5>
+</section><section id="metagegeven-koppelvlak-naam"><h5 id="x2-5-1-3-metagegeven-koppelvlak-naam"><bdi class="secno">2.5.1.3 </bdi>Metagegeven: Koppelvlak-naam</h5>
 <aside class="definition">
   <dfn data-lt="objecten|Koppelvlak-naam" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-14" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Koppelvlak-naam</dfn>Volledige naam van een koppelvlak.
 </aside>
@@ -847,7 +847,7 @@ is hoe ze middels e-Mail contact op kunnen nemen met de beherende persoon of org
 Bedoelt om kernachtig de functie/domein van het koppelvlak dat gemodelleerd wordt aan te geven.</p>
 <p><em>Bijvoorbeeld:</em> ‘Open Raads- en StatenInformatie’ of ‘Regels bij activiteiten’.</p>
 <p><em>Toepassing:</em> Koppelvlak (verplicht)</p>
-</section><section id="metagegeven-project_url"><h5 id="x2-3-1-4-metagegeven-project_url"><bdi class="secno">2.3.1.4 </bdi>Metagegeven: project_url</h5>
+</section><section id="metagegeven-project_url"><h5 id="x2-5-1-4-metagegeven-project_url"><bdi class="secno">2.5.1.4 </bdi>Metagegeven: project_url</h5>
 <aside class="definition">
   <dfn data-lt="objecten|project_url" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-15" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">project_url</dfn>Url van de bij het koppelvlak horende project repository.
 </aside>
@@ -857,7 +857,7 @@ De url van de repository waarin de al dan niet met het koppelvlakmodel te genere
 Dit kan bijv. een GitHub repository zijn maar ook een GitLab of andersoortige repository.</p>
 <p><em>Bijvoorbeeld:</em> <a href="https://github.com/VNG-Realisatie/ODS-Open-Raadsinformatie">https://github.com/VNG-Realisatie/ODS-Open-Raadsinformatie</a> </p>
 <p><em>Toepassing:</em> Koppelvlak (optioneel)</p>
-</section><section id="metagegeven-release"><h5 id="x2-3-1-5-metagegeven-release"><bdi class="secno">2.3.1.5 </bdi>Metagegeven: release</h5>
+</section><section id="metagegeven-release"><h5 id="x2-5-1-5-metagegeven-release"><bdi class="secno">2.5.1.5 </bdi>Metagegeven: release</h5>
 <aside class="definition">
   <dfn data-lt="objecten|release" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-16" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">release</dfn>Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak.
 </aside>
@@ -867,7 +867,7 @@ De datum wordt uitgedrukt in het volgende formaat ‘jjjjmmdd’.</p>
 <p><em>Bijvoorbeeld:</em> 20230404</p>
 <p><em>Toepassing:</em> Koppelvlak (verplicht)
  </p>
-</section><section id="metagegeven-serialisatie"><h5 id="x2-3-1-6-metagegeven-serialisatie"><bdi class="secno">2.3.1.6 </bdi>Metagegeven: Serialisatie</h5>
+</section><section id="metagegeven-serialisatie"><h5 id="x2-5-1-6-metagegeven-serialisatie"><bdi class="secno">2.5.1.6 </bdi>Metagegeven: Serialisatie</h5>
 <aside class="definition">
   <dfn data-lt="objecten|Serialisatie" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-17" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Serialisatie</dfn>Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden.
 </aside>
@@ -877,14 +877,14 @@ BSM’s op basis van het MBG worden opgesteld teneinde omgezet te worden naar ee
 uitgedrukt is de serialisatie. Voor REST OAS API’s gaat het om de serialisatietypes, ‘json’ en ‘hal+json’. In principe zijn ook andere serialisaties 
 mogelijk zoals ‘xml’. Dit metagegeven definieert de gewenste serialisatievorm.</p>
 <p><em>Toepassing:</em> Koppelvlak (optioneel)</p>
-</section></section><section id="specificatie-metagegevens-modelelementen"><h4 id="x2-3-2-specificatie-metagegevens-modelelementen"><bdi class="secno">2.3.2 </bdi>Specificatie metagegevens modelelementen</h4>
+</section></section><section id="specificatie-metagegevens-modelelementen"><h4 id="x2-5-2-specificatie-metagegevens-modelelementen"><bdi class="secno">2.5.2 </bdi>Specificatie metagegevens modelelementen</h4>
 <p>De specifieke metagegevens op het niveau van de modelelementen waarmee een BSM wordt samengesteld staan beschreven in deze paragaaf.</p>
 <p>Zo is er de naam van het modelelement, bijvoorbeeld het Getberichttype met als naam ‘Getagendapunt’ en een bijbehorende berichtcode, bijvoorbeeld Gr01.</p>
 <p>Welke metagegevens verplicht zijn per modelelement en welke niet staat beschreven in het diagram in Metagegevens per modelelement. Dit diagram is een onderdeel 
 van deze specificatie.</p>
 <p>Elk modelelement kent een eigen set van metagegevens, die bepaalde aspecten van het modelelement specificeren. Metagegevens kunnen dus verplicht of optioneel 
 zijn. Zo is een berichtcode altijd verplicht voor de berichttype modelelementen.</p>
-<section id="metagegeven-naam-0"><h5 id="x2-3-2-1-metagegeven-naam"><bdi class="secno">2.3.2.1 </bdi>Metagegeven: Naam</h5>
+<section id="metagegeven-naam-0"><h5 id="x2-5-2-1-metagegeven-naam"><bdi class="secno">2.5.2.1 </bdi>Metagegeven: Naam</h5>
 <aside class="definition">
   <dfn data-lt="objecten|Naam" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-18" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Naam</dfn>De naam van een modelelement.
 </aside>
@@ -898,7 +898,7 @@ altijd slechts 1 mogelijke waarde, te weten ‘pad’.</p>
 <p>Binnen een BSM mogen niet meerdere Berichttype, Padtype, Domein en Bericht modelelementen met dezelfde naam voorkomen.</p>
 <p><em>Bijvoorbeeld:</em> ‘/stemmingen/{stemmingsidentificatie}’ is de naam van het modelelement ‘Padtype’ en ‘Getactiviteit’ is de naam van het modelelement ‘Getberichttype’.</p>
 <p><em>Toepassing:</em> alle modelelementen behalve Generalisatie (verplicht).</p>
-</section><section id="metagegeven-berichtcode"><h5 id="x2-3-2-2-metagegeven-berichtcode"><bdi class="secno">2.3.2.2 </bdi>Metagegeven: berichtcode</h5>
+</section><section id="metagegeven-berichtcode"><h5 id="x2-5-2-2-metagegeven-berichtcode"><bdi class="secno">2.5.2.2 </bdi>Metagegeven: berichtcode</h5>
 <aside class="definition">
   <dfn data-lt="objecten|berichtcode" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-19" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">berichtcode</dfn>Code ter typering van een bericht.
 </aside>
@@ -907,7 +907,7 @@ altijd slechts 1 mogelijke waarde, te weten ‘pad’.</p>
 De code bestaat uit een limitatieve lijst van waarden en typeert een bericht. Aan de hand van deze code worden door Imvertor aan properties/kenmerken toegekend aan een 
 bericht in een berichtspecificatie standaard.</p>
 <p><em>Toepassing:</em> Alle van Berichttype afgeleide modelelementen (verplicht).</p>
-</section><section id="metagegeven-tag"><h5 id="x2-3-2-3-metagegeven-tag"><bdi class="secno">2.3.2.3 </bdi>Metagegeven: tag</h5>
+</section><section id="metagegeven-tag"><h5 id="x2-5-2-3-metagegeven-tag"><bdi class="secno">2.5.2.3 </bdi>Metagegeven: tag</h5>
 <aside class="definition">
   <dfn data-lt="objecten|tag" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-20" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">tag</dfn>Naam waarmee een aantal berichten kan worden gegroepeerd.
 </aside>
@@ -916,7 +916,7 @@ bericht in een berichtspecificatie standaard.</p>
 Dit metagegeven heeft een ordenende functie. De wijze van ordenen is niet voorgeschreven maar over het algemeen krijgen berichten die een (deel van een pad) met elkaar gemeen 
 hebben dezelfde waarde voor dit metagegeven.</p>
 <p><em>Toepassing:</em> Alle van Berichttype afgeleide modelelementen (optioneel).</p>
-</section><section id="metagegeven-servicename"><h5 id="x2-3-2-4-metagegeven-servicename"><bdi class="secno">2.3.2.4 </bdi>Metagegeven: servicename</h5>
+</section><section id="metagegeven-servicename"><h5 id="x2-5-2-4-metagegeven-servicename"><bdi class="secno">2.5.2.4 </bdi>Metagegeven: servicename</h5>
 <aside class="definition">
   <dfn data-lt="objecten|servicename" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-21" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">servicename</dfn>OperationId van een OAS3 service.
 </aside>
@@ -926,7 +926,7 @@ Unieke identificatie van een operation in een OAS berichtspecificatie. Een opera
 het niet toegestaan om een path en een HTTP method meerdere keren met elkaar te combineren.</p>
 <p><em>Bijvoorbeeld:</em> ‘getUserById’.</p>
 <p><em>Toepassing:</em> Alle van Berichttype afgeleide modelelementen (verplicht).</p>
-</section><section id="metagegeven-custom_path_facet"><h5 id="x2-3-2-5-metagegeven-custom_path_facet"><bdi class="secno">2.3.2.5 </bdi>Metagegeven: custom_path_facet</h5>
+</section><section id="metagegeven-custom_path_facet"><h5 id="x2-5-2-5-metagegeven-custom_path_facet"><bdi class="secno">2.5.2.5 </bdi>Metagegeven: custom_path_facet</h5>
 <aside class="definition">
   <dfn data-lt="objecten|custom_path_facet" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-22" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">custom_path_facet</dfn>Niet af te leiden deel van het path.
 </aside>
@@ -936,7 +936,7 @@ Het deel van het path dat niet uit het berichtenmodel kan worden afgeleid.
 Om het path toch te kunnen verifiëren tegen het model wordt daar eerst de custom_path_facet uit verwijderd. Deze tv mag ‘/’ (slashes) bevatten maar niet aan het begin en eind.</p>
 <p><em>Bijvoorbeeld:</em> ‘actuelestatus’ en ‘nawgegevens’ in ‘/zaken/{id}/actuelestatus’ resp. ‘/ingeschrevennatuurlijkpersonen/{burgerservicenummer}/nawgegevens’.</p>
 <p><em>Toepassing:</em> Padtype (optioneel).</p>
-</section><section id="metagegeven-positie"><h5 id="x2-3-2-6-metagegeven-positie"><bdi class="secno">2.3.2.6 </bdi>Metagegeven: Positie</h5>
+</section><section id="metagegeven-positie"><h5 id="x2-5-2-6-metagegeven-positie"><bdi class="secno">2.5.2.6 </bdi>Metagegeven: Positie</h5>
 <aside class="definition">
   <dfn data-lt="objecten|Positie" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-23" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Positie</dfn>Positie die een construct inneemt t.o.v. constructs op hetzelfde niveau.
 </aside>
@@ -945,14 +945,14 @@ Om het path toch te kunnen verifiëren tegen het model wordt daar eerst de custo
 De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. Dit metagegeven had in het verleden een functie maar is inmiddels obsolete.</p>
 <p><em>Toepassing:</em> Entiteitrelatie (optioneel).
  </p>
-</section></section><section id="specificatie-metagegevens-modelelement-bindingen"><h4 id="x2-3-3-specificatie-metagegevens-modelelement-bindingen"><bdi class="secno">2.3.3 </bdi>Specificatie metagegevens modelelement bindingen</h4>
+</section></section><section id="specificatie-metagegevens-modelelement-bindingen"><h4 id="x2-5-3-specificatie-metagegevens-modelelement-bindingen"><bdi class="secno">2.5.3 </bdi>Specificatie metagegevens modelelement bindingen</h4>
 <p>Bindingen geven aan hoe modelelementen met elkaar verbonden kunnen en mogen worden.</p>
 <p>Voorbeeld: de binding tussen een Berichttype en een Padtype, om aan te geven dat een Berichttype aan een pad moet worden gekoppeld. Een voorbeeld van wat niet 
 mag is de verbinding van een Padtype aan een EntiteitRelatie.</p>
 <p>Deze metagegevens zijn alleen nodig voor de binding van modelelementen aan elkaar en zijn vrijwel altijd een onderdeel van een modelleertaal (waarmee een BSM 
 gemaakt kan worden).</p>
 <p>De bindingen zijn ook in diagram vorm te lezen aan het begin van dit hoofdstuk, in Diagrammen van modelelementen.</p>
-<section id="metagegeven-heeft-padrelatie"><h5 id="x2-3-3-1-metagegeven-heeft-padrelatie"><bdi class="secno">2.3.3.1 </bdi>Metagegeven: heeft padrelatie</h5>
+<section id="metagegeven-heeft-padrelatie"><h5 id="x2-5-3-1-metagegeven-heeft-padrelatie"><bdi class="secno">2.5.3.1 </bdi>Metagegeven: heeft padrelatie</h5>
 <p>Verkorte schrijfwijze: PadRelatie</p>
 <aside class="definition">
   <dfn data-lt="objecten|heeft padrelatie" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-24" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">heeft padrelatie</dfn>De binding van een Berichttype aan een Padtype middels een Padrelatie.
@@ -961,7 +961,7 @@ gemaakt kan worden).</p>
 <p><em>Toelichting:</em>
 Een Berichttype heeft een relatie naar een Padtype.</p>
 <p><em>Toepassing:</em> Alle Berichttype modelelementen en Padtype.</p>
-</section><section id="metagegeven-heeft-entiteitrelatie"><h5 id="x2-3-3-2-metagegeven-heeft-entiteitrelatie"><bdi class="secno">2.3.3.2 </bdi>Metagegeven: heeft entiteitrelatie</h5>
+</section><section id="metagegeven-heeft-entiteitrelatie"><h5 id="x2-5-3-2-metagegeven-heeft-entiteitrelatie"><bdi class="secno">2.5.3.2 </bdi>Metagegeven: heeft entiteitrelatie</h5>
 <p>Verkorte schrijfwijze: EntiteitRelatie</p>
 <aside class="definition">
   <dfn data-lt="objecten|heeft entiteitrelatie" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-25" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">heeft entiteitrelatie</dfn>De binding van een Berichttype aan een Entiteittype uit het MUG middels een EntiteitRelatie.
@@ -971,7 +971,7 @@ Een Berichttype heeft een relatie naar een Padtype.</p>
 Een Berichttype heeft een relatie naar een Entiteittype, de top level entiteit.</p>
 <p><em>Toepassing:</em> Alle Entiteittype modelelementen uit het MUG en alle Berichttype modelelementen.
  </p>
-</section><section id="metagegeven-verwijst-naar-supertype"><h5 id="x2-3-3-3-metagegeven-verwijst-naar-supertype"><bdi class="secno">2.3.3.3 </bdi>Metagegeven: verwijst naar supertype</h5>
+</section><section id="metagegeven-verwijst-naar-supertype"><h5 id="x2-5-3-3-metagegeven-verwijst-naar-supertype"><bdi class="secno">2.5.3.3 </bdi>Metagegeven: verwijst naar supertype</h5>
 <p>Verkorte schrijfwijze: supertype</p>
 <aside class="definition">
   <dfn data-lt="objecten|verwijst naar supertype" class="respec-offending-element" title="This is defined more than once in the document." id="respec-offender-this-is-defined-more-than-once-in-the-document-26" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verwijst naar supertype</dfn>De binding van een supertype aan een subtype middels een generalisatie.
@@ -980,8 +980,8 @@ Een Berichttype heeft een relatie naar een Entiteittype, de top level entiteit.<
 <p><em>Toelichting:</em>
 Een subtype verwijst met een generalisatie naar een supertype en subtype verwijst met een generalisatie naar een supertype.</p>
 <p><em>Toepassing:</em> Alle Berichttype en Interface modelelementen.</p>
-</section></section></section><section id="toegestane-waarden-voor-bepaalde-metagegevens"><h3 id="x2-4-toegestane-waarden-voor-bepaalde-metagegevens"><bdi class="secno">2.4 </bdi>Toegestane waarden voor (bepaalde) metagegevens</h3>
-<section id="waardebereik-metagegevens"><h4 id="x2-4-1-waardebereik-metagegevens"><bdi class="secno">2.4.1 </bdi>Waardebereik metagegevens</h4>
+</section></section></section><section id="toegestane-waarden-voor-bepaalde-metagegevens"><h3 id="x2-6-toegestane-waarden-voor-bepaalde-metagegevens"><bdi class="secno">2.6 </bdi>Toegestane waarden voor (bepaalde) metagegevens</h3>
+<section id="waardebereik-metagegevens"><h4 id="x2-6-1-waardebereik-metagegevens"><bdi class="secno">2.6.1 </bdi>Waardebereik metagegevens</h4>
 <p>Een aantal metagegevens hebben als datatype CharacterString. Aanvullend geldt:
 *	Voor datums dat deze het volgende patroon volgen: jjjjmmdd</p>
 <p>Voor de volgende metagegevens geldt een specifiek waardebereik.</p>
@@ -1029,7 +1029,7 @@ Een subtype verwijst met een generalisatie naar een supertype en subtype verwijs
 <td>SIM, UGM, BSM</td>
 </tr>
 </tbody></table>
-</section><section id="defaultwaarden-voor-metagegevens-modelelementen"><h4 id="x2-4-2-defaultwaarden-voor-metagegevens-modelelementen"><bdi class="secno">2.4.2 </bdi>Defaultwaarden voor metagegevens modelelementen</h4>
+</section><section id="defaultwaarden-voor-metagegevens-modelelementen"><h4 id="x2-6-2-defaultwaarden-voor-metagegevens-modelelementen"><bdi class="secno">2.6.2 </bdi>Defaultwaarden voor metagegevens modelelementen</h4>
 <p>Er zijn metagegevens die een defaultwaarde hebben. Het is echter niet nodig om deze defaultwaarde expliciet aan te geven in het informatiemodel. 
 De default staat hier aangegeven. Alleen wanneer er afgeweken wordt van deze default wordt dit in een BSM aangegeven.</p>
 <table class="simple">
@@ -1068,68 +1068,68 @@ wordt).</p>
     <ul class="index">
     <li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-13">beheerder-email</a> 
-    <span class="print-only">§2.3.1.2</span></li><li>
+    <span class="print-only">§2.5.1.2</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-11">Bericht</a> 
-    <span class="print-only">§2.2.5</span></li><li>
+    <span class="print-only">§2.4.3</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-19">berichtcode</a> 
-    <span class="print-only">§2.3.2.2</span></li><li>
+    <span class="print-only">§2.5.2.2</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-22">custom_path_facet</a> 
-    <span class="print-only">§2.3.2.5</span></li><li>
+    <span class="print-only">§2.5.2.5</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-2">Deleteberichttype</a> 
     <span class="print-only">§2.2.1.5</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-10">Domein</a> 
-    <span class="print-only">§2.2.4</span></li><li>
+    <span class="print-only">§2.4.2</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-6">EntiteitRelatie</a> 
-    <span class="print-only">§2.2.2</span></li><li>
+    <span class="print-only">§2.3.2</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-5">Generalisatie tussen Berichttype en Interface</a> 
-    <span class="print-only">§2.2.2</span></li><li>
+    <span class="print-only">§2.3.1</span></li><li>
       <a class="index-term" href="#dfn-objecten">Getberichttype</a> 
     <span class="print-only">§2.2.1.1</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-25">heeft entiteitrelatie</a> 
-    <span class="print-only">§2.3.3.2</span></li><li>
+    <span class="print-only">§2.5.3.2</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-24">heeft padrelatie</a> 
-    <span class="print-only">§2.3.3.1</span></li><li>
+    <span class="print-only">§2.5.3.1</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-4">Interface</a> 
-    <span class="print-only">§2.2.2</span></li><li>
-      <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-9">Koppelvlak</a> 
     <span class="print-only">§2.2.3</span></li><li>
+      <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-9">Koppelvlak</a> 
+    <span class="print-only">§2.4.1</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-14">Koppelvlak-naam</a> 
-    <span class="print-only">§2.3.1.3</span></li><li>
+    <span class="print-only">§2.5.1.3</span></li><li>
     Naam
     <ul>
       <li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-12">definitie van</a> 
-    <span class="print-only">§2.3.1.1</span></li><li>
+    <span class="print-only">§2.5.1.1</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-18">definitie van</a> 
-    <span class="print-only">§2.3.2.1</span></li>
+    <span class="print-only">§2.5.2.1</span></li>
     </ul>
   </li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-8">Package</a> 
-    <span class="print-only">§2.2.2</span></li><li>
+    <span class="print-only">§2.4</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-7">PadRelatie</a> 
-    <span class="print-only">§2.2.2</span></li><li>
+    <span class="print-only">§2.3.3</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-3">Padtype</a> 
     <span class="print-only">§2.2.2</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-1">Patchberichttype</a> 
     <span class="print-only">§2.2.1.4</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-23">Positie</a> 
-    <span class="print-only">§2.3.2.6</span></li><li>
+    <span class="print-only">§2.5.2.6</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document">Postberichttype</a> 
     <span class="print-only">§2.2.1.2</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-15">project_url</a> 
-    <span class="print-only">§2.3.1.4</span></li><li>
+    <span class="print-only">§2.5.1.4</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-0">Putberichttype</a> 
     <span class="print-only">§2.2.1.3</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-16">release</a> 
-    <span class="print-only">§2.3.1.5</span></li><li>
+    <span class="print-only">§2.5.1.5</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-17">Serialisatie</a> 
-    <span class="print-only">§2.3.1.6</span></li><li>
+    <span class="print-only">§2.5.1.6</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-21">servicename</a> 
-    <span class="print-only">§2.3.2.4</span></li><li>
+    <span class="print-only">§2.5.2.4</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-20">tag</a> 
-    <span class="print-only">§2.3.2.3</span></li><li>
+    <span class="print-only">§2.5.2.3</span></li><li>
       <a class="index-term" href="#respec-offender-this-is-defined-more-than-once-in-the-document-26">verwijst naar supertype</a> 
-    <span class="print-only">§2.3.3.3</span></li>
+    <span class="print-only">§2.5.3.3</span></li>
   </ul>
   </section><section id="index-defined-elsewhere">
     <h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3>

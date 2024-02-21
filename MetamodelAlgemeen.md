@@ -83,9 +83,6 @@ In diagramvorm:
   <figcaption>Diagram: Kern - Modelelementen zonder Metagegevens</figcaption>
 </figure>
 
- 
-Kern: Modelelementen zonder Metagegevens
-
 De verbindingen tussen de modelelementen geven aan welke combinaties kunnen voorkomen op metamodelniveau, oftewel welke 
 modelelementen in een informatiemodel met elkaar gecombineerd kunnen worden. Bijvoorbeeld:
 
@@ -112,9 +109,6 @@ In diagramvorm:
   <img src="media/MBG Packages zonder details 1.jpg" alt="" />
   <figcaption>Diagram: Groepering</figcaption>
 </figure>
-
-
-Diagram: groepering
 
 ## Objecten
 

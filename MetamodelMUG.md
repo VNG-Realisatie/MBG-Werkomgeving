@@ -60,18 +60,18 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| <span style="grey">Alias</span> | - | - | - | - |
 | Afkorting | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
-| <span class="grey">Datum opname</span> | - | - | - | - |
+| <span style="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment. | Notes |
-| <span class="grey">Herkomst</span> | - | - | - | - |
-| <span class="grey">Herkomst definitie</span> | - | - | - | - |
-| <span class="grey">Informatie-domein</span> | - | - | - | - |
-| <span class="grey">Informatie-model type</span> | - | - | - | - |
-| <span class="grey">MIM extensie</span> | - | - | - | - |
-| <span class="grey">MIM taal</span> | - | - | - | - |
-| <span class="grey">MIM versie</span> | - | - | - | - |
-| Relatie-modellerings-type | - | - | - | - |
+| <span style="grey">Herkomst</span> | - | - | - | - |
+| <span style="grey">Herkomst definitie</span> | - | - | - | - |
+| <span style="grey">Informatie-domein</span> | - | - | - | - |
+| <span style="grey">Informatie-model type</span> | - | - | - | - |
+| <span style="grey">MIM extensie</span> | - | - | - | - |
+| <span style="grey">MIM taal</span> | - | - | - | - |
+| <span style="grey">MIM versie</span> | - | - | - | - |
+| <span style="grey">Relatie-modellerings-type</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | Web locatie | 0..1 | ???? |  | Tagged value
 | Release | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het UGM. |  | Tagged value |

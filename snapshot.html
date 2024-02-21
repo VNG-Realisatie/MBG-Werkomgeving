@@ -411,7 +411,7 @@ ul.index code{color:inherit}
 <p>Metamodel voor het beschrijven van Berichtgegevens (MBG), versie <strong>0.9</strong>.</p>
 <p>Met MBG, het Metamodel voor BerichtstructuurGegevens, wordt een metamodel beschreven waarmee berichten kunnen worden gemodelleerd in de vorm van Berichtstructuurmodellen. Het beschrijft de metaklassen, metastructuur en metagegevens als grondslag voor alle onderdelen van een bericht. Doel hiervan is het vastleggen van de methode van het modelleren van berichten zodat dit op een eenduidige gebeurd en de gemeenschappelijke tooling deze modellen ook kan verwerken. Vooralsnog wordt ingezet op het definiëren van een metamodel voor het beschrijven van OAS specificaties voor REST API’s maar het is tevens bedoeld als basis voor verbetering en doorontwikkeling van dit metamodel.</p>
 </section></div>
-  <div id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></div><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#gebruikswijzer"><bdi class="secno">1.4 </bdi>Gebruikswijzer</a></li><li class="tocline"><a class="tocxref" href="#wat-is-een-bsm"><bdi class="secno">1.5 </bdi>Wat is een BSM</a></li><li class="tocline"><a class="tocxref" href="#typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</a></li><li class="tocline"><a class="tocxref" href="#wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</a></li><li class="tocline"><a class="tocxref" href="#uitdrukken-in-uml"><bdi class="secno">1.8 </bdi>Uitdrukken in UML</a></li><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">1.9 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">1.10 </bdi>Normreferenties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-algemeen"><bdi class="secno">2. </bdi>Metamodel Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel"><bdi class="secno">2.1 </bdi>Structuur metamodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern"><bdi class="secno">2.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering"><bdi class="secno">2.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#objecten"><bdi class="secno">2.2 </bdi>Objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#berichttypes"><bdi class="secno">2.2.1 </bdi>Berichttypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#getberichttype"><bdi class="secno">2.2.1.1 </bdi>Getberichttype</a></li><li class="tocline"><a class="tocxref" href="#postberichttype"><bdi class="secno">2.2.1.2 </bdi>Postberichttype</a></li><li class="tocline"><a class="tocxref" href="#putberichttype"><bdi class="secno">2.2.1.3 </bdi>Putberichttype</a></li><li class="tocline"><a class="tocxref" href="#patchberichttype"><bdi class="secno">2.2.1.4 </bdi>Patchberichttype</a></li><li class="tocline"><a class="tocxref" href="#deleteberichttype"><bdi class="secno">2.2.1.5 </bdi>Deleteberichttype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#padtype"><bdi class="secno">2.2.2 </bdi>Padtype</a></li><li class="tocline"><a class="tocxref" href="#interface"><bdi class="secno">2.2.3 </bdi>Interface</a></li></ol></li><li class="tocline"><a class="tocxref" href="#relaties"><bdi class="secno">2.3 </bdi>Relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generalisatie"><bdi class="secno">2.3.1 </bdi>Generalisatie</a></li><li class="tocline"><a class="tocxref" href="#entiteitrelatie"><bdi class="secno">2.3.2 </bdi>EntiteitRelatie</a></li><li class="tocline"><a class="tocxref" href="#padrelatie"><bdi class="secno">2.3.3 </bdi>PadRelatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#packages"><bdi class="secno">2.4 </bdi>Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#koppelvlak"><bdi class="secno">2.4.1 </bdi>Koppelvlak</a></li><li class="tocline"><a class="tocxref" href="#domein"><bdi class="secno">2.4.2 </bdi>Domein</a></li><li class="tocline"><a class="tocxref" href="#bericht"><bdi class="secno">2.4.3 </bdi>Bericht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens"><bdi class="secno">2.5 </bdi>Specificatie metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-packages"><bdi class="secno">2.5.1 </bdi>Specificatie metagegevens Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam"><bdi class="secno">2.5.1.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-beheerder-email"><bdi class="secno">2.5.1.2 </bdi>Metagegeven: beheerder-email</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-koppelvlak-naam"><bdi class="secno">2.5.1.3 </bdi>Metagegeven: Koppelvlak-naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-project_url"><bdi class="secno">2.5.1.4 </bdi>Metagegeven: project_url</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-release"><bdi class="secno">2.5.1.5 </bdi>Metagegeven: release</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-serialisatie"><bdi class="secno">2.5.1.6 </bdi>Metagegeven: Serialisatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelementen"><bdi class="secno">2.5.2 </bdi>Specificatie metagegevens modelelementen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam-0"><bdi class="secno">2.5.2.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-berichtcode"><bdi class="secno">2.5.2.2 </bdi>Metagegeven: berichtcode</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-tag"><bdi class="secno">2.5.2.3 </bdi>Metagegeven: tag</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-servicename"><bdi class="secno">2.5.2.4 </bdi>Metagegeven: servicename</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-custom_path_facet"><bdi class="secno">2.5.2.5 </bdi>Metagegeven: custom_path_facet</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-positie"><bdi class="secno">2.5.2.6 </bdi>Metagegeven: Positie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelement-bindingen"><bdi class="secno">2.5.3 </bdi>Specificatie metagegevens modelelement bindingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-padrelatie"><bdi class="secno">2.5.3.1 </bdi>Metagegeven: heeft padrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-entiteitrelatie"><bdi class="secno">2.5.3.2 </bdi>Metagegeven: heeft entiteitrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-verwijst-naar-supertype"><bdi class="secno">2.5.3.3 </bdi>Metagegeven: verwijst naar supertype</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toegestane-waarden-voor-bepaalde-metagegevens"><bdi class="secno">2.6 </bdi>Toegestane waarden voor (bepaalde) metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardebereik-metagegevens"><bdi class="secno">2.6.1 </bdi>Waardebereik metagegevens</a></li><li class="tocline"><a class="tocxref" href="#defaultwaarden-voor-metagegevens-modelelementen"><bdi class="secno">2.6.2 </bdi>Defaultwaarden voor metagegevens modelelementen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <div id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></div><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#gebruikswijzer"><bdi class="secno">1.4 </bdi>Gebruikswijzer</a></li><li class="tocline"><a class="tocxref" href="#wat-is-een-bsm"><bdi class="secno">1.5 </bdi>Wat is een BSM</a></li><li class="tocline"><a class="tocxref" href="#typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</a></li><li class="tocline"><a class="tocxref" href="#wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</a></li><li class="tocline"><a class="tocxref" href="#uitdrukken-in-uml"><bdi class="secno">1.8 </bdi>Uitdrukken in UML</a></li><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">1.9 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">1.10 </bdi>Normreferenties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-algemeen"><bdi class="secno">2. </bdi>Metamodel Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel"><bdi class="secno">2.1 </bdi>Structuur metamodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern"><bdi class="secno">2.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering"><bdi class="secno">2.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#objecten"><bdi class="secno">2.2 </bdi>Objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#berichttypes"><bdi class="secno">2.2.1 </bdi>Berichttypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#getberichttype"><bdi class="secno">2.2.1.1 </bdi>Getberichttype</a></li><li class="tocline"><a class="tocxref" href="#postberichttype"><bdi class="secno">2.2.1.2 </bdi>Postberichttype</a></li><li class="tocline"><a class="tocxref" href="#putberichttype"><bdi class="secno">2.2.1.3 </bdi>Putberichttype</a></li><li class="tocline"><a class="tocxref" href="#patchberichttype"><bdi class="secno">2.2.1.4 </bdi>Patchberichttype</a></li><li class="tocline"><a class="tocxref" href="#deleteberichttype"><bdi class="secno">2.2.1.5 </bdi>Deleteberichttype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#padtype"><bdi class="secno">2.2.2 </bdi>Padtype</a></li><li class="tocline"><a class="tocxref" href="#interface"><bdi class="secno">2.2.3 </bdi>Interface</a></li></ol></li><li class="tocline"><a class="tocxref" href="#relaties"><bdi class="secno">2.3 </bdi>Relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generalisatie"><bdi class="secno">2.3.1 </bdi>Generalisatie</a></li><li class="tocline"><a class="tocxref" href="#entiteitrelatie"><bdi class="secno">2.3.2 </bdi>EntiteitRelatie</a></li><li class="tocline"><a class="tocxref" href="#padrelatie"><bdi class="secno">2.3.3 </bdi>PadRelatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#packages"><bdi class="secno">2.4 </bdi>Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#koppelvlak"><bdi class="secno">2.4.1 </bdi>Koppelvlak</a></li><li class="tocline"><a class="tocxref" href="#domein"><bdi class="secno">2.4.2 </bdi>Domein</a></li><li class="tocline"><a class="tocxref" href="#bericht"><bdi class="secno">2.4.3 </bdi>Bericht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens"><bdi class="secno">2.5 </bdi>Specificatie metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-packages"><bdi class="secno">2.5.1 </bdi>Specificatie metagegevens Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam"><bdi class="secno">2.5.1.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-beheerder-email"><bdi class="secno">2.5.1.2 </bdi>Metagegeven: beheerder-email</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-koppelvlak-naam"><bdi class="secno">2.5.1.3 </bdi>Metagegeven: Koppelvlak-naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-project_url"><bdi class="secno">2.5.1.4 </bdi>Metagegeven: project_url</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-release"><bdi class="secno">2.5.1.5 </bdi>Metagegeven: release</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-serialisatie"><bdi class="secno">2.5.1.6 </bdi>Metagegeven: Serialisatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelementen"><bdi class="secno">2.5.2 </bdi>Specificatie metagegevens modelelementen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam-0"><bdi class="secno">2.5.2.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-berichtcode"><bdi class="secno">2.5.2.2 </bdi>Metagegeven: berichtcode</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-tag"><bdi class="secno">2.5.2.3 </bdi>Metagegeven: tag</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-servicename"><bdi class="secno">2.5.2.4 </bdi>Metagegeven: servicename</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-custom_path_facet"><bdi class="secno">2.5.2.5 </bdi>Metagegeven: custom_path_facet</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-positie"><bdi class="secno">2.5.2.6 </bdi>Metagegeven: Positie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelement-bindingen"><bdi class="secno">2.5.3 </bdi>Specificatie metagegevens modelelement bindingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-padrelatie"><bdi class="secno">2.5.3.1 </bdi>Metagegeven: heeft padrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-entiteitrelatie"><bdi class="secno">2.5.3.2 </bdi>Metagegeven: heeft entiteitrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-verwijst-naar-supertype"><bdi class="secno">2.5.3.3 </bdi>Metagegeven: verwijst naar supertype</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toegestane-waarden-voor-bepaalde-metagegevens"><bdi class="secno">2.6 </bdi>Toegestane waarden voor (bepaalde) metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardebereik-metagegevens"><bdi class="secno">2.6.1 </bdi>Waardebereik metagegevens</a></li><li class="tocline"><a class="tocxref" href="#defaultwaarden-voor-metagegevens-modelelementen"><bdi class="secno">2.6.2 </bdi>Defaultwaarden voor metagegevens modelelementen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-in-uml"><bdi class="secno">3. </bdi>Metamodel in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel-in-uml"><bdi class="secno">3.1 </bdi>Structuur metamodel in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern-0"><bdi class="secno">3.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering-0"><bdi class="secno">3.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#nadere-specificatie-metagegevens-in-uml"><bdi class="secno">3.2 </bdi>Nadere specificatie metagegevens in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#modellering-metagegevens-voor-objecten-en-attributen-in-uml"><bdi class="secno">3.2.1 </bdi>Modellering metagegevens voor objecten en attributen in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-berichttype"><bdi class="secno">3.2.1.1 </bdi>Specificatie voor «Berichttype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-getberichttype"><bdi class="secno">3.2.1.2 </bdi>Specificatie voor «Getberichttype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-padtype"><bdi class="secno">3.2.1.3 </bdi>Specificatie voor «Padtype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-interface"><bdi class="secno">3.2.1.4 </bdi>Specificatie voor «Interface»</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-voor-relaties"><bdi class="secno">3.2.2 </bdi>Specificatie metagegevens voor relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-entiteitrelatie"><bdi class="secno">3.2.2.1 </bdi>Specificatie voor «EntiteitRelatie»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-padrelatie"><bdi class="secno">3.2.2.2 </bdi>Specificatie voor «PadRelatie»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-generalisatie-tussen-berichttypes-en-interfaces"><bdi class="secno">3.2.2.3 </bdi>Specificatie voor «Generalisatie» tussen berichttypes en interfaces</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-voor-packages"><bdi class="secno">3.2.3 </bdi>Specificatie metagegevens voor packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-koppelvlak"><bdi class="secno">3.2.3.1 </bdi>Specificatie voor «Koppelvlak»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-domein"><bdi class="secno">3.2.3.2 </bdi>Specificatie voor «Domein»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-bericht"><bdi class="secno">3.2.3.3 </bdi>Specificatie voor «Bericht»</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#uml-tooling"><bdi class="secno">3.3 </bdi>UML Tooling</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mbg-toolbox"><bdi class="secno">3.3.1 </bdi>MBG-toolbox</a></li><li class="tocline"><a class="tocxref" href="#extensie-op-mbg-toolbox"><bdi class="secno">3.3.2 </bdi>Extensie op MBG-toolbox</a></li><li class="tocline"><a class="tocxref" href="#imvertor"><bdi class="secno">3.3.3 </bdi>Imvertor</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
   <div><section><h2 id="colofon-en-voorwoord">Colofon en Voorwoord</h2>
 <section><h3 id="colofon">Colofon</h3>
 <p>Aan de totstandkoming van deze versie van dit metamodel hebben de volgende inhoudelijke experts op het gebied van informatiemodellering meegewerkt:</p>
@@ -1061,7 +1061,530 @@ altijd worden aangegeven. De kardinaliteit aan de bron/eigenaar kant van een rel
 niets over de kardinaliteit gezegd en kent deze geen default waarde (in de praktijk betekent dit dat een kardinaliteit aan de bron kant als 0..* geïmplementeerd 
 wordt).</p>
 </section></section></section>
-  <section id="conformance"><h2 id="x3-conformiteit"><bdi class="secno">3. </bdi>Conformiteit</h2><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="metamodel-in-uml"><h2 id="x3-metamodel-in-uml"><bdi class="secno">3. </bdi>Metamodel in UML</h2>
+<section id="structuur-metamodel-in-uml"><h3 id="x3-1-structuur-metamodel-in-uml"><bdi class="secno">3.1 </bdi>Structuur metamodel in UML</h3>
+<p>Dit hoofdstuk beschrijft hoe je een BSM kan maken in UML, oftewel hoe de modelelementen uit het hoofdstuk Algemeen worden uitgedrukt in UML.</p>
+<p>De eerste paragraaf bevat diagrammen, in UML. Elk diagram geeft een aantal modelelementen weer. </p>
+
+
+<p>Uitgangspunten voor het metamodel in UML zijn:</p>
+<ul>
+<li>   UML 2.5 vormt de basis voor de conceptuele beschrijving.</li>
+<li>   Er wordt gebruik gemaakt van de bestaande UML-modelelementen conform UML van OMG. OMG noemt dit een UML metaclass. Een voorbeeld hiervan is
+UML-Class.</li>
+<li>   Daar waar (semantisch) nodig worden extensiemechanismen toegepast met behoud van de betekenis van de UML-metaclasses. Het modelelement is dan
+een MBG metaclass. Hoe deze zich verhouden tot UML is weergegeven in bijlage A.1.</li>
+<li>   Modelelementen hebben één stereotype. Daarnaast hebben twee verschillende stereotypen nooit dezelfde betekenis. Stereotypes worden toegepast
+als er een verbijzondering van een UML constructie nodig is met behoud van de betekenis van de UML-metaclass.</li>
+</ul>
+<p>Elk modelelement heeft een MIM metaclass. Deze wordt in UML in een BSM gemodelleerd als een extensie van een Metaclass van UML 2.5 en een bijbehorende 
+stereotype.</p>
+<p><strong>VOORBEELD</strong></p>
+<p>Het MBG modelelement Padtype wordt gemodelleerd als een UML-Class met stereotype «Padtype».</p>
+<table class="simple">
+<thead>
+<tr>
+<th>MIM metaclass</th>
+<th>Stereotype</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Padtype</td>
+<td>«Padtype»</td>
+<td>(UML) Class</td>
+<td>Class</td>
+</tr>
+</tbody></table>
+<p>De meest linkse kolom bevat het MBG modelelement, zoals bedoeld in het hoofdstuk <a href="#metamodel-algemeen">Metamodel Algemeen</a>. De 2e en 3e kolom bevatten 
+de uitdrukking van het MBG in UML, versie 2.5. De 2e en 5e kolom bevatten de uitdrukking van het MIM in Sparx Enterprise Architect. Deze gebruikt Class 
+(i.p.v. UML-Class). Deze UML tool is (uiteraard) geen onderdeel van de MBG specificatie. Het is zeker niet verplicht om deze te gebruiken, u kunt uw 
+eigen tool gebruiken. Deze kolom staat erbij om illustratief aan te geven dat het soms nodig kan zijn om, afhankelijk van de tool, net iets specifieker 
+aan te geven hoe het MBG in de tool exact uitgedrukt wordt.</p>
+<p>Alle modelelementen hebben een UML-metaclass (UML 2.5) als basis, deze is aangegeven als ‘blauw gekleurde’ metaclass.</p>
+<section id="kern-0"><h4 id="x3-1-1-kern"><bdi class="secno">3.1.1 </bdi>Kern</h4>
+<p><strong>Diagram toevoegen</strong></p>
+<p>Kern zonder Metagegevens</p>
+<table class="simple">
+<thead>
+<tr>
+<th>MIM metaclass</th>
+<th>Stereotype</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Getberichttype</td>
+<td>«Getberichttype»</td>
+<td>(UML) Class</td>
+<td>Class</td>
+</tr>
+<tr>
+<td>Postberichttype</td>
+<td>«Postberichttype»</td>
+<td>(UML) Class</td>
+<td>Class</td>
+</tr>
+<tr>
+<td>Putberichttype</td>
+<td>«Putberichttype»</td>
+<td>(UML) Class</td>
+<td>Class</td>
+</tr>
+<tr>
+<td>Patchberichttype</td>
+<td>«Patchberichttype»</td>
+<td>(UML) Class</td>
+<td>Class</td>
+</tr>
+<tr>
+<td>Deleteberichttype</td>
+<td>«Deleteberichttype»</td>
+<td>(UML) Class</td>
+<td>Class</td>
+</tr>
+<tr>
+<td>EntiteitRelatie</td>
+<td>«EntiteitRelatie»</td>
+<td>(UML) Association</td>
+<td>Association</td>
+</tr>
+<tr>
+<td>PadRelatie</td>
+<td>«PadRelatie»</td>
+<td>(UML) Association</td>
+<td>Association</td>
+</tr>
+<tr>
+<td>Padtype</td>
+<td>«Padtype»</td>
+<td>(UML) Class</td>
+<td>Class</td>
+</tr>
+<tr>
+<td>Generalisatie</td>
+<td>«Generalisatie»</td>
+<td>(UML) Association</td>
+<td>Association</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>«Interface»</td>
+<td>(UML) Class</td>
+<td>Class</td>
+</tr>
+</tbody></table>
+</section><section id="groepering-0"><h4 id="x3-1-2-groepering"><bdi class="secno">3.1.2 </bdi>Groepering</h4>
+<p><strong>Diagram toevoegen</strong></p>
+<p>Groepering</p>
+<table class="simple">
+<thead>
+<tr>
+<th>MIM metaclass</th>
+<th>Stereotype</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Koppelvlak</td>
+<td>«Koppelvlak»</td>
+<td>(UML) Package</td>
+<td>Package</td>
+</tr>
+<tr>
+<td>Domein</td>
+<td>«Domein»</td>
+<td>(UML) Package</td>
+<td>Package</td>
+</tr>
+<tr>
+<td>Bericht</td>
+<td>«Bericht»</td>
+<td>(UML) Package</td>
+<td>Package</td>
+</tr>
+</tbody></table>
+</section></section><section id="nadere-specificatie-metagegevens-in-uml"><h3 id="x3-2-nadere-specificatie-metagegevens-in-uml"><bdi class="secno">3.2 </bdi>Nadere specificatie metagegevens in UML</h3>
+<p>Deze paragraaf is een aanvulling op de paragraaf 'Specificatie metagegevens' in het hoofdstuk <a href="#metamodel-algemeen">Metamodel Algemeen</a>.</p>
+<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="4"><span>Noot</span></div><aside class="" title="">
+In de hierna volgende paragrafen worden de metagegevens per modelelement gespecificeerd in tabellen. Per metagegeven zijn de volgende onderdelen gespecificeerd:
+
+<p><strong>Aspect</strong>: Het benoemde metagegeven.</p>
+<p><strong>Kardinaliteit</strong>: Aantal maal dat een metagegeven opgenomen kan worden bij dit modelelement.</p>
+<p><strong>Toelichting</strong>: Nadere uitleg over het metagegeven.</p>
+<p><strong>In UML 2.5</strong>: De naam waarmee het metagegeven in UML2.5 is benoemd. Het betreft veelal overerving van een metagegeven van een UML metaclass die niet in dit document is benoemd.</p>
+<p><strong>In EA</strong>: Aanduiding hoe het metagegeven in Sparx Enterprise Architect (EA) is aangegeven.</p>
+</aside></div>
+
+<section id="modellering-metagegevens-voor-objecten-en-attributen-in-uml"><h4 id="x3-2-1-modellering-metagegevens-voor-objecten-en-attributen-in-uml"><bdi class="secno">3.2.1 </bdi>Modellering metagegevens voor objecten en attributen in UML</h4>
+<section id="specificatie-voor-berichttype"><h5 id="x3-2-1-1-specificatie-voor-berichttype"><bdi class="secno">3.2.1.1 </bdi>Specificatie voor «Berichttype»</h5>
+<p>Alle classes die overerven van de Berichttype class worden naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.<br>Heeft altijd de waarde ‘request’, ‘requestbody’ of ‘response’</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>0..1</td>
+<td>Algemeen metagegeven.</td>
+<td>Body van de metaclass Comment</td>
+<td>Notes</td>
+</tr>
+<tr>
+<td>heeft entiteitrelatie</td>
+<td>1..2</td>
+<td>Binding aan een EntiteitRelatie.</td>
+<td>owned element = UML-Relationship</td>
+<td>Association</td>
+</tr>
+<tr>
+<td>heeft padrelatie</td>
+<td>1</td>
+<td>Binding aan een PadRelatie.</td>
+<td>owned element = UML-Relationship</td>
+<td>Association</td>
+</tr>
+<tr>
+<td>berichtcode</td>
+<td>1</td>
+<td>Uniek id voor het typeren van berichten.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>0..1</td>
+<td>Voorziening ter groepering van endpoints.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>servicename</td>
+<td>0..1</td>
+<td>Technisch operationid</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>verwijst naar supertype</td>
+<td>0..1</td>
+<td>Binding aan een generalisatie (naar een Interface).</td>
+<td>owned element = UML-Relationship</td>
+<td>association</td>
+</tr>
+</tbody></table>
+</section><section id="specificatie-voor-getberichttype"><h5 id="x3-2-1-2-specificatie-voor-getberichttype"><bdi class="secno">3.2.1.2 </bdi>Specificatie voor «Getberichttype»</h5>
+<p>De Getberichttype classes wordt naast de aspecten in de voorgaande tabel ook nog naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Grouping	0..1	Indicatie waarmee wordt aangegeven of de response meerdere resultaten kan teruggeven (collection) of slechts 1 resultaat (resource).		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Page	0..1	Indicatie waarmee wordt aangegeven of de response geschikt moet zijn voor hal+json pagination. Natuurlijk alleen van toepassing als de serialisatie ook hal+json is.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sort	0..1	Indicatie waarmee wordt aangegeven of de request parameter 'Sort' moet worden opgenomen in het bericht.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="specificatie-voor-padtype"><h5 id="x3-2-1-3-specificatie-voor-padtype"><bdi class="secno">3.2.1.3 </bdi>Specificatie voor «Padtype»</h5>
+<p>De Padtype classes worden naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>padrelatie	1	Binding aan een PadRelatie.	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>custom_path_facet	0..1	Het deel van de messagepath dat niet uit het model afgeleid kan worden.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="specificatie-voor-interface"><h5 id="x3-2-1-4-specificatie-voor-interface"><bdi class="secno">3.2.1.4 </bdi>Specificatie voor «Interface»</h5>
+<p>Interface classes worden naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section></section><section id="specificatie-metagegevens-voor-relaties"><h4 id="x3-2-2-specificatie-metagegevens-voor-relaties"><bdi class="secno">3.2.2 </bdi>Specificatie metagegevens voor relaties</h4>
+<section id="specificatie-voor-entiteitrelatie"><h5 id="x3-2-2-1-specificatie-voor-entiteitrelatie"><bdi class="secno">3.2.2.1 </bdi>Specificatie voor «EntiteitRelatie»</h5>
+<p>De EntiteitRelatie associaties worden naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>positie	0..1	Indien het voor de serialisatie van belang is kan hiermee de positie van het modelelement in de serialisatie gestuurd worden.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="specificatie-voor-padrelatie"><h5 id="x3-2-2-2-specificatie-voor-padrelatie"><bdi class="secno">3.2.2.2 </bdi>Specificatie voor «PadRelatie»</h5>
+<p>Voor PadRelatie associaties worden naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Heeft altijd de waarde ‘pad’.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="specificatie-voor-generalisatie-tussen-berichttypes-en-interfaces"><h5 id="x3-2-2-3-specificatie-voor-generalisatie-tussen-berichttypes-en-interfaces"><bdi class="secno">3.2.2.3 </bdi>Specificatie voor «Generalisatie» tussen berichttypes en interfaces</h5>
+<p>De generalisaties worden naar het volgende aspect gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Subtype	1	De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De bron kant van deze generalisatie relatie specificeert een berichttype die een subtype/specialisatie is van het via deze generalisatie relatie aangegeven supertype (zie verwijst naar supertype). Kortweg, het subtype is een specialisatie van het supertype. Het berichttype dat het subtype is van deze generalisatie is verbonden met deze generalisatie.	/source: related Element bij Relationship Element	Source</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verwijst naar supertype	1	Binding van deze generalisatie aan een interface. De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De doel kant van deze generalisatie relatie specificeert een interface die het supertype/de generalisatie is van het via deze generalisatie aangegeven subtype. Kortweg, het supertype is een generalisatie van het subtype.	/target: related Element bij Relationship Element = UML-Class	Target</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section></section><section id="specificatie-metagegevens-voor-packages"><h4 id="x3-2-3-specificatie-metagegevens-voor-packages"><bdi class="secno">3.2.3 </bdi>Specificatie metagegevens voor packages</h4>
+<section id="specificatie-voor-koppelvlak"><h5 id="x3-2-3-1-specificatie-voor-koppelvlak"><bdi class="secno">3.2.3.1 </bdi>Specificatie voor «Koppelvlak»</h5>
+<p>Koppelvlak packages worden naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Definitie	0..1	Algemeen metagegeven.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>beheerder-email	0..1	Het e-Mailadres van de persoon of organisatie die het koppelvlak beheert.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Koppelvlak-naam	0..1	Volledige naam van het koppelvlak		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>project_url	0..1	Url van de bij het koppelvlak horende project repository		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>release	1	Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Serialisatie	1	Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="specificatie-voor-domein"><h5 id="x3-2-3-2-specificatie-voor-domein"><bdi class="secno">3.2.3.2 </bdi>Specificatie voor «Domein»</h5>
+<p>Domein packages worden naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="specificatie-voor-bericht"><h5 id="x3-2-3-3-specificatie-voor-bericht"><bdi class="secno">3.2.3.3 </bdi>Specificatie voor «Bericht»</h5>
+<p>Bericht packages worden naar de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section></section></section><section id="uml-tooling"><h3 id="x3-3-uml-tooling"><bdi class="secno">3.3 </bdi>UML Tooling</h3>
+<section id="mbg-toolbox"><h4 id="x3-3-1-mbg-toolbox"><bdi class="secno">3.3.1 </bdi>MBG-toolbox</h4>
+<p>Er is door de MBG beheerder een metamodel profiel gemaakt voor Sparx Enterprise Architect, dat gebruikt kan worden bij het modelleren van een informatiemodel. Dit profiel kan je inladen en daarna kan je kiezen uit de metamodel elementen. Het profiel is faciliterend en zorgt dat (de meeste) modelelementen van een BSM automatisch voldoen aan dit metamodel. Dit profiel is te vinden op MBG profiel - toolbox voor EA.</p>
+</section><section id="extensie-op-mbg-toolbox"><h4 id="x3-3-2-extensie-op-mbg-toolbox"><bdi class="secno">3.3.2 </bdi>Extensie op MBG-toolbox</h4>
+<p>Het is niet vereist om dit profiel te gebruiken en het is ook toegestaan om het profiel naar de behoefte van de eigen organisatie uit te breiden. Het is echter niet toegestaan het profiel te wijzigen, dan wordt niet meer aan MBG voldaan. De reden hiervoor is dat een dergelijk aanpassing niet beheerd kan worden door de MBG-beheerder en er ambiguïteit zal ontstaan bij de interpretatie van het model.</p>
+</section><section id="imvertor"><h4 id="x3-3-3-imvertor"><bdi class="secno">3.3.3 </bdi>Imvertor</h4>
+<p>Er is een tool Imvertor, die kan controleren of een BSM voldoet aan dit metamodel en zo niet, wat de reden daarvan is. Deze tool is open source en is te vinden op <a href="http://www.imvertor.org">www.imvertor.org</a>.</p>
+</section></section></section>
+  <section id="conformance"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
   <section id="tof"></section>
   <section id="index" class="appendix"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><section id="index-defined-here">
     <h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3>

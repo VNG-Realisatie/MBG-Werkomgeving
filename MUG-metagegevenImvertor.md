@@ -90,34 +90,34 @@ Toepassing: alle modelelementen (optioneel).
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. | Tagged value |
+| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Metagegevens voor «Relatie»
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. | Tagged value |
+| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Metagegevens voor «Relatie-entiteit»
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. | Tagged value |
+| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Metagegevens voor «Tabel Element»
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. | Tagged value |
+| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Metagegevens voor «Tabel-entiteit»
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. | Tagged value |
+| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
 
 #### Metagegevens voor «Union»
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. | Tagged value |
+| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |

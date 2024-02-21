@@ -49,7 +49,7 @@ Die laatste stereotypes hebben (nog) geen functie bij de berichtdefinitie.
 ### Metagegevens
 
 De MUG stereotypes in de voorgaande paragraaf kennen een aantal metagegevens. In deze paragraaf worden deze per stereotype beschreven.
-Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn onderlijnd.
+Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn groen gemaakt.
 
 Daarnaast zijn de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes in dezelfde tabellen opgenomen maar uitgegrijsd.
 
@@ -61,7 +61,7 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
 | <span class="grey">Alias</span> | - | - | - | - |
-| Afkorting | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
+| <span class="green">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment. | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
@@ -73,9 +73,9 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | <span class="grey">MIM versie</span> | - | - | - | - |
 | <span class="grey">Relatie-modellerings-type</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-| Web locatie | 0..1 | ???? |  | Tagged value
-| Release | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het UGM. |  | Tagged value |
-| Versie ID | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
+| <span class="green">Web locatie</span> | 0..1 | ???? |  | Tagged value
+| <span class="green">Release</span> | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het UGM. |  | Tagged value |
+| <span class="green">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
  
 #### Metagegevens voor «Complex datatype»
 
@@ -112,9 +112,9 @@ Data elementen hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | Kardinaliteit | 1 | Algemeen metagegeven. | lowerValue en upperValue van de metaclass MultiplicityElement | Multiplicity |
 | Lengte | 0..1 | De maximale lengte die een attribuut kan hebben. |  | Tagged value |
-| Maximum waarde (inclusief) | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | Tagged value |
-| Minimum lengte | 0..1 | De minimale lengte die een attribuut moet hebben. |  | Tagged value |
-| Minimum waarde (inclusief) | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben. |  | Tagged value |
+| <span class="green">Maximum waarde (inclusief)</span> | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | Tagged value |
+| <span class="green">Minimum lengte</span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | Tagged value |
+| <span class="green">Minimum waarde (inclusief)</span> | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben. |  | Tagged value |
 | Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | Tagged value |
 | Regels | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
@@ -128,16 +128,16 @@ Domein packages hebben de volgende aspecten gespecificeerd:
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. De naam van het domein package. | name van de metaclass Namedelement | Name |
 | <span class="grey">Alias</span> | - | - | - | - |
-| Afkorting | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
+| <span class="green">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-| Ref-release | 0..1 | ??? |  | Tagged value |
-| Ref-version | 0..1 | ??? |  | Tagged value |
-| Release | 1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
-| Versie ID | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
+| <span class="green">Ref-release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="green">Ref-version</span> | 0..1 | ??? |  | Tagged value |
+| <span class="green">Release</span> | 1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
+| <span class="green">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
 
 #### Metagegevens voor «Element»
 
@@ -150,23 +150,23 @@ Elementen hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | Notes |
-| Example | 0..1 | Voorbeeldwaarde van een property. |  | Tagged value |
+| <span class="green">Example</span> | 0..1 | Voorbeeldwaarde van een property. |  | Tagged value |
 | Formeel patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | Tagged value |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | Identificerend | 0..1 | Algemeen metagegeven | isID bij de metaclass Property | isID |
 | <span class="grey">Authentiek</span> | - | - | - | - |
-| Indicatie authentiek | 0..1 | Aanduiding of het een authentiek gegeven (element) betreft. |  | Tagged value |
+| <span class="green">Indicatie authentiek</span> | 0..1 | Aanduiding of het een authentiek gegeven (element) betreft. |  | Tagged value |
 | <span class="grey">Indicatie classificerend</span> | - | - | - | - |
 | <span class="grey">Indicatie afleidbaar</span> | - | - | - | - |
-| Indicatie in onderzoek | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | Tagged value |
+| <span class="green">Indicatie in onderzoek</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | Tagged value |
 | Indicatie materiële historie | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
 | Indicatie formele historie | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
 | Kardinaliteit | 1 | Algemeen metagegeven | lowerValue en upperValue van de metaclass Multiplicity Element | Multiplicity |
 | Lengte | 0..1 | De maximale lengte die een attribuut kan hebben. |  | Tagged value |
-| Maximum waarde (inclusief) | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | Tagged value |
-| Minimum lengte | 0..1 | De minimale lengte die een attribuut moet hebben. |  | Tagged value |
-| Minimum waarde (inclusief) | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben. |  | Tagged value |
+| <span class="green">Maximum waarde (inclusief)</span> | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | Tagged value |
+| <span class="green">Minimum lengte</span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | Tagged value |
+| <span class="green">Minimum waarde (inclusief)</span> | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben. |  | Tagged value |
 | Mogelijk geen waarde | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | Tagged value |
 | Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | Tagged value |
 | Regels | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
@@ -184,11 +184,11 @@ Entiteittype classes hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | Notes |
-| Endpoint beschikbaar | 0..1 | Voorziening waarmee kan worden aangegeven dat er voor een entiteit al dan niet een resource endpoint beschikbaar is. |  | Tagged value |
+| <span class="green">Endpoint beschikbaar</span> | 0..1 | Voorziening waarmee kan worden aangegeven dat er voor een entiteit al dan niet een resource endpoint beschikbaar is. |  | Tagged value |
 | Herkomst | 0..1 | ? |  | Tagged value |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Kwaliteit</span> | - | - | - | - |
-| Naam in meervoud | 0..1 | Voorziening om een entiteit een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een entiteit in een yaml bestand. |  | Tagged value |
+| <span class="green">Naam in meervoud</span> | 0..1 | Voorziening om een entiteit een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een entiteit in een yaml bestand. |  | Tagged value |
 | <span class="grey">Populatie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | Unieke aanduiding | 1 | De identificerende kenmerken van een entiteit die een instantie van het entiteittype uniek identificeren. Deze kenmerken worden in UML gemodelleerd als element en/of relatie dus dit metagegeven hoeft niet apart te worden gespecificeerd bij een entiteittype, het is afleidbaar. Voor entiteittypen die deel uitmaken van een (basis)registratie betreft dit de wijze waarop daarin voorkomende entiteiten (van dit type) uniek in de registratie worden aangeduid. | UML isID | isId bij element, --- of --- stereotype «isId» bij target role relatie --- of --- een combinatie van deze twee, elk hiervan meer keren toepasbaar |
@@ -238,18 +238,18 @@ Extern packages hebben de volgende aspecten gespecificeerd:
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. De naam van het domein package. | name van de metaclass Named element | Name |
 | Alias | 0..1 | Algemeen metagegeven. | UML-Property | Alias |
-| Beheerder | 0..1 | Naam van de beheerder van het model. |  | Tagged value |
+| <span class="green">Beheerder</span> | 0..1 | Naam van de beheerder van het model. |  | Tagged value |
 |<span class="grey"> Locatie</span> | - | - | - | - |
 | Data locatie | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | Herkomst definitie</span> | - | - | - | - |
-| Ref-release | 0..1 | ??? |  | Tagged value |
-| Ref-version | 0..1 | ??? |  | Tagged value |
-| Release | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
-| Versie ID | 0..1 | De identificatie van de versie/revisie van dit model-element in het gehanteerde versiebeheersysteem. |  | Tagged value |
-| Web locatie | 0..1 | ??? |  | Tagged value |
+| <span class="green">Ref-release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="green">Ref-version</span> | 0..1 | ??? |  | Tagged value |
+| <span class="green">Release</span> | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
+| <span class="green">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model-element in het gehanteerde versiebeheersysteem. |  | Tagged value |
+| <span class="green">Web locatie</span> | 0..1 | ??? |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 
 #### Metagegevens voor «Externe koppeling»
@@ -275,7 +275,7 @@ Externe koppeling packages hebben de volgende aspecten gespecificeerd:
 | Indicatie materiële historie | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
 | Indicatie formele historie | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
 | <span class="grey">Authentiek</span> | - | - | - | - |
-| Indicatie authentiek | 0..1 | Aanduiding of het een authentiek gegeven betreft. |  | Tagged value |
+| <span class="green">Indicatie authentiek</span> | 0..1 | Aanduiding of het een authentiek gegeven betreft. |  | Tagged value |
 | <span class="grey">Indicatie afleidbaar</span> | - | - | - | - |
 | <span class="grey">Mogelijk geen waarde</span> | - | - | - | - |
 | <span class="grey">verwijst naar relatiedoel | 0..* | Binding aan een entiteittype | /target: related Element bij Relationship Element = UML-Class | association target = Class |
@@ -288,14 +288,14 @@ Gegevensgroep classes hebben de volgende aspecten gespecificeerd:
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
 | <span class="grey">Alias</span> | - | - | - | - |
-| Indicatie in onderzoek | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | Tagged value |
+| <span class="green">Indicatie in onderzoek</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | Tagged value |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Authentiek</span> | - | - | - | - |
-| Indicatie authentiek | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | Tagged value |
+| <span class="green">Indicatie authentiek</span> | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | Tagged value |
 | Indicatie formele historie | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
 | Indicatie materiële historie | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
 | Kardinaliteit | 1 | Algemeen metagegeven | lowerValue en upperValue van de --metaclass Multiplicity | Element	Multiplicity |
@@ -313,13 +313,13 @@ Groepen hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
-| Groepnaam | 0..1 | Voorziening om een groep aangepaste naam te kunnen geven. | Tagged value |
+| <span class="green">Groepnaam</span> | 0..1 | Voorziening om een groep aangepaste naam te kunnen geven. | Tagged value |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
-| Indicatie formele historie | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
-| Indicatie materiële historie | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
-| Mogelijk geen waarde | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | Tagged value |
-| Regels | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
+| <span class="green">Indicatie formele historie</span> | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
+| <span class="green">Indicatie materiële historie</span> | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
+| <span class="green">Mogelijk geen waarde</span> | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | Tagged value |
+| <span class="green">Regels</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | heeft attribuut | 0..* | Binding aan een attribuutsoort. | owned element = UML-property | attribute |
 | heeft gegevensgroep | 0..* | Binding aan een gegevensgroep | owned element = UML-property | attribute |
@@ -341,10 +341,10 @@ Primitieve datatypes hebben de volgende aspecten gespecificeerd:
 | Formeel patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | Tagged value |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
-| Maximum waarde (inclusief) | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | Tagged value |
+| <span class="green">Maximum waarde (inclusief)</span> | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | Tagged value |
 | Lengte | 0..1 | De maximale lengte die een attribuut kan hebben. |  | Tagged value |
-| Minimum lengte | 0..1 | De minimale lengte die een attribuut moet hebben. | Tagged value |
-| Minimum waarde (inclusief) | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben |  | Tagged value |
+| <span class="green">Minimum lengte</span> | 0..1 | De minimale lengte die een attribuut moet hebben. | Tagged value |
+| <span class="green">Minimum waarde (inclusief)</span> | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben |  | Tagged value |
 | Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 
@@ -363,12 +363,12 @@ De Relatie associaties hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Authentiek</span> | - | - | - | - |
 | Identificerend | 0..1 | Algemeen metagegeven | isID bij de metaclass Property | isId |
-| Indicatie authentiek | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | Tagged value |
-| Indicatie in onderzoek | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | Tagged value |
+| <span class="green">Indicatie authentiek</span> | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | Tagged value |
+| <span class="green">Indicatie in onderzoek</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | Tagged value |
 | Indicatie formele historie | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
 | Indicatie materiële historie | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
 | Regels | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
-| Target role in meervoud | 0..1 | Voorziening om de target role een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een relatie in een yaml bestand. |  | Tagged value |
+| <span class="green">Target role in meervoud</span> | 0..1 | Voorziening om de target role een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een relatie in een yaml bestand. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | Unidirectioneel | 1 | Algemeen metagegeven. |  | Direction van de betreffende assiciation (van source naar target) |
 | Relatie eigenaar | 1 | Algemeen metagegeven. | /source: related Element bij Relationship Element | Source |
@@ -474,15 +474,15 @@ View packages hebben de volgende aspecten gespecificeerd:
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. Deze is, indien mogelijk, analoog aan de naamgeving in het externe schema waar de view over gaat, eventueel met een prefix. | name van de metaclass Named element | Name |
 | <span class="grey">Alias</span> | - | - | - | - |
-| Afkorting | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.	 |  | Tagged value |
-| Data locatie | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
+| <span class="green">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.	 |  | Tagged value |
+| <span class="green">Data locatie</span> | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Locatie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-| Ref-release | 0..1 | ??? |  | Tagged value |
-| Ref-version | 0..1 | ??? |  | Tagged value |
-| Release | 0..1 | ??? |  | Tagged value |
-| Versie ID | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
+| <span class="green">Ref-release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="green">Ref-version</span> | 0..1 | ??? |  | Tagged value |
+| <span class="green">Release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="green">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |

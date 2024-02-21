@@ -411,7 +411,7 @@ ul.index code{color:inherit}
 <p>Metamodel voor het beschrijven van Berichtgegevens (MBG), versie <strong>0.9</strong>.</p>
 <p>Met MBG, het Metamodel voor BerichtstructuurGegevens, wordt een metamodel beschreven waarmee berichten kunnen worden gemodelleerd in de vorm van Berichtstructuurmodellen. Het beschrijft de metaklassen, metastructuur en metagegevens als grondslag voor alle onderdelen van een bericht. Doel hiervan is het vastleggen van de methode van het modelleren van berichten zodat dit op een eenduidige gebeurd en de gemeenschappelijke tooling deze modellen ook kan verwerken. Vooralsnog wordt ingezet op het definiëren van een metamodel voor het beschrijven van OAS specificaties voor REST API’s maar het is tevens bedoeld als basis voor verbetering en doorontwikkeling van dit metamodel.</p>
 </section></div>
-  <div id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></div><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#gebruikswijzer"><bdi class="secno">1.4 </bdi>Gebruikswijzer</a></li><li class="tocline"><a class="tocxref" href="#wat-is-een-bsm"><bdi class="secno">1.5 </bdi>Wat is een BSM</a></li><li class="tocline"><a class="tocxref" href="#typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</a></li><li class="tocline"><a class="tocxref" href="#wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</a></li><li class="tocline"><a class="tocxref" href="#uitdrukken-in-uml"><bdi class="secno">1.8 </bdi>Uitdrukken in UML</a></li><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">1.9 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">1.10 </bdi>Normreferenties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-algemeen"><bdi class="secno">2. </bdi>Metamodel Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel"><bdi class="secno">2.1 </bdi>Structuur metamodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern"><bdi class="secno">2.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering"><bdi class="secno">2.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#objecten"><bdi class="secno">2.2 </bdi>Objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#berichttypes"><bdi class="secno">2.2.1 </bdi>Berichttypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#getberichttype"><bdi class="secno">2.2.1.1 </bdi>Getberichttype</a></li><li class="tocline"><a class="tocxref" href="#postberichttype"><bdi class="secno">2.2.1.2 </bdi>Postberichttype</a></li><li class="tocline"><a class="tocxref" href="#putberichttype"><bdi class="secno">2.2.1.3 </bdi>Putberichttype</a></li><li class="tocline"><a class="tocxref" href="#patchberichttype"><bdi class="secno">2.2.1.4 </bdi>Patchberichttype</a></li><li class="tocline"><a class="tocxref" href="#deleteberichttype"><bdi class="secno">2.2.1.5 </bdi>Deleteberichttype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#padtype"><bdi class="secno">2.2.2 </bdi>Padtype</a></li><li class="tocline"><a class="tocxref" href="#interface"><bdi class="secno">2.2.3 </bdi>Interface</a></li></ol></li><li class="tocline"><a class="tocxref" href="#relaties"><bdi class="secno">2.3 </bdi>Relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generalisatie"><bdi class="secno">2.3.1 </bdi>Generalisatie</a></li><li class="tocline"><a class="tocxref" href="#entiteitrelatie"><bdi class="secno">2.3.2 </bdi>EntiteitRelatie</a></li><li class="tocline"><a class="tocxref" href="#padrelatie"><bdi class="secno">2.3.3 </bdi>PadRelatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#packages"><bdi class="secno">2.4 </bdi>Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#koppelvlak"><bdi class="secno">2.4.1 </bdi>Koppelvlak</a></li><li class="tocline"><a class="tocxref" href="#domein"><bdi class="secno">2.4.2 </bdi>Domein</a></li><li class="tocline"><a class="tocxref" href="#bericht"><bdi class="secno">2.4.3 </bdi>Bericht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens"><bdi class="secno">2.5 </bdi>Specificatie metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-packages"><bdi class="secno">2.5.1 </bdi>Specificatie metagegevens Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam"><bdi class="secno">2.5.1.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-beheerder-email"><bdi class="secno">2.5.1.2 </bdi>Metagegeven: beheerder-email</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-koppelvlak-naam"><bdi class="secno">2.5.1.3 </bdi>Metagegeven: Koppelvlak-naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-project_url"><bdi class="secno">2.5.1.4 </bdi>Metagegeven: project_url</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-release"><bdi class="secno">2.5.1.5 </bdi>Metagegeven: release</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-serialisatie"><bdi class="secno">2.5.1.6 </bdi>Metagegeven: Serialisatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelementen"><bdi class="secno">2.5.2 </bdi>Specificatie metagegevens modelelementen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam-0"><bdi class="secno">2.5.2.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-berichtcode"><bdi class="secno">2.5.2.2 </bdi>Metagegeven: berichtcode</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-tag"><bdi class="secno">2.5.2.3 </bdi>Metagegeven: tag</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-servicename"><bdi class="secno">2.5.2.4 </bdi>Metagegeven: servicename</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-custom_path_facet"><bdi class="secno">2.5.2.5 </bdi>Metagegeven: custom_path_facet</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-positie"><bdi class="secno">2.5.2.6 </bdi>Metagegeven: Positie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelement-bindingen"><bdi class="secno">2.5.3 </bdi>Specificatie metagegevens modelelement bindingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-padrelatie"><bdi class="secno">2.5.3.1 </bdi>Metagegeven: heeft padrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-entiteitrelatie"><bdi class="secno">2.5.3.2 </bdi>Metagegeven: heeft entiteitrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-verwijst-naar-supertype"><bdi class="secno">2.5.3.3 </bdi>Metagegeven: verwijst naar supertype</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toegestane-waarden-voor-bepaalde-metagegevens"><bdi class="secno">2.6 </bdi>Toegestane waarden voor (bepaalde) metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardebereik-metagegevens"><bdi class="secno">2.6.1 </bdi>Waardebereik metagegevens</a></li><li class="tocline"><a class="tocxref" href="#defaultwaarden-voor-metagegevens-modelelementen"><bdi class="secno">2.6.2 </bdi>Defaultwaarden voor metagegevens modelelementen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-in-uml"><bdi class="secno">3. </bdi>Metamodel in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel-in-uml"><bdi class="secno">3.1 </bdi>Structuur metamodel in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern-0"><bdi class="secno">3.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering-0"><bdi class="secno">3.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#nadere-specificatie-metagegevens-in-uml"><bdi class="secno">3.2 </bdi>Nadere specificatie metagegevens in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#modellering-metagegevens-voor-objecten-en-attributen-in-uml"><bdi class="secno">3.2.1 </bdi>Modellering metagegevens voor objecten en attributen in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-berichttype"><bdi class="secno">3.2.1.1 </bdi>Specificatie voor «Berichttype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-getberichttype"><bdi class="secno">3.2.1.2 </bdi>Specificatie voor «Getberichttype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-padtype"><bdi class="secno">3.2.1.3 </bdi>Specificatie voor «Padtype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-interface"><bdi class="secno">3.2.1.4 </bdi>Specificatie voor «Interface»</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-voor-relaties"><bdi class="secno">3.2.2 </bdi>Specificatie metagegevens voor relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-entiteitrelatie"><bdi class="secno">3.2.2.1 </bdi>Specificatie voor «EntiteitRelatie»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-padrelatie"><bdi class="secno">3.2.2.2 </bdi>Specificatie voor «PadRelatie»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-generalisatie-tussen-berichttypes-en-interfaces"><bdi class="secno">3.2.2.3 </bdi>Specificatie voor «Generalisatie» tussen berichttypes en interfaces</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-voor-packages"><bdi class="secno">3.2.3 </bdi>Specificatie metagegevens voor packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-koppelvlak"><bdi class="secno">3.2.3.1 </bdi>Specificatie voor «Koppelvlak»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-domein"><bdi class="secno">3.2.3.2 </bdi>Specificatie voor «Domein»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-bericht"><bdi class="secno">3.2.3.3 </bdi>Specificatie voor «Bericht»</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#uml-tooling"><bdi class="secno">3.3 </bdi>UML Tooling</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mbg-toolbox"><bdi class="secno">3.3.1 </bdi>MBG-toolbox</a></li><li class="tocline"><a class="tocxref" href="#extensie-op-mbg-toolbox"><bdi class="secno">3.3.2 </bdi>Extensie op MBG-toolbox</a></li><li class="tocline"><a class="tocxref" href="#imvertor"><bdi class="secno">3.3.3 </bdi>Imvertor</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#afspraken-regels"><bdi class="secno">4. </bdi>Afspraken &amp; Regels</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#afspraken-rondom-naamgeving-en-definities"><bdi class="secno">4.1 </bdi>Afspraken rondom naamgeving en definities</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#uniciteit-van-namen-van-modelelementen"><bdi class="secno">4.1.1 </bdi>Uniciteit van namen van modelelementen</a></li><li class="tocline"><a class="tocxref" href="#uniekheid-van-waarden-van-tagged-values"><bdi class="secno">4.1.2 </bdi>Uniekheid van waarden van tagged values</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlagen"><bdi class="secno">5. </bdi>Bijlagen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#diagrammen"><bdi class="secno">5.1 </bdi>Diagrammen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-toegepaste-uml-metaclasses"><bdi class="secno">5.1.1 </bdi>Overzicht toegepaste UML metaclasses</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-en-metagegevens-als-diagram"><bdi class="secno">5.1.2 </bdi>Modelelementen en metagegevens als diagram</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">B.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+  <div id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></div><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#gebruikswijzer"><bdi class="secno">1.4 </bdi>Gebruikswijzer</a></li><li class="tocline"><a class="tocxref" href="#wat-is-een-bsm"><bdi class="secno">1.5 </bdi>Wat is een BSM</a></li><li class="tocline"><a class="tocxref" href="#typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</a></li><li class="tocline"><a class="tocxref" href="#wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</a></li><li class="tocline"><a class="tocxref" href="#uitdrukken-in-uml"><bdi class="secno">1.8 </bdi>Uitdrukken in UML</a></li><li class="tocline"><a class="tocxref" href="#beheer"><bdi class="secno">1.9 </bdi>Beheer</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">1.10 </bdi>Normreferenties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-algemeen"><bdi class="secno">2. </bdi>Metamodel Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel"><bdi class="secno">2.1 </bdi>Structuur metamodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern"><bdi class="secno">2.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering"><bdi class="secno">2.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#objecten"><bdi class="secno">2.2 </bdi>Objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#berichttypes"><bdi class="secno">2.2.1 </bdi>Berichttypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#getberichttype"><bdi class="secno">2.2.1.1 </bdi>Getberichttype</a></li><li class="tocline"><a class="tocxref" href="#postberichttype"><bdi class="secno">2.2.1.2 </bdi>Postberichttype</a></li><li class="tocline"><a class="tocxref" href="#putberichttype"><bdi class="secno">2.2.1.3 </bdi>Putberichttype</a></li><li class="tocline"><a class="tocxref" href="#patchberichttype"><bdi class="secno">2.2.1.4 </bdi>Patchberichttype</a></li><li class="tocline"><a class="tocxref" href="#deleteberichttype"><bdi class="secno">2.2.1.5 </bdi>Deleteberichttype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#padtype"><bdi class="secno">2.2.2 </bdi>Padtype</a></li><li class="tocline"><a class="tocxref" href="#interface"><bdi class="secno">2.2.3 </bdi>Interface</a></li></ol></li><li class="tocline"><a class="tocxref" href="#relaties"><bdi class="secno">2.3 </bdi>Relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generalisatie"><bdi class="secno">2.3.1 </bdi>Generalisatie</a></li><li class="tocline"><a class="tocxref" href="#entiteitrelatie"><bdi class="secno">2.3.2 </bdi>EntiteitRelatie</a></li><li class="tocline"><a class="tocxref" href="#padrelatie"><bdi class="secno">2.3.3 </bdi>PadRelatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#packages"><bdi class="secno">2.4 </bdi>Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#koppelvlak"><bdi class="secno">2.4.1 </bdi>Koppelvlak</a></li><li class="tocline"><a class="tocxref" href="#domein"><bdi class="secno">2.4.2 </bdi>Domein</a></li><li class="tocline"><a class="tocxref" href="#bericht"><bdi class="secno">2.4.3 </bdi>Bericht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens"><bdi class="secno">2.5 </bdi>Specificatie metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-packages"><bdi class="secno">2.5.1 </bdi>Specificatie metagegevens Packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam"><bdi class="secno">2.5.1.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-beheerder-email"><bdi class="secno">2.5.1.2 </bdi>Metagegeven: beheerder-email</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-koppelvlak-naam"><bdi class="secno">2.5.1.3 </bdi>Metagegeven: Koppelvlak-naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-project_url"><bdi class="secno">2.5.1.4 </bdi>Metagegeven: project_url</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-release"><bdi class="secno">2.5.1.5 </bdi>Metagegeven: release</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-serialisatie"><bdi class="secno">2.5.1.6 </bdi>Metagegeven: Serialisatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelementen"><bdi class="secno">2.5.2 </bdi>Specificatie metagegevens modelelementen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-naam-0"><bdi class="secno">2.5.2.1 </bdi>Metagegeven: Naam</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-berichtcode"><bdi class="secno">2.5.2.2 </bdi>Metagegeven: berichtcode</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-tag"><bdi class="secno">2.5.2.3 </bdi>Metagegeven: tag</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-servicename"><bdi class="secno">2.5.2.4 </bdi>Metagegeven: servicename</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-custom_path_facet"><bdi class="secno">2.5.2.5 </bdi>Metagegeven: custom_path_facet</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-positie"><bdi class="secno">2.5.2.6 </bdi>Metagegeven: Positie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-modelelement-bindingen"><bdi class="secno">2.5.3 </bdi>Specificatie metagegevens modelelement bindingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-padrelatie"><bdi class="secno">2.5.3.1 </bdi>Metagegeven: heeft padrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-heeft-entiteitrelatie"><bdi class="secno">2.5.3.2 </bdi>Metagegeven: heeft entiteitrelatie</a></li><li class="tocline"><a class="tocxref" href="#metagegeven-verwijst-naar-supertype"><bdi class="secno">2.5.3.3 </bdi>Metagegeven: verwijst naar supertype</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toegestane-waarden-voor-bepaalde-metagegevens"><bdi class="secno">2.6 </bdi>Toegestane waarden voor (bepaalde) metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardebereik-metagegevens"><bdi class="secno">2.6.1 </bdi>Waardebereik metagegevens</a></li><li class="tocline"><a class="tocxref" href="#defaultwaarden-voor-metagegevens-modelelementen"><bdi class="secno">2.6.2 </bdi>Defaultwaarden voor metagegevens modelelementen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-in-uml"><bdi class="secno">3. </bdi>Metamodel in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#structuur-metamodel-in-uml"><bdi class="secno">3.1 </bdi>Structuur metamodel in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern-0"><bdi class="secno">3.1.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#groepering-0"><bdi class="secno">3.1.2 </bdi>Groepering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#nadere-specificatie-metagegevens-in-uml"><bdi class="secno">3.2 </bdi>Nadere specificatie metagegevens in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#modellering-metagegevens-voor-objecten-en-attributen-in-uml"><bdi class="secno">3.2.1 </bdi>Modellering metagegevens voor objecten en attributen in UML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-berichttype"><bdi class="secno">3.2.1.1 </bdi>Specificatie voor «Berichttype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-getberichttype"><bdi class="secno">3.2.1.2 </bdi>Specificatie voor «Getberichttype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-padtype"><bdi class="secno">3.2.1.3 </bdi>Specificatie voor «Padtype»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-interface"><bdi class="secno">3.2.1.4 </bdi>Specificatie voor «Interface»</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-voor-relaties"><bdi class="secno">3.2.2 </bdi>Specificatie metagegevens voor relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-entiteitrelatie"><bdi class="secno">3.2.2.1 </bdi>Specificatie voor «EntiteitRelatie»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-padrelatie"><bdi class="secno">3.2.2.2 </bdi>Specificatie voor «PadRelatie»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-generalisatie-tussen-berichttypes-en-interfaces"><bdi class="secno">3.2.2.3 </bdi>Specificatie voor «Generalisatie» tussen berichttypes en interfaces</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie-metagegevens-voor-packages"><bdi class="secno">3.2.3 </bdi>Specificatie metagegevens voor packages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-voor-koppelvlak"><bdi class="secno">3.2.3.1 </bdi>Specificatie voor «Koppelvlak»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-domein"><bdi class="secno">3.2.3.2 </bdi>Specificatie voor «Domein»</a></li><li class="tocline"><a class="tocxref" href="#specificatie-voor-bericht"><bdi class="secno">3.2.3.3 </bdi>Specificatie voor «Bericht»</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#uml-tooling"><bdi class="secno">3.3 </bdi>UML Tooling</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mbg-toolbox"><bdi class="secno">3.3.1 </bdi>MBG-toolbox</a></li><li class="tocline"><a class="tocxref" href="#extensie-op-mbg-toolbox"><bdi class="secno">3.3.2 </bdi>Extensie op MBG-toolbox</a></li><li class="tocline"><a class="tocxref" href="#imvertor"><bdi class="secno">3.3.3 </bdi>Imvertor</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#afspraken-regels"><bdi class="secno">4. </bdi>Afspraken &amp; Regels</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#afspraken-rondom-naamgeving-en-definities"><bdi class="secno">4.1 </bdi>Afspraken rondom naamgeving en definities</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#uniciteit-van-namen-van-modelelementen"><bdi class="secno">4.1.1 </bdi>Uniciteit van namen van modelelementen</a></li><li class="tocline"><a class="tocxref" href="#uniekheid-van-waarden-van-tagged-values"><bdi class="secno">4.1.2 </bdi>Uniekheid van waarden van tagged values</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlagen"><bdi class="secno">5. </bdi>Bijlagen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#diagrammen"><bdi class="secno">5.1 </bdi>Diagrammen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-toegepaste-uml-metaclasses"><bdi class="secno">5.1.1 </bdi>Overzicht toegepaste UML metaclasses</a></li><li class="tocline"><a class="tocxref" href="#modelelementen-en-metagegevens-als-diagram"><bdi class="secno">5.1.2 </bdi>Modelelementen en metagegevens als diagram</a></li></ol></li><li class="tocline"><a class="tocxref" href="#metamodel-uitwisselingsgegevensmodel-mug"><bdi class="secno">5.2 </bdi>Metamodel UitwisselingsGegevensmodel (MUG)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping-mim-op-mug-stereotypes"><bdi class="secno">5.2.1 </bdi>Mapping MIM op MUG stereotypes</a></li><li class="tocline"><a class="tocxref" href="#metagegevens"><bdi class="secno">5.2.2 </bdi>Metagegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metagegevens-voor-basismodel"><bdi class="secno">5.2.2.1 </bdi>Metagegevens voor «Basismodel»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-complex-datatype"><bdi class="secno">5.2.2.2 </bdi>Metagegevens voor «Complex datatype»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-data-element"><bdi class="secno">5.2.2.3 </bdi>Metagegevens voor «Data element»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-domein"><bdi class="secno">5.2.2.4 </bdi>Metagegevens voor «Domein»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-element"><bdi class="secno">5.2.2.5 </bdi>Metagegevens voor «Element»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-entiteittype"><bdi class="secno">5.2.2.6 </bdi>Metagegevens voor «Entiteittype»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-enum"><bdi class="secno">5.2.2.7 </bdi>Metagegevens voor «Enum»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-enumeration"><bdi class="secno">5.2.2.8 </bdi>Metagegevens voor «Enumeration»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-extern"><bdi class="secno">5.2.2.9 </bdi>Metagegevens voor «Extern»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-externe-koppeling"><bdi class="secno">5.2.2.10 </bdi>Metagegevens voor «Externe koppeling»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-gegevensgroep"><bdi class="secno">5.2.2.11 </bdi>Metagegevens voor «Gegevensgroep»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-groep"><bdi class="secno">5.2.2.12 </bdi>Metagegevens voor «Groep»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-primitief-datatype"><bdi class="secno">5.2.2.13 </bdi>Metagegevens voor «Primitief datatype»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-relatie"><bdi class="secno">5.2.2.14 </bdi>Metagegevens voor «Relatie»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-relatie-entiteit"><bdi class="secno">5.2.2.15 </bdi>Metagegevens voor «Relatie-entiteit»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-tabel-element"><bdi class="secno">5.2.2.16 </bdi>Metagegevens voor «Tabel Element»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-tabel-entiteit"><bdi class="secno">5.2.2.17 </bdi>Metagegevens voor «Tabel-entiteit»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-union"><bdi class="secno">5.2.2.18 </bdi>Metagegevens voor «Union»</a></li><li class="tocline"><a class="tocxref" href="#metagegevens-voor-view"><bdi class="secno">5.2.2.19 </bdi>Metagegevens voor «View»</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">B.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
   <div><section><h2 id="colofon-en-voorwoord">Colofon en Voorwoord</h2>
 <section><h3 id="colofon">Colofon</h3>
 <p>Aan de totstandkoming van deze versie van dit metamodel hebben de volgende inhoudelijke experts op het gebied van informatiemodellering meegewerkt:</p>
@@ -1597,10 +1597,2501 @@ In de hierna volgende paragrafen worden de metagegevens per modelelement gespeci
 Packages</p>
 <p><strong>Voeg diagram toe</strong></p>
 </section></section>
-      <section data-include-format="markdown" data-include="MetamodelMUG.md" data-include-id="include-22522558388949365" class="respec-offending-element" title="`data-include` failed: `MetamodelMUG.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-metamodelmug-md-cannot-read-properties-of-null-reading-localname"></section>
-      <section data-include-format="markdown" data-include="MBG-metagegevenImvertor.md" data-include-id="include-22864990488661885" class="respec-offending-element" title="`data-include` failed: `MBG-metagegevenImvertor.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-mbg-metagegevenimvertor-md-cannot-read-properties-of-null-reading-localname"></section>
-      <section data-include-format="markdown" data-include="MUG-metagegevenImvertor.md" data-include-id="include-7222785632030797" class="respec-offending-element" title="`data-include` failed: `MUG-metagegevenImvertor.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-mug-metagegevenimvertor-md-cannot-read-properties-of-null-reading-localname"></section>
-      <section data-include-format="markdown" data-include="Versielog.md" data-include-id="include-6103353641542704" class="respec-offending-element" title="`data-include` failed: `Versielog.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-versielog-md-cannot-read-properties-of-null-reading-localname"></section>
+      <section id="metamodel-uitwisselingsgegevensmodel-mug"><h3 id="x5-2-metamodel-uitwisselingsgegevensmodel-mug"><bdi class="secno">5.2 </bdi>Metamodel UitwisselingsGegevensmodel (MUG)</h3>
+<p>Het Bericht StructuurModel (BSM) is in feite een extensie op het UitwisselingsGegevensModel (UGM). Het BSM definieert het vehikel 
+waarmee gegevens of een uit te voeren actie naar een endpoint wordt gecommuniceerd en het UGM voorziet in de gegevens die verstuurd 
+dan wel ontvangen worden. Het UGM is gebaseerd op het Metamodel UitwisselingsGegevensmodel (MUG). </p>
+<p>Een UGM is in de basis een vertaling van een Conceptueel Informatie Model (CIM) naar een ander metamodel. De structuur van een UGM kan 
+in principe gelijk zijn aan die van een CIM maar dat is over het algemeen niet het geval. Waar een CIM een beeld geeft van de 
+informatiebehoefte binnen een domein op conceptueel niveau is het UGM een vertaling daarvan naar een technische structuur. </p>
+<p>De in een CIM gebruikte stereotypes kunnen 1 op 1 gemapt worden met de in een UGM gebruikte stereotypes. Om die reden zou een BSM in 
+theorie ook als extensie op een op het MIM gebaseerd CIM kunnen worden gedefinieerd, al ontbreken er dan op de objecten en attributen 
+nog wel diverse tagged values.</p>
+<p>In de volgende paragraaf vind je de mapping tussen de stereotypes van het MIM en in de daarop volgende paragraaf per stereotype in het 
+MUG de op de gerelateerde stereotype in het MIM ontbrekende maar voor het BSM bruikbare of zelfs noodzakelijke tagged values.</p>
+<section id="mapping-mim-op-mug-stereotypes"><h4 id="x5-2-1-mapping-mim-op-mug-stereotypes"><bdi class="secno">5.2.1 </bdi>Mapping MIM op MUG stereotypes</h4>
+<p>De volgende tabel bevat een mapping tussen de MIM stereotypes en de MUG stereotypes. Stereotypes die niet in het MIM aanwezig zijn maar 
+wel in het MUG zijn niet opgenomen, stereotypes die wel aanwezig zijn in het MIM maar waarvoor geen MUG stereotype is opgenomen wel. 
+Die laatste stereotypes hebben (nog) geen functie bij de berichtdefinitie.</p>
+<table class="simple">
+<thead>
+<tr>
+<th>MIM stereotype</th>
+<th>MUG stereotype</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Informatiemodel</td>
+<td>Basismodel</td>
+</tr>
+<tr>
+<td>Gestructureerd</td>
+<td>datatype	Complex datatype</td>
+</tr>
+<tr>
+<td>Data element</td>
+<td>Data element</td>
+</tr>
+<tr>
+<td>Domein</td>
+<td>Domein</td>
+</tr>
+<tr>
+<td>Attribuutsoort</td>
+<td>Element</td>
+</tr>
+<tr>
+<td>Objecttype</td>
+<td>Entiteittype</td>
+</tr>
+<tr>
+<td>Enumeratiewaarde</td>
+<td>Enum</td>
+</tr>
+<tr>
+<td>Enumeratie</td>
+<td>Enumeration</td>
+</tr>
+<tr>
+<td>Extern</td>
+<td>Extern</td>
+</tr>
+<tr>
+<td>Externe koppeling</td>
+<td>Externe koppeling</td>
+</tr>
+<tr>
+<td>Gegevensgroep</td>
+<td>Gegevensgroep</td>
+</tr>
+<tr>
+<td>Gegevensgroeptype</td>
+<td>Groep</td>
+</tr>
+<tr>
+<td>Primitief datatype</td>
+<td>Primitief datatype</td>
+</tr>
+<tr>
+<td>Relatiesoort</td>
+<td>Relatie</td>
+</tr>
+<tr>
+<td>Relatieklasse</td>
+<td>Relatie-entiteit</td>
+</tr>
+<tr>
+<td>Referentie element</td>
+<td>Tabel Element</td>
+</tr>
+<tr>
+<td>Referentielijst</td>
+<td>Tabel-entiteit</td>
+</tr>
+<tr>
+<td>Keuze</td>
+<td>Union</td>
+</tr>
+<tr>
+<td>View</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Codelijst</td>
+<td>Tabel-entiteit</td>
+</tr>
+<tr>
+<td>Generalisatie</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Relatierol</td>
+<td>-</td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens"><h4 id="x5-2-2-metagegevens"><bdi class="secno">5.2.2 </bdi>Metagegevens</h4>
+<p>De MUG stereotypes in de voorgaande paragraaf kennen een aantal metagegevens. In deze paragraaf worden deze per stereotype beschreven.
+metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn onderlijnd.</p>
+<p>Daarnaast zijn de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes in dezelfde tabellen opgenomen maar uitgegrijsd.</p>
+<section id="metagegevens-voor-basismodel"><h5 id="x5-2-2-1-metagegevens-voor-basismodel"><bdi class="secno">5.2.2.1 </bdi>Metagegevens voor «Basismodel»</h5>
+<p>Basismodel packages hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>name van de metaclass Named element</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Afkorting</td>
+<td>0..1</td>
+<td>Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>0..1</td>
+<td>De beschrijving van de betekenis van de construct.</td>
+<td>Body van de metaclass Comment.</td>
+<td>Notes</td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Informatie-domein</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Informatie-model type</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>MIM extensie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>MIM taal</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>MIM versie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Relatie-modellerings-type</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting</td>
+<td>0..1</td>
+<td>Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Web locatie</td>
+<td>0..1</td>
+<td>????</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Release</td>
+<td>0..1</td>
+<td>Datum waarop begonnen is met het realiseren van de betreffende versie van het UGM.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Versie ID</td>
+<td>0..1</td>
+<td>De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-complex-datatype"><h5 id="x5-2-2-2-metagegevens-voor-complex-datatype"><bdi class="secno">5.2.2.2 </bdi>Metagegevens voor «Complex datatype»</h5>
+<p>Complex datatype classes hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven. De naam van het domein package.</td>
+<td>name van de metaclass Namedelement</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>0..1</td>
+<td>De beschrijving van de betekenis van de construct.</td>
+<td>Body van de metaclass Comment</td>
+<td>Notes</td>
+</tr>
+<tr>
+<td>Formeel Patroon</td>
+<td>0..1</td>
+<td>Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Patroon</td>
+<td>0..1</td>
+<td>Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Toelichting</td>
+<td>0..1</td>
+<td>Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>bevat data element</td>
+<td>0..*</td>
+<td>Binding aan een data element, 2 of meer tenzij via generalisatie verkregen.</td>
+<td></td>
+<td>attribute</td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-data-element"><h5 id="x5-2-2-3-metagegevens-voor-data-element"><bdi class="secno">5.2.2.3 </bdi>Metagegevens voor «Data element»</h5>
+<p>Data elementen hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>name van de metaclass Namedelement</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>0..1</td>
+<td>De beschrijving van de betekenis van de construct.</td>
+<td>Body van de metaclass Comment</td>
+<td>Notes</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0..1</td>
+<td>Voorbeeld waarde.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Formeel patroon</td>
+<td>0..1</td>
+<td>Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Kardinaliteit</td>
+<td>1</td>
+<td>Algemeen metagegeven.</td>
+<td>lowerValue en upperValue van de metaclass MultiplicityElement</td>
+<td>Multiplicity</td>
+</tr>
+<tr>
+<td>Lengte</td>
+<td>0..1</td>
+<td>De maximale lengte die een attribuut kan hebben.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Maximum waarde (inclusief)</td>
+<td>0..1</td>
+<td>De maximale waarde (inclusief) dat een attribuut mag hebben.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Minimum lengte</td>
+<td>0..1</td>
+<td>De minimale lengte die een attribuut moet hebben.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Minimum waarde (inclusief)</td>
+<td>0..1</td>
+<td>De minimale waarde (inclusief) dat een attribuut moet hebben.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Patroon</td>
+<td>0..1</td>
+<td>Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Regels</td>
+<td>0..1</td>
+<td>Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Toelichting</td>
+<td>0..1</td>
+<td>Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.</td>
+<td></td>
+<td>Tagged value</td>
+</tr>
+<tr>
+<td>Heeft datatype</td>
+<td>1</td>
+<td>Binding aan een datatype.</td>
+<td>datatype = UML-datatype</td>
+<td>type = datatype</td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-domein"><h5 id="x5-2-2-4-metagegevens-voor-domein"><bdi class="secno">5.2.2.4 </bdi>Metagegevens voor «Domein»</h5>
+<p>Domein packages hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven. De naam van het domein package.	name van de metaclass Namedelement	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Afkorting	0..1	Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ref-release	0..1	???		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ref-version	0..1	???		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Release	1 Datum waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Versie ID	0..1	De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-element"><h5 id="x5-2-2-5-metagegevens-voor-element"><bdi class="secno">5.2.2.5 </bdi>Metagegevens voor «Element»</h5>
+<p>Elementen hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Example	0..1	Voorbeeldwaarde van een property.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Formeel patroon	0..1	Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Identificerend	0..1	Algemeen metagegeven	isID bij de metaclass Property	isID</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Authentiek</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Indicatie authentiek	0..1	Aanduiding of het een authentiek gegeven (element) betreft.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie classificerend</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Indicatie afleidbaar</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Indicatie in onderzoek	0..1	De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde.	 -	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie materiële historie	0..1	Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie formele historie	0..1	Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit	1	Algemeen metagegeven	lowerValue en upperValue van de metaclass Multiplicity Element	Multiplicity</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Lengte	0..1	De maximale lengte die een attribuut kan hebben.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Maximum waarde (inclusief)	0..1	De maximale waarde (inclusief) dat een attribuut mag hebben.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Minimum lengte	0..1	De minimale lengte die een attribuut moet hebben.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Minimum waarde (inclusief)	0..1	De minimale waarde (inclusief) dat een attribuut moet hebben.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mogelijk geen waarde	0..1	Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Patroon	0..1	Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Regels	0..1	Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Heeft datatype	1	Binding aan een datatype.	datatype = UML-datatype	type = datatype</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-entiteittype"><h5 id="x5-2-2-6-metagegevens-voor-entiteittype"><bdi class="secno">5.2.2.6 </bdi>Metagegevens voor «Entiteittype»</h5>
+<p>Entiteittype classes hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Endpoint beschikbaar 0..1	Voorziening waarmee kan worden aangegeven dat er voor een entiteit al dan niet een resource endpoint beschikbaar is.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst	0..1	?		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Kwaliteit</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Naam in meervoud	0..1	Voorziening om een entiteit een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een entiteit in een yaml bestand.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Populatie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Unieke aanduiding	1	De identificerende kenmerken van een entiteit die een instantie van het entiteittype uniek identificeren. Deze kenmerken worden in UML gemodelleerd als element en/of relatie dus dit metagegeven hoeft niet apart te worden gespecificeerd bij een entiteittype, het is afleidbaar. Voor entiteittypen die deel uitmaken van een (basis)registratie betreft dit de wijze waarop daarin voorkomende entiteiten (van dit type) uniek in de registratie worden aangeduid.	UML isID	isId bij element, --- of --- stereotype «isId» bij target role relatie --- of --- een combinatie van deze twee, elk hiervan meer keren toepasbaar</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie abstract object</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>heeft element	0..*	Binding aan een element.	owned element = UML-property	attribute</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft groep	0..*	Binding aan een gegevensgroep.	owned element = UML-property	attribute</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft relatie	0..*	Binding aan een relatie of relatie-entiteit.	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft externe koppeling	0..*	Binding aan een externe koppeling.	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verwijst naar supertype	0..*	Binding aan een generalisatie (naar een ander objecttype).	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-enum"><h5 id="x5-2-2-7-metagegevens-voor-enum"><bdi class="secno">5.2.2.7 </bdi>Metagegevens voor «Enum»</h5>
+<p>Enums hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Code	0..1	De in een registratie aan de enumeratiewaarde toegekend unieke code.	Alias van de metaclass Element Import	Alias</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-enumeration"><h5 id="x5-2-2-8-metagegevens-voor-enumeration"><bdi class="secno">5.2.2.8 </bdi>Metagegevens voor «Enumeration»</h5>
+<p>Enumeration classes hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>bevat enumeratiewaarde	1..*	Binding aan een enum	owned element = UML-EnumerationLiteral	Enumera-tionLiteral</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-extern"><h5 id="x5-2-2-9-metagegevens-voor-extern"><bdi class="secno">5.2.2.9 </bdi>Metagegevens voor «Extern»</h5>
+<p>Extern packages hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven. De naam van het domein package.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias	0..1	Algemeen metagegeven.	UML-Property	Alias</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Beheerder	0..1	Naam van de beheerder van het model.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Locatie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Data locatie	0..1	De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere</td>
+<td>gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Ref-release	0..1	???		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ref-version	0..1	???		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Release	0..1	Datum waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Versie ID	0..1	De identificatie van de versie/revisie van dit model-element in het gehanteerde versiebeheersysteem.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Web locatie	0..1	???		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-externe-koppeling"><h5 id="x5-2-2-10-metagegevens-voor-externe-koppeling"><bdi class="secno">5.2.2.10 </bdi>Metagegevens voor «Externe koppeling»</h5>
+<p>Externe koppeling packages hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Unidirectioneel	1	Algemeen metagegeven.		Direction van de betreffende assiciation (van source naar target)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Relatie eigenaar	1	Algemeen metagegeven.	/source: related Element bij Relationship Element	Source</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Relatie doel	1	Algemeen metagegeven.	/target: related Element bij Relationship Element	Target</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Aggregatietype	1	Algemeen metagegeven.	AggregationKind bij metaclass Property	Aggregation van de source role met waarde composite of shared</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit	1	Algemeen metagegeven	lowerValue en upperValue van de metaclass MultiplicityElement 	Multiplicity van de target role</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit relatie bron	1	Algemeen metagegeven	lowerValue en upperValue van de metaclass MultiplicityElement /source	Multiplicity van de source role</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie materiële historie	0..1	Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie formele historie	0..1	Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Authentiek</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Indicatie authentiek	0..1	Aanduiding of het een authentiek gegeven betreft.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie afleidbaar</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mogelijk geen waarde</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>verwijst naar relatiedoel	0..*	Binding aan een entiteittype	/target: related Element bij Relationship Element = UML-Class	association target = Class</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-gegevensgroep"><h5 id="x5-2-2-11-metagegevens-voor-gegevensgroep"><bdi class="secno">5.2.2.11 </bdi>Metagegevens voor «Gegevensgroep»</h5>
+<p>Gegevensgroep classes hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Indicatie in onderzoek	0..1	De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde.	 -	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	 Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Authentiek</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Indicatie authentiek	0..1	Aanduiding of het een authentiek gegeven (attribuutsoort) betreft.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie formele historie	0..1	Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie materiële historie	0..1	Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit	1	Algemeen metagegeven	lowerValue en upperValue van de --metaclass Multiplicity Element	Multiplicity</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft groep	1	Binding aan een gegevensgroeptype	owned element = UML-Class	type = Class</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-groep"><h5 id="x5-2-2-12-metagegevens-voor-groep"><bdi class="secno">5.2.2.12 </bdi>Metagegevens voor «Groep»</h5>
+<p>Groepen hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Groepnaam	0..1	Voorziening om een groep aangepaste naam te kunnen geven.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Indicatie formele historie	0..1	Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie materiële historie	0..1	Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mogelijk geen waarde	0..1	Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Regels	0..1	Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft attribuut	0..*	Binding aan een attribuutsoort.	owned element = UML-property	attribute</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft gegevensgroep	0..*	Binding aan een gegevensgroep	owned element = UML-property	attribute</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft relatie	0..*	Binding aan een relatiesoort of relatieklasse.	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft externe koppeling	0..*	Binding aan een externe koppeling.	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verwijst naar supertype	0..*	Binding aan een generalisatie (naar een ander gegevensgroeptype).	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-primitief-datatype"><h5 id="x5-2-2-13-metagegevens-voor-primitief-datatype"><bdi class="secno">5.2.2.13 </bdi>Metagegevens voor «Primitief datatype»</h5>
+<p>Primitieve datatypes hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Formeel patroon	0..1	Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Maximum waarde (inclusief)	0..1	De maximale waarde (inclusief) dat een attribuut mag hebben.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Lengte	0..1	De maximale lengte die een attribuut kan hebben.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Minimum lengte	0..1	De minimale lengte die een attribuut moet hebben.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Minimum waarde (inclusief)	0..1	De minimale waarde (inclusief) dat een attribuut moet hebben		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Patroon	0..1	Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-relatie"><h5 id="x5-2-2-14-metagegevens-voor-relatie"><bdi class="secno">5.2.2.14 </bdi>Metagegevens voor «Relatie»</h5>
+<p>De Relatie associaties hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Authentiek</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Identificerend	0..1	Algemeen metagegeven	isID bij de metaclass Property	isId</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie authentiek	0..1	Aanduiding of het een authentiek gegeven (attribuutsoort) betreft.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie in onderzoek	0..1	De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde.	 -	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie formele historie	0..1	Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie materiële historie	0..1	Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Regels	0..1	Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen.	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Target role in meervoud	0..1	Voorziening om de target role een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een relatie in een yaml bestand.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Unidirectioneel	1	Algemeen metagegeven.		Direction van de betreffende assiciation (van source naar target)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Relatie eigenaar	1	Algemeen metagegeven.	/source: related Element bij Relationship Element	Source</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Relatie doel	1	Algemeen metagegeven.	/target: related Element bij Relationship Element	Target</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Aggregatietype	1	Algemeen metagegeven.	AggregationKind bij metaclass Property	Aggregation van de source role met waarde composite of shared</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit	1	Algemeen metagegeven.	lowerValue en upperValue van de metaclass MultiplicityElement /target	Multiplicity van de target role</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit relatie bron	1	Algemeen metagegeven.	lowerValue en upperValue van de metaclass MultiplicityElement /source	Multiplicity van de source role</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie afleidbaar	1	Algemeen metagegeven.	isDerived bij UML metaclass Assocation	isDerived</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verwijst naar relatiedoel	0..*	Binding aan een objecttype.	/target: related Element bij Relationship Element = UML-Class	association target = Class</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-relatie-entiteit"><h5 id="x5-2-2-15-metagegevens-voor-relatie-entiteit"><bdi class="secno">5.2.2.15 </bdi>Metagegevens voor «Relatie-entiteit»</h5>
+<p>De Relatie-entiteit classes hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Unidirectioneel	1	Algemeen metagegeven.		Direction van de betreffende assiciation (van source naar target)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Relatie eigenaar	1	Algemeen metagegeven.	/source: related Element bij Relationship Element	Source</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Relatie doel	1	Algemeen metagegeven.	/target: related Element bij Relationship Element	Target</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Aggregatietype	1	Algemeen metagegeven.	AggregationKind bij metaclass Property	Aggregation van de source role met waarde composite of shared</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit	1	Algemeen metagegeven.	lowerValue en upperValue van de metaclass MultiplicityElement /target	Multiplicity van de target role</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit relatie bron	1	Algemeen metagegeven.	lowerValue en upperValue van de metaclass MultiplicityElement /source	Multiplicity van de source role</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie afleidbaar	1	Algemeen metagegeven.	isDerived bij UML metaclass Assocation	isDerived</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mogelijk geen waarde	0..1	Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Authentiek</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Indicatie authentiek	0..1	Aanduiding of het een authentiek gegeven (attribuutsoort) betreft.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie formele historie	0..1	Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Indicatie materiële historie	0..1	Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft attribute	0..*	Binding aan een attribuutsoort	owned element = UML-property	attribute</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verwijst naar relatiedoel	0..*	Binding aan een objecttype.	/target: related Element bij Relationship Element = UML-Class	association target = Class</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-tabel-element"><h5 id="x5-2-2-16-metagegevens-voor-tabel-element"><bdi class="secno">5.2.2.16 </bdi>Metagegevens voor «Tabel Element»</h5>
+<p>Tabel elementen hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Formeel patroon	0..1	Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Identificerend	0..1	Algemeen metagegeven	isID bij de metaclass Property	isID</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kardinaliteit	1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Lengte</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Patroon	0..1	Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft datatype	1	Binding aan een datatype.	datatype = UML-datatype	type = datatype</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-tabel-entiteit"><h5 id="x5-2-2-17-metagegevens-voor-tabel-entiteit"><bdi class="secno">5.2.2.17 </bdi>Metagegevens voor «Tabel-entiteit»</h5>
+<p>Tabel-entiteit classes hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Locatie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Web locatie	0..1	????	 	Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>bevat referentie element	1..*	Binding aan een referentie element.	owned element = UML-property	attribute</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verwijst naar supertype	0..*	Binding aan een generalisatie (naar een andere referentie lijst).	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-union"><h5 id="x5-2-2-18-metagegevens-voor-union"><bdi class="secno">5.2.2.18 </bdi>Metagegevens voor «Union»</h5>
+<p>Union datatypes hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Begrip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft datatypekeuze	0..*	Binding van een datatype, in UML via een additionale UML-property met stereotype keuze	owned element = UML-property en deze heeft en datatype	type</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft attribuutkeuze	0..*	Binding aan een attribuutsoort	owned element = UML-Property	attribute</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>heeft relatiedoelkeuze	0..*	Binding aan een relatiesoort.	owned element = UML-Relationship	association</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="metagegevens-voor-view"><h5 id="x5-2-2-19-metagegevens-voor-view"><bdi class="secno">5.2.2.19 </bdi>Metagegevens voor «View»</h5>
+<p>View packages hebben de volgende aspecten gespecificeerd:</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Kardinaliteit</th>
+<th>Toelichting</th>
+<th>Metaclass UML 2.5</th>
+<th>In EA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Naam	1	Algemeen metagegeven. Deze is, indien mogelijk, analoog aan de naamgeving in het externe schema waar de view over gaat, eventueel met een prefix.	name van de metaclass Named element	Name</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Afkorting	0..1	Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Data locatie 0..1	De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Datum opname</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Definitie	0..1	De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Herkomst</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herkomst definitie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Locatie</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Toelichting	0..1	Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ref-release	0..1	???		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ref-version	0..1	???		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Release	0..1	???		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Versie ID	0..1	De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem.		Tagged value</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</section></section></section>
+      <section data-include-format="markdown" data-include="MBG-metagegevenImvertor.md" data-include-id="include-45985564907324017" class="respec-offending-element" title="`data-include` failed: `MBG-metagegevenImvertor.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-mbg-metagegevenimvertor-md-cannot-read-properties-of-null-reading-localname"></section>
+      <section data-include-format="markdown" data-include="MUG-metagegevenImvertor.md" data-include-id="include-4996837075610152" class="respec-offending-element" title="`data-include` failed: `MUG-metagegevenImvertor.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-mug-metagegevenimvertor-md-cannot-read-properties-of-null-reading-localname"></section>
+      <section data-include-format="markdown" data-include="Versielog.md" data-include-id="include-6252941685981921" class="respec-offending-element" title="`data-include` failed: `Versielog.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-versielog-md-cannot-read-properties-of-null-reading-localname"></section>
     </section>
   <section id="tof"></section>
   <section id="index" class="appendix"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><section id="index-defined-here">

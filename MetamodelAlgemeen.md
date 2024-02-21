@@ -78,7 +78,7 @@ De betekenis van deze modelelementen en de beschrijvingen ervan staat in [Object
 
 In diagramvorm:
 
-<figure id="KernZonderUML">
+<figure id="MBGKernzonderdetails">
   <img src="media/MBG Kern zonder details.jpg" alt="" />
   <figcaption>Diagram: Kern - Modelelementen zonder Metagegevens</figcaption>
 </figure>
@@ -105,7 +105,7 @@ De betekenis van deze modelelementen en de beschrijvingen ervan staan in [Packag
 
 In diagramvorm:
 
-<figure id="KernZonderUML">
+<figure id="MBGPackageszonderdetails1">
   <img src="media/MBG Packages zonder details 1.jpg" alt="" />
   <figcaption>Diagram: Groepering</figcaption>
 </figure>

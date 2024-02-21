@@ -1,114 +1,171 @@
-3. Metamodel in UML
-3.1 Structuur metamodel in UML
+# Metamodel in UML
+
+## Structuur metamodel in UML
+
 Dit hoofdstuk beschrijft hoe je een BSM kan maken in UML, oftewel hoe de modelelementen uit het hoofdstuk Algemeen worden uitgedrukt in UML.
-De eerste paragraaf bevat diagrammen, in UML. Elk diagram geeft een aantal modelelementen weer. Het geheel van diagrammen, in samenhang, is opgenomen in de bijlage Template naamgeving conventies.
+
+De eerste paragraaf bevat diagrammen, in UML. Elk diagram geeft een aantal modelelementen weer. 
+<!--Het geheel van diagrammen, in samenhang, is opgenomen in de bijlage Template naamgeving conventies. -->
+
 Uitgangspunten voor het metamodel in UML zijn:
-•	UML 2.5 vormt de basis voor de conceptuele beschrijving.
-•	Er wordt gebruik gemaakt van de bestaande UML-modelelementen conform UML van OMG. OMG noemt dit een UML metaclass. Een voorbeeld hiervan is UML-Class.
-•	Daar waar (semantisch) nodig worden extensiemechanismen toegepast met behoud van de betekenis van de UML-metaclasses. Het modelelement is dan een MBG metaclass. Hoe deze zich verhouden tot UML is weergegeven in bijlage A.1.
-•	Modelelementen hebben één stereotype. Daarnaast hebben twee verschillende stereotypen nooit dezelfde betekenis. Stereotypes worden toegepast als er een verbijzondering van een UML constructie nodig is met behoud van de betekenis van de UML-metaclass.
-Elk modelelement heeft een MIM metaclass. Deze wordt in UML in een BSM gemodelleerd als een extensie van een Metaclass van UML 2.5 en een bijbehorende stereotype.
-VOORBEELD
+
+*	UML 2.5 vormt de basis voor de conceptuele beschrijving.
+*	Er wordt gebruik gemaakt van de bestaande UML-modelelementen conform UML van OMG. OMG noemt dit een UML metaclass. Een voorbeeld hiervan is
+UML-Class.
+*	Daar waar (semantisch) nodig worden extensiemechanismen toegepast met behoud van de betekenis van de UML-metaclasses. Het modelelement is dan
+een MBG metaclass. Hoe deze zich verhouden tot UML is weergegeven in bijlage A.1.
+*	Modelelementen hebben één stereotype. Daarnaast hebben twee verschillende stereotypen nooit dezelfde betekenis. Stereotypes worden toegepast
+als er een verbijzondering van een UML constructie nodig is met behoud van de betekenis van de UML-metaclass.
+
+Elk modelelement heeft een MIM metaclass. Deze wordt in UML in een BSM gemodelleerd als een extensie van een Metaclass van UML 2.5 en een bijbehorende 
+stereotype.
+
+**VOORBEELD**
+
 Het MBG modelelement Padtype wordt gemodelleerd als een UML-Class met stereotype «Padtype».
-MIM metaclass	Stereotype	Metaclass UML 2.5	In EA
-Padtype	«Padtype»	(UML) Class	Class
-De meest linkse kolom bevat het MBG modelelement, zoals bedoeld in het hoofdstuk [Metamodel Algemeen]. De 2e en 3e kolom bevatten de uitdrukking van het MBG in UML, versie 2.5. De 2e en 5e kolom bevatten de uitdrukking van het MIM in Sparx Enterprise Architect. Deze gebruikt Class (i.p.v. UML-Class). Deze UML tool is (uiteraard) geen onderdeel van de MBG specificatie. Het is zeker niet verplicht om deze te gebruiken, u kunt uw eigen tool gebruiken. Deze kolom staat erbij om illustratief aan te geven dat het soms nodig kan zijn om, afhankelijk van de tool, net iets specifieker aan te geven hoe het MBG in de tool exact uitgedrukt wordt.
+
+| MIM metaclass | Stereotype | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- |
+| Padtype | «Padtype» | (UML) Class | Class |
+
+De meest linkse kolom bevat het MBG modelelement, zoals bedoeld in het hoofdstuk [Metamodel Algemeen](#metamodel-algemeen). De 2e en 3e kolom bevatten 
+de uitdrukking van het MBG in UML, versie 2.5. De 2e en 5e kolom bevatten de uitdrukking van het MIM in Sparx Enterprise Architect. Deze gebruikt Class 
+(i.p.v. UML-Class). Deze UML tool is (uiteraard) geen onderdeel van de MBG specificatie. Het is zeker niet verplicht om deze te gebruiken, u kunt uw 
+eigen tool gebruiken. Deze kolom staat erbij om illustratief aan te geven dat het soms nodig kan zijn om, afhankelijk van de tool, net iets specifieker 
+aan te geven hoe het MBG in de tool exact uitgedrukt wordt.
+
 Alle modelelementen hebben een UML-metaclass (UML 2.5) als basis, deze is aangegeven als ‘blauw gekleurde’ metaclass.
-3.1.1 Kern
+
+### Kern
+
+**Diagram toevoegen**
  
 Kern zonder Metagegevens
-MIM metaclass	Stereotype	Metaclass UML 2.5	In EA
-Getberichttype	«Getberichttype»	(UML) Class	Class
-Postberichttype	«Postberichttype»	(UML) Class	Class
-Putberichttype	«Putberichttype»	(UML) Class	Class
-Patchberichttype	«Patchberichttype»	(UML) Class	Class
-Deleteberichttype	«Deleteberichttype»	(UML) Class	Class
-EntiteitRelatie	«EntiteitRelatie»	(UML) Association	Association
-PadRelatie	«PadRelatie»	(UML) Association	Association
-Padtype	«Padtype»	(UML) Class	Class
-Generalisatie	«Generalisatie»	(UML) Association	Association
-Interface	«Interface»	(UML) Class	Class
-3.1.2 Groepering
+
+| MIM metaclass | Stereotype | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- |
+| Getberichttype | «Getberichttype» | (UML) Class | Class |
+| Postberichttype | «Postberichttype» | (UML) Class | Class |
+| Putberichttype | «Putberichttype» | (UML) Class | Class |
+| Patchberichttype | «Patchberichttype» | (UML) Class | Class |
+| Deleteberichttype | «Deleteberichttype» | (UML) Class | Class |
+| EntiteitRelatie | «EntiteitRelatie» | (UML) Association | Association |
+| PadRelatie | «PadRelatie» | (UML) Association | Association |
+| Padtype | «Padtype» | (UML) Class | Class |
+| Generalisatie | «Generalisatie» | (UML) Association | Association |
+| Interface | «Interface» | (UML) Class | Class |
+
+### Groepering
+ 
+**Diagram toevoegen**
  
 Groepering
-MIM metaclass	Stereotype	Metaclass UML 2.5	In EA
-Koppelvlak	«Koppelvlak»	(UML) Package	Package
-Domein	«Domein»	(UML) Package	Package
-Bericht	«Bericht»	(UML) Package	Package
-3.2 Nadere specificatie metagegevens in UML
-Deze paragraaf is een aanvulling op de paragraaf 'Specificatie metagegevens' in het hoofdstuk Metamodel Algemeen.
 
- 
-NOOT
+| MIM metaclass | Stereotype | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- |
+| Koppelvlak | «Koppelvlak» | (UML) Package | Package |
+| Domein | «Domein» | (UML) Package | Package |
+| Bericht | «Bericht» | (UML) Package | Package |
+
+## Nadere specificatie metagegevens in UML
+
+Deze paragraaf is een aanvulling op de paragraaf 'Specificatie metagegevens' in het hoofdstuk [Metamodel Algemeen](#metamodel-algemeen).
+
+<aside class='note' title="">
 In de hierna volgende paragrafen worden de metagegevens per modelelement gespecificeerd in tabellen. Per metagegeven zijn de volgende onderdelen gespecificeerd:
-Aspect: Het benoemde metagegeven.
-Kardinaliteit: Aantal maal dat een metagegeven opgenomen kan worden bij dit modelelement.
-Toelichting: Nadere uitleg over het metagegeven.
-In UML 2.5: De naam waarmee het metagegeven in UML2.5 is benoemd. Het betreft veelal overerving van een metagegeven van een UML metaclass die niet in dit document is benoemd.
-In EA: Aanduiding hoe het metagegeven in Sparx Enterprise Architect (EA) is aangegeven.
-3.2.1 Modellering metagegevens voor objecten en attributen in UML
-Specificatie voor «Berichttype»
+
+**Aspect**: Het benoemde metagegeven.
+
+**Kardinaliteit**: Aantal maal dat een metagegeven opgenomen kan worden bij dit modelelement.
+
+**Toelichting**: Nadere uitleg over het metagegeven.
+
+**In UML 2.5**: De naam waarmee het metagegeven in UML2.5 is benoemd. Het betreft veelal overerving van een metagegeven van een UML metaclass die niet in dit document is benoemd.
+
+**In EA**: Aanduiding hoe het metagegeven in Sparx Enterprise Architect (EA) is aangegeven.
+</aside>
+
+### Modellering metagegevens voor objecten en attributen in UML
+
+#### Specificatie voor «Berichttype»
 Alle classes die overerven van de Berichttype class worden naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
-Naam	1	Algemeen metagegeven.
-Heeft altijd de waarde ‘request’, ‘requestbody’ of ‘response’	name van de metaclass Named element	Name
-Definitie	0..1	Algemeen metagegeven.	Body van de metaclass Comment	Notes
-heeft 
-entiteitrelatie	1..2	Binding aan een EntiteitRelatie.	owned element = UML-Relationship	Association
-heeft 
-padrelatie	1	Binding aan een PadRelatie.	owned element = UML-Relationship	Association
-berichtcode	1	Uniek id voor het typeren van berichten.		Tagged value
-tag	0..1	Voorziening ter groepering van endpoints.		Tagged value
-servicename	0..1	Technisch operationid	 	Tagged value
-verwijst naar supertype	0..1	Binding aan een generalisatie (naar een Interface).	owned element = UML-Relationship	association	
-Specificatie voor «Getberichttype»
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
+| Naam | 1 | Algemeen metagegeven.<br/>Heeft altijd de waarde ‘request’, ‘requestbody’ of ‘response’ | name van de metaclass Named element | Name |
+| Definitie | 0..1 | Algemeen metagegeven. | Body van de metaclass Comment | Notes |
+| heeft entiteitrelatie | 1..2 | Binding aan een EntiteitRelatie. | owned element = UML-Relationship | Association |
+| heeft padrelatie | 1 | Binding aan een PadRelatie. | owned element = UML-Relationship | Association |
+| berichtcode | 1 | Uniek id voor het typeren van berichten. |  | Tagged value |
+| tag | 0..1 | Voorziening ter groepering van endpoints. |  | Tagged value |
+| servicename | 0..1 | Technisch operationid	 |  | Tagged value |
+| verwijst naar supertype | 0..1 | Binding aan een generalisatie (naar een Interface). | owned element = UML-Relationship | association	 |
+
+#### Specificatie voor «Getberichttype»
+
 De Getberichttype classes wordt naast de aspecten in de voorgaande tabel ook nog naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Grouping	0..1	Indicatie waarmee wordt aangegeven of de response meerdere resultaten kan teruggeven (collection) of slechts 1 resultaat (resource).		Tagged value
 Page	0..1	Indicatie waarmee wordt aangegeven of de response geschikt moet zijn voor hal+json pagination. Natuurlijk alleen van toepassing als de serialisatie ook hal+json is.		Tagged value
 Sort	0..1	Indicatie waarmee wordt aangegeven of de request parameter 'Sort' moet worden opgenomen in het bericht.	 	Tagged value
 
- 
-Specificatie voor «Padtype»
+#### Specificatie voor «Padtype»
 De Padtype classes worden naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
 heeft 
 padrelatie	1	Binding aan een PadRelatie.	owned element = UML-Relationship	association
 custom_path_facet	0..1	Het deel van de messagepath dat niet uit het model afgeleid kan worden.	 	Tagged value
-Specificatie voor «Interface»
+
+#### Specificatie voor «Interface»
+
 Interface classes worden naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
-3.2.2 Specificatie metagegevens voor relaties
-Specificatie voor «EntiteitRelatie»
+
+### Specificatie metagegevens voor relaties
+
+#### Specificatie voor «EntiteitRelatie»
+
 De EntiteitRelatie associaties worden naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
 positie	0..1	Indien het voor de serialisatie van belang is kan hiermee de positie van het modelelement in de serialisatie gestuurd worden.	 	Tagged value
-Specificatie voor «PadRelatie»
+
+#### Specificatie voor «PadRelatie»
+
 Voor PadRelatie associaties worden naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Naam	1	Algemeen metagegeven.
 Heeft altijd de waarde ‘pad’.	name van de metaclass Named element	Name
-Specificatie voor «Generalisatie» tussen berichttypes en interfaces
+
+#### Specificatie voor «Generalisatie» tussen berichttypes en interfaces
+
 De generalisaties worden naar het volgende aspect gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Subtype	1	De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De bron kant van deze generalisatie relatie specificeert een berichttype die een subtype/specialisatie is van het via deze generalisatie relatie aangegeven supertype (zie verwijst naar supertype). Kortweg, het subtype is een specialisatie van het supertype. Het berichttype dat het subtype is van deze generalisatie is verbonden met deze generalisatie.	/source: related Element bij Relationship Element	Source
 verwijst naar supertype	1	Binding van deze generalisatie aan een interface. De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De doel kant van deze generalisatie relatie specificeert een interface die het supertype/de generalisatie is van het via deze generalisatie aangegeven subtype. Kortweg, het supertype is een generalisatie van het subtype.	/target: related Element bij Relationship Element = UML-Class	Target
 
-3.2.3 Specificatie metagegevens voor packages
-Specificatie voor «Koppelvlak»
+### Specificatie metagegevens voor packages
+
+#### Specificatie voor «Koppelvlak»
+
 Koppelvlak packages worden naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
 Definitie	0..1	Algemeen metagegeven.	Body van de metaclass Comment	Notes
 beheerder-email	0..1	Het e-Mailadres van de persoon of organisatie die het koppelvlak beheert.		Tagged value
@@ -116,21 +173,33 @@ Koppelvlak-naam	0..1	Volledige naam van het koppelvlak		Tagged value
 project_url	0..1	Url van de bij het koppelvlak horende project repository		Tagged value
 release	1	Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak.		Tagged value
 Serialisatie	1	Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden.		Tagged value
-Specificatie voor «Domein»
+
+#### Specificatie voor «Domein»
+
 Domein packages worden naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
  
-Specificatie voor «Bericht»
+#### Specificatie voor «Bericht»
+
 Bericht packages worden naar de volgende aspecten gespecificeerd:
-Aspect	Kardinaliteit
-Toelichting	In UML 2.5	In EA
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
 Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
-3.3 UML Tooling
-3.3.1 MBG-toolbox
+
+## UML Tooling
+
+### MBG-toolbox
+
 Er is door de MBG beheerder een metamodel profiel gemaakt voor Sparx Enterprise Architect, dat gebruikt kan worden bij het modelleren van een informatiemodel. Dit profiel kan je inladen en daarna kan je kiezen uit de metamodel elementen. Het profiel is faciliterend en zorgt dat (de meeste) modelelementen van een BSM automatisch voldoen aan dit metamodel. Dit profiel is te vinden op MBG profiel - toolbox voor EA.
-3.3.2 Extensie op MBG-toolbox
+
+### Extensie op MBG-toolbox
+
 Het is niet vereist om dit profiel te gebruiken en het is ook toegestaan om het profiel naar de behoefte van de eigen organisatie uit te breiden. Het is echter niet toegestaan het profiel te wijzigen, dan wordt niet meer aan MBG voldaan. De reden hiervoor is dat een dergelijk aanpassing niet beheerd kan worden door de MBG-beheerder en er ambiguïteit zal ontstaan bij de interpretatie van het model.
-3.3.3 Imvertor
+
+### Imvertor
+
 Er is een tool Imvertor, die kan controleren of een BSM voldoet aan dit metamodel en zo niet, wat de reden daarvan is. Deze tool is open source en is te vinden op www.imvertor.org.

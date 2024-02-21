@@ -49,7 +49,7 @@ Die laatste stereotypes hebben (nog) geen functie bij de berichtdefinitie.
 ### Metagegevens
 
 De MUG stereotypes in de voorgaande paragraaf kennen een aantal metagegevens. In deze paragraaf worden deze per stereotype beschreven.
-metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn onderlijnd.
+Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn onderlijnd.
 
 Daarnaast zijn de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes in dezelfde tabellen opgenomen maar uitgegrijsd.
 
@@ -60,7 +60,7 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span style="grey">Alias</span> | - | - | - | - |
+| <span style="color:#BCBCBC;">Alias</span> | - | - | - | - |
 | Afkorting | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
 | <span style="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment. | Notes |

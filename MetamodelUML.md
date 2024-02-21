@@ -99,7 +99,7 @@ Alle classes die overerven van de Berichttype class worden naar de volgende aspe
 | berichtcode | 1 | Uniek id voor het typeren van berichten. |  | Tagged value |
 | tag | 0..1 | Voorziening ter groepering van endpoints. |  | Tagged value |
 | servicename | 0..1 | Technisch operationid	 |  | Tagged value |
-| verwijst naar supertype | 0..1 | Binding aan een generalisatie (naar een Interface). | owned element = UML-Relationship | association	 |
+| verwijst naar supertype | 0..1 | Binding aan een generalisatie (naar een Interface). | owned element = UML-Relationship | association	|
 
 #### Specificatie voor «Getberichttype»
 
@@ -107,19 +107,18 @@ De Getberichttype classes wordt naast de aspecten in de voorgaande tabel ook nog
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Grouping	0..1	Indicatie waarmee wordt aangegeven of de response meerdere resultaten kan teruggeven (collection) of slechts 1 resultaat (resource).		Tagged value
-Page	0..1	Indicatie waarmee wordt aangegeven of de response geschikt moet zijn voor hal+json pagination. Natuurlijk alleen van toepassing als de serialisatie ook hal+json is.		Tagged value
-Sort	0..1	Indicatie waarmee wordt aangegeven of de request parameter 'Sort' moet worden opgenomen in het bericht.	 	Tagged value
+| Grouping | 0..1 | Indicatie waarmee wordt aangegeven of de response meerdere resultaten kan teruggeven (collection) of slechts 1 resultaat (resource). |  | Tagged value |
+| Page | 0..1 | Indicatie waarmee wordt aangegeven of de response geschikt moet zijn voor hal+json pagination. Natuurlijk alleen van toepassing als de serialisatie ook hal+json is. |  | Tagged value |
+| Sort | 0..1 | Indicatie waarmee wordt aangegeven of de request parameter 'Sort' moet worden opgenomen in het bericht. |  | Tagged value |
 
 #### Specificatie voor «Padtype»
 De Padtype classes worden naar de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
-heeft 
-padrelatie	1	Binding aan een PadRelatie.	owned element = UML-Relationship	association
-custom_path_facet	0..1	Het deel van de messagepath dat niet uit het model afgeleid kan worden.	 	Tagged value
+| Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
+| heeft padrelatie | 1 | Binding aan een PadRelatie. | owned element = UML-Relationship | association |
+| custom_path_facet | 0..1 | Het deel van de messagepath dat niet uit het model afgeleid kan worden. |  | Tagged value |
 
 #### Specificatie voor «Interface»
 
@@ -127,7 +126,7 @@ Interface classes worden naar de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
+| Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
 
 ### Specificatie metagegevens voor relaties
 
@@ -137,8 +136,8 @@ De EntiteitRelatie associaties worden naar de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
-positie	0..1	Indien het voor de serialisatie van belang is kan hiermee de positie van het modelelement in de serialisatie gestuurd worden.	 	Tagged value
+| Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
+| positie | 0..1 | Indien het voor de serialisatie van belang is kan hiermee de positie van het modelelement in de serialisatie gestuurd worden. |  | Tagged value |
 
 #### Specificatie voor «PadRelatie»
 
@@ -146,8 +145,7 @@ Voor PadRelatie associaties worden naar de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Naam	1	Algemeen metagegeven.
-Heeft altijd de waarde ‘pad’.	name van de metaclass Named element	Name
+| Naam | 1 | Algemeen metagegeven.<br/>Heeft altijd de waarde ‘pad’. | name van de metaclass Named element | Name |
 
 #### Specificatie voor «Generalisatie» tussen berichttypes en interfaces
 
@@ -155,8 +153,13 @@ De generalisaties worden naar het volgende aspect gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Subtype	1	De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De bron kant van deze generalisatie relatie specificeert een berichttype die een subtype/specialisatie is van het via deze generalisatie relatie aangegeven supertype (zie verwijst naar supertype). Kortweg, het subtype is een specialisatie van het supertype. Het berichttype dat het subtype is van deze generalisatie is verbonden met deze generalisatie.	/source: related Element bij Relationship Element	Source
-verwijst naar supertype	1	Binding van deze generalisatie aan een interface. De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De doel kant van deze generalisatie relatie specificeert een interface die het supertype/de generalisatie is van het via deze generalisatie aangegeven subtype. Kortweg, het supertype is een generalisatie van het subtype.	/target: related Element bij Relationship Element = UML-Class	Target
+| Subtype | 1 | De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel kant (target) van de relatie. De bron kant van deze generalisatie 
+relatie specificeert een berichttype die een subtype/specialisatie is van het via deze generalisatie relatie aangegeven supertype (zie verwijst naar supertype). Kortweg, 
+het subtype is een specialisatie van het supertype. Het berichttype dat het subtype is van deze generalisatie is verbonden met deze generalisatie. | /source: related Element 
+bij Relationship Element | Source |
+| verwijst naar supertype | 1 | Binding van deze generalisatie aan een interface. De generalisatie relatie kent twee kanten, de bron kant (source) van de relatie en de doel 
+kant (target) van de relatie. De doel kant van deze generalisatie relatie specificeert een interface die het supertype de generalisatie is van het via deze generalisatie 
+aangegeven subtype. Kortweg, het supertype is een generalisatie van het subtype. | /target: related Element bij Relationship Element = UML-Class | Target |
 
 ### Specificatie metagegevens voor packages
 
@@ -166,13 +169,13 @@ Koppelvlak packages worden naar de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
-Definitie	0..1	Algemeen metagegeven.	Body van de metaclass Comment	Notes
-beheerder-email	0..1	Het e-Mailadres van de persoon of organisatie die het koppelvlak beheert.		Tagged value
-Koppelvlak-naam	0..1	Volledige naam van het koppelvlak		Tagged value
-project_url	0..1	Url van de bij het koppelvlak horende project repository		Tagged value
-release	1	Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak.		Tagged value
-Serialisatie	1	Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden.		Tagged value
+| Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
+| Definitie | 0..1 | Algemeen metagegeven. | Body van de metaclass Comment | Notes |
+| beheerder-email | 0..1 | Het e-Mailadres van de persoon of organisatie die het koppelvlak beheert. |  | Tagged value |
+| Koppelvlak-naam | 0..1 | Volledige naam van het koppelvlak |  | Tagged value |
+| project_url | 0..1 | Url van de bij het koppelvlak horende project repository |  | Tagged value |
+| release | 1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak. |  | Tagged value |
+| Serialisatie | 1 | Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden. |  | Tagged value |
 
 #### Specificatie voor «Domein»
 
@@ -180,7 +183,7 @@ Domein packages worden naar de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
+| Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
  
 #### Specificatie voor «Bericht»
 
@@ -188,7 +191,7 @@ Bericht packages worden naar de volgende aspecten gespecificeerd:
 
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
-Naam	1	Algemeen metagegeven.	name van de metaclass Named element	Name
+| Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
 
 ## UML Tooling
 

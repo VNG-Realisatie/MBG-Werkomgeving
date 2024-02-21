@@ -80,7 +80,7 @@ In diagramvorm:
 
 <figure id="KernZonderUML">
   <img src="media/MBG Kern zonder details.jpg" alt="" />
-  <figcaption>Kern: Modelelementen zonder Metagegevens</figcaption>
+  <figcaption>Diagram: Kern - Modelelementen zonder Metagegevens</figcaption>
 </figure>
 
  
@@ -110,7 +110,7 @@ In diagramvorm:
 
 <figure id="KernZonderUML">
   <img src="media/MBG Packages zonder details 1.jpg" alt="" />
-  <figcaption>Diagram: groepering</figcaption>
+  <figcaption>Diagram: Groepering</figcaption>
 </figure>
 
 

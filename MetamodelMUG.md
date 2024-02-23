@@ -482,7 +482,7 @@ View packages hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Locatie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-| <span class="red">Release</span> | 0..1 | ??? |  | Tagged value |
 | <span class="green">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
-<!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
+<!--| <span class="red">Release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
 | <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->

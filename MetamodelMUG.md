@@ -73,9 +73,9 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | <span class="grey">MIM versie</span> | - | - | - | - |
 | <span class="grey">Relatie-modellerings-type</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-<!--| <span class="red">Web locatie</span> | 0..1 | ???? |  | Tagged value | -->
 | <span class="red">Release</span> | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het UGM. |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
+<!--| <span class="red">Web locatie</span> | 0..1 | ???? |  | Tagged value | -->
  
 #### Metagegevens voor «Complex datatype»
 
@@ -134,10 +134,10 @@ Domein packages hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-<!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
-| <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->
 | <span class="red">Release</span> | 1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
+<!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->
 
 #### Metagegevens voor «Element»
 
@@ -185,7 +185,7 @@ Entiteittype classes hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | Notes |
 | <span class="red">Endpoint beschikbaar</span> | 0..1 | Voorziening waarmee kan worden aangegeven dat er voor een entiteit al dan niet een resource endpoint beschikbaar is. |  | Tagged value |
-| Herkomst | 0..1 | ? |  | Tagged value |
+| <span class="grey">Herkomst</span> | 0..1 | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Kwaliteit</span> | - | - | - | - |
 | <span class="red">Naam in meervoud</span> | 0..1 | Voorziening om een entiteit een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een entiteit in een yaml bestand. |  | Tagged value |
@@ -245,12 +245,12 @@ Extern packages hebben de volgende aspecten gespecificeerd:
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
-<!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
-| <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->
 | <span class="red">Release</span> | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model-element in het gehanteerde versiebeheersysteem. |  | Tagged value |
 | <span class="red">Web locatie</span> | 0..1 | Url van de locatie waar het externe package te vinden is. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
+<!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->
 
 #### Metagegevens voor «Externe koppeling»
 
@@ -482,7 +482,7 @@ View packages hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Locatie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-<!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
-| <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->
 | <span class="red">Release</span> | 0..1 | ??? |  | Tagged value |
 | <span class="green">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
+<!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->

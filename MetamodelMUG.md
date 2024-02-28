@@ -17,9 +17,8 @@ MUG de op de gerelateerde stereotype in het MIM ontbrekende maar voor het BSM br
 
 ### Mapping MIM op MUG stereotypes
 
-De volgende tabel bevat een mapping tussen de MIM stereotypes en de MUG stereotypes. Stereotypes die niet in het MIM aanwezig zijn maar 
-wel in het MUG zijn niet opgenomen, stereotypes die wel aanwezig zijn in het MIM maar waarvoor geen MUG stereotype is opgenomen wel. 
-Die laatste stereotypes hebben (nog) geen functie bij de berichtdefinitie.
+De volgende tabel bevat een mapping tussen de MIM stereotypes en de MUG stereotypes. Stereotypes die wel in het MIM aanwezig zijn maar 
+niet in het MUG zijn niet opgenomen hebben (nog) geen functie bij de berichtdefinitie.
 
 | MIM stereotype | MUG stereotype |
 | --- | --- |
@@ -43,13 +42,14 @@ Die laatste stereotypes hebben (nog) geen functie bij de berichtdefinitie.
 | Keuze | Union |
 | View | View |
 | Codelijst | Tabel-entiteit |
+| - | Intern |
 | Generalisatie | - |
 | Relatierol | - |
 
 ### Metagegevens
 
 De MUG stereotypes in de voorgaande paragraaf kennen een aantal metagegevens. In deze paragraaf worden deze per stereotype beschreven.
-Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt.
+Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve daar waar het stereotype niet kan worden gemapt op een stereotype in het MIM .
 
 Daarnaast zijn de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes in dezelfde tabellen opgenomen maar uitgegrijsd.
 
@@ -60,7 +60,7 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="red">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment. | Notes |
@@ -84,7 +84,7 @@ Complex datatype classes hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. De naam van het domein package. | name van de metaclass Namedelement | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -102,7 +102,7 @@ Data elementen hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Namedelement | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -127,7 +127,7 @@ Domein packages hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. De naam van het domein package. | name van de metaclass Namedelement | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="red">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment | Notes |
@@ -146,7 +146,7 @@ Elementen hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | Notes |
@@ -180,7 +180,7 @@ Entiteittype classes hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | Notes |
@@ -221,7 +221,7 @@ Enumeration classes hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | Notes |
@@ -259,7 +259,7 @@ Externe koppeling packages hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -287,7 +287,7 @@ Gegevensgroep classes hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="red">Indicatie in onderzoek</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | Tagged value |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
@@ -309,7 +309,7 @@ Groepen hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -327,6 +327,18 @@ Groepen hebben de volgende aspecten gespecificeerd:
 | heeft externe koppeling | 0..* | Binding aan een externe koppeling. | owned element = UML-Relationship | association |
 | verwijst naar supertype | 0..* | Binding aan een generalisatie (naar een ander gegevensgroeptype). | owned element = UML-Relationship | association |
 
+#### Metagegevens voor «Intern»
+
+Interne packages hebben de volgende aspecten gespecificeerd:
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
+| Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
+| Definitie | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment. | Notes |
+| Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
+| Release | 1..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Interne package. De releasedatum wordt mede gebruikt om het Interne package uniek te identificeren in Imvertor. |  | Tagged value |
+ 
 #### Metagegevens voor «Primitief datatype»
 
 Primitieve datatypes hebben de volgende aspecten gespecificeerd:
@@ -334,7 +346,7 @@ Primitieve datatypes hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -355,7 +367,7 @@ De Relatie associaties hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -386,7 +398,7 @@ De Relatie-entiteit classes hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct.	Body van de metaclass Comment	Notes |
@@ -415,7 +427,7 @@ Tabel elementen hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -436,7 +448,7 @@ Tabel-entiteit classes hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -455,7 +467,7 @@ Union datatypes hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
@@ -473,7 +485,7 @@ View packages hebben de volgende aspecten gespecificeerd:
 | Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
 | --- | --- | --- | --- | --- |
 | Naam | 1 | Algemeen metagegeven. Deze is, indien mogelijk, analoog aan de naamgeving in het externe schema waar de view over gaat, eventueel met een prefix. | name van de metaclass Named element | Name |
-| <span class="grey">Alias</span> | - | - | - | - |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
 | <span class="red">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.	 |  | Tagged value |
 | <span class="red">Data locatie</span> | 1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |

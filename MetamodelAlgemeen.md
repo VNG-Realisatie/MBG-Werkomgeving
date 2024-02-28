@@ -61,7 +61,7 @@ enzovoorts. In de diagrammen in de bijlage zijn deze wel opgenomen.
 
 View 1: De kern van een BSM. Deze bestaat uit de volgende modelelementen:
 
-| MBG metaclass |
+| **MBG metaclass** |
 | --- |
 | Getberichttype |
 | Postberichttype |
@@ -95,7 +95,7 @@ kan dus niet rechtstreeks verbonden worden met een Padtype.
 
 View 2: Groepering. Deze bestaat uit de volgende modelelementen:
 
-| MBG metaclass |
+| **MBG metaclass** |
 | --- |
 | Koppelvlak |
 | Domein |
@@ -583,7 +583,7 @@ Een aantal metagegevens hebben als datatype CharacterString. Aanvullend geldt:
 
 Voor de volgende metagegevens geldt een specifiek waardebereik.
 
-| Metagegeven | Waardenbereik |
+| **Metagegeven** | **Waardenbereik** |
 | --- | --- |
 | berichtcode | Gr01, Gr02, Gc01, Po01, Pu01, Pa01, De01 |
 | Grouping | resource, collection |
@@ -600,7 +600,7 @@ Voor de volgende metagegevens geldt een specifiek waardebereik.
 Er zijn metagegevens die een defaultwaarde hebben. Het is echter niet nodig om deze defaultwaarde expliciet aan te geven in het informatiemodel. 
 De default staat hier aangegeven. Alleen wanneer er afgeweken wordt van deze default wordt dit in een BSM aangegeven.
 
-| Metagegeven | Defaultwaarde |
+| **Metagegeven** | **Defaultwaarde** |
 | --- | --- |
 | Is afgeleid (bij Koppelvlak) | Ja |
 | Is afgeleid (bij andere elementen) | Ja |

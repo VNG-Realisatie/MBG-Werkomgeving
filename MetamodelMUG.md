@@ -18,7 +18,7 @@ MUG de op de gerelateerde stereotype in het MIM ontbrekende maar voor het BSM br
 ### Mapping MIM op MUG stereotypes
 
 De volgende tabel bevat een mapping tussen de MIM stereotypes en de MUG stereotypes. Stereotypes die wel in het MIM aanwezig zijn maar 
-niet in het MUG zijn niet opgenomen hebben (nog) geen functie bij de berichtdefinitie.
+niet in het MUG zijn opgenomen hebben (nog) geen functie bij de berichtdefinitie.
 
 | MIM stereotype | MUG stereotype |
 | --- | --- |

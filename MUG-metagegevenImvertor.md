@@ -67,57 +67,57 @@ Toepassing: alle modelelementen (optioneel).
 
 #### Metagegevens voor «Basismodel»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Supplier-name | 0..1 | Naam van het model waar het UGM model van is afgeleid. |  | Tagged value |
-| Supplier-project | 0..1 | Projecttype van het model waar het UGM model van is afgeleid. |  | Tagged value |
-| Supplier-release | 0..1 | Waarde van het metadatgegeven ‘release’ van het model waar het UGM model van is afgeleid. |  | Tagged value |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
+| **Supplier-name** | 0..1 | Naam van het model waar het UGM model van is afgeleid. |  | _Tagged value_ |
+| **Supplier-project** | 0..1 | Projecttype van het model waar het UGM model van is afgeleid. |  | _Tagged value_ |
+| **Supplier-release** | 0..1 | Waarde van het metadatgegeven ‘release’ van het model waar het UGM model van is afgeleid. |  | _Tagged value_ |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Metagegevens voor «Complex datatype»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Metagegevens voor «Groep»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Metagegevens voor «Primitief datatype»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Metagegevens voor «Relatie»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Metagegevens voor «Relatie-entiteit»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Metagegevens voor «Tabel Element»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Metagegevens voor «Tabel-entiteit»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Metagegevens voor «Union»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
 | Is afgeleid | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | Tagged value |

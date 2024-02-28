@@ -23,7 +23,7 @@ niet in het MUG zijn opgenomen hebben geen functie bij de berichtdefinitie.
 | MIM stereotype | MUG stereotype |
 | --- | --- |
 | Informatiemodel | Basismodel |
-| Gestructureerd | datatype	Complex datatype |
+| Gestructureerd | Complex datatype |
 | Data element | Data element |
 | Domein | Domein |
 | Attribuutsoort | Element |
@@ -40,6 +40,7 @@ niet in het MUG zijn opgenomen hebben geen functie bij de berichtdefinitie.
 | Referentie element | Tabel Element |
 | Referentielijst | Tabel-entiteit |
 | Keuze | Union |
+| - | Union element |
 | View | View |
 | Codelijst | Tabel-entiteit |
 | - | Intern |
@@ -75,7 +76,8 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | <span class="red">Release</span> | 1..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het UGM. De releasedatum wordt mede gebruikt om het Basismodel uniek te identificeren in Imvertor. |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
-<!--| <span class="red">Web locatie</span> | 0..1 | ???? |  | Tagged value | -->
+| <span class="red">Web locatie</span> | 0..1 | Url van de locatie waar het model te vinden is. |  | Tagged value |
+| <span class="red">Niveau</span> | 0..1 | Het niveau is een waarde uit een beperkte set:<br/>"algemeen" betekent dat het model een fundament is van een ander model en moet worden opgenomen. Het modelleert generieke constructies die deel uitmaken van de echte wereld. Dit omvat meestal abstracte object typen. Het kan andere constructen bevatten.<br/>"specifiek" betekent dat het model een bepaald domein beschrijft of een samenhangend deel ervan. |  | Tagged value |
  
 #### Metagegevens voor «Complex datatype»
 
@@ -88,12 +90,12 @@ Complex datatype classes hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Begrip</span> | - | - | - | - |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
-| Formeel Patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | Tagged value |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
-| Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | bevat data element | 0..* | Binding aan een data element, 2 of meer tenzij via generalisatie verkregen. |  | attribute |
+<!--| Formeel Patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | Tagged value |
+| Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | Tagged value |-->
 
 #### Metagegevens voor «Data element»
 
@@ -119,6 +121,7 @@ Data elementen hebben de volgende aspecten gespecificeerd:
 | Regels | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | Heeft datatype | 1 | Binding aan een datatype. | datatype = UML-datatype | type = datatype |
+| <span class="red">Positie</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | Tagged value |
 
 #### Metagegevens voor «Domein»
 
@@ -136,6 +139,7 @@ Domein packages hebben de volgende aspecten gespecificeerd:
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | <span class="red">Release</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om het Domein uniek te identificeren in Imvertor. |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
+| <span class="red">Web locatie</span> | 0..1 | Url van de locatie waar het domein te vinden is. |  | Tagged value |
 <!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
 | <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->
 
@@ -172,7 +176,8 @@ Elementen hebben de volgende aspecten gespecificeerd:
 | Regels | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | Heeft datatype | 1 | Binding aan een datatype. | datatype = UML-datatype | type = datatype |
- 
+| <span class="red">Positie</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | Tagged value |
+
 #### Metagegevens voor «Entiteittype»
 
 Entiteittype classes hebben de volgende aspecten gespecificeerd:
@@ -213,6 +218,7 @@ Enums hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
+| <span class="red">Positie</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | Tagged value |
 
 #### Metagegevens voor «Enumeration»
 
@@ -240,7 +246,7 @@ Extern packages hebben de volgende aspecten gespecificeerd:
 | Alias | 0..1 | Algemeen metagegeven. | UML-Property | Alias |
 | <span class="red">Beheerder</span> | 0..1 | Naam van de beheerder van het model. |  | Tagged value |
 |<span class="grey"> Locatie</span> | - | - | - | - |
-| Data locatie | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
+| <span class="red">Data locatie</span> | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
@@ -294,6 +300,7 @@ Gegevensgroep classes hebben de volgende aspecten gespecificeerd:
 | Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
+| <span class="red">Mogelijk geen waarde</span> | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | Tagged value |
 | <span class="grey">Authentiek</span> | - | - | - | - |
 | <span class="red">Indicatie authentiek</span> | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | Tagged value |
 | Indicatie formele historie | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
@@ -316,10 +323,10 @@ Groepen hebben de volgende aspecten gespecificeerd:
 | <span class="red">Groepnaam</span> | 0..1 | Voorziening om een groep aangepaste naam te kunnen geven. | Tagged value |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
-| <span class="red">Indicatie formele historie</span> | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
-| <span class="red">Indicatie materiële historie</span> | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
 | <span class="red">Mogelijk geen waarde</span> | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | Tagged value |
-| <span class="red">Regels</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
+| <span class="grey">Authentiek</span> | - | - | - | - |
+| <span class="red">Indicatie authentiek</span> | 0..1 | Aanduiding of het een authentiek gegeven betreft. |  | Tagged value |
+| <span class="red">Regels</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het construct moet voldoen. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | heeft attribuut | 0..* | Binding aan een attribuutsoort. | owned element = UML-property | attribute |
 | heeft gegevensgroep | 0..* | Binding aan een gegevensgroep | owned element = UML-property | attribute |
@@ -382,7 +389,7 @@ De Relatie associaties hebben de volgende aspecten gespecificeerd:
 | Regels | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | Tagged value |
 | <span class="red">Target role in meervoud</span> | 0..1 | Voorziening om de target role een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een relatie in een yaml bestand. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-| Unidirectioneel | 1 | Algemeen metagegeven. |  | Direction van de betreffende assiciation (van source naar target) |
+| Unidirectioneel | 1 | Algemeen metagegeven. |  | Direction van de betreffende association (van source naar target) |
 | Relatie eigenaar | 1 | Algemeen metagegeven. | /source: related Element bij Relationship Element | Source |
 | Relatie doel | 1 | Algemeen metagegeven. | /target: related Element bij Relationship Element | Target |
 | Aggregatietype | 1 | Algemeen metagegeven. | AggregationKind bij metaclass Property | Aggregation van de source role met waarde composite of shared |
@@ -390,6 +397,7 @@ De Relatie associaties hebben de volgende aspecten gespecificeerd:
 | Kardinaliteit relatie bron | 1 | Algemeen metagegeven. | lowerValue en upperValue van de metaclass MultiplicityElement | /source	Multiplicity van de source role |
 | Indicatie afleidbaar | 1 | Algemeen metagegeven. | isDerived bij UML metaclass Assocation | isDerived |
 | verwijst naar relatiedoel | 0..* | Binding aan een objecttype. | /target: related Element bij Relationship Element = UML-Class | association target = Class |
+| Positie | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | Tagged value |
 
 #### Metagegevens voor «Relatie-entiteit»
 
@@ -414,7 +422,7 @@ De Relatie-entiteit classes hebben de volgende aspecten gespecificeerd:
 | Indicatie afleidbaar | 1 | Algemeen metagegeven. | isDerived bij UML metaclass Assocation | isDerived |
 | Mogelijk geen waarde | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | Tagged value |
 | <span class="grey">Authentiek</span> | - | - | - | - |
-| Indicatie authentiek | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | Tagged value |
+| <span class="red">Indicatie authentiek</span> | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | Tagged value |
 | Indicatie formele historie | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | Tagged value |
 | Indicatie materiële historie | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | Tagged value |
 | heeft attribute | 0..* | Binding aan een attribuutsoort | owned element = UML-property | attribute |
@@ -436,10 +444,12 @@ Tabel elementen hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | Identificerend | 0..1 | Algemeen metagegeven | isID bij de metaclass Property | isID |
 | Kardinaliteit | 1 | Algemeen metagegeven | lowerValue en upperValue van de --metaclass Multiplicity | Element	Multiplicity |		
-| <span class="grey">Lengte</span> | - | - | - | - |
+| Lengte | 0..1 | De maximale lengte die een attribuut kan hebben. |  | Tagged value |
+| Minimum lengte | 0..1 | De minimale lengte die een attribuut moet hebben. |  | Tagged value |
 | Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | heeft datatype | 1 | Binding aan een datatype. | datatype = UML-datatype | type = datatype |
+| Positie | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | Tagged value |
 
 #### Metagegevens voor «Tabel-entiteit»
 
@@ -478,6 +488,19 @@ Union datatypes hebben de volgende aspecten gespecificeerd:
 | heeft attribuutkeuze | 0..* | Binding aan een attribuutsoort. | owned element = UML-Property | attribute |
 | heeft relatiedoelkeuze | 0..* | Binding aan een relatiesoort. | owned element = UML-Relationship | association |
  
+#### Metagegevens voor «Union element»
+
+Union datatypes hebben de volgende aspecten gespecificeerd:
+
+| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| --- | --- | --- | --- | --- |
+| Naam | 1 | Algemeen metagegeven | name van de metaclass Named element | Name |
+| Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | Alias |
+| Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
+| Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
+| Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | Tagged value |
+| Formeel patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | Tagged value |
+ 
 #### Metagegevens voor «View»
 
 View packages hebben de volgende aspecten gespecificeerd:
@@ -496,5 +519,6 @@ View packages hebben de volgende aspecten gespecificeerd:
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
 | <span class="red">Release</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van de View. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om de View uniek te identificeren in Imvertor. |  | Tagged value |
+| <span class="red">Web locatie</span> | 0..1 | Url van de locatie waar de view te vinden is. |  | Tagged value |
 <!--| <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
 | <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->

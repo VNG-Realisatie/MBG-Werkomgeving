@@ -62,7 +62,7 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | --- | --- | --- | --- | --- |
 | <b>Naam</b> | 1 | Algemeen metagegeven. | name van de metaclass Named element | _Name_ |
 | <span class="grey"><b>URI</b></span> | - | - | - | - |
-| <span class="grey"><b>heeft Constraint</b></span> | - | - | - | - |
+| <span class="grey">heeft <b>Constraint</b></span> | - | - | - | - |
 | <span class="grey"><b>Basis-URI</b></span> | - | - | - | - |
 | <b>Alias</b> | 0..1 | Algemeen metagegeven. | UML-Property	 | _Alias_ |
 | <span class="red"><b>Afkorting</b></span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | _Tagged value_ |
@@ -237,6 +237,7 @@ Enumeration classes hebben de volgende aspecten gespecificeerd:
 | <span class="grey"><b>Herkomst</b></span> | - | - | - | - |
 | <span class="grey"><b>Herkomst definitie</b></span> | - | - | - | - |
 | <b>Toelichting</b> | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
+| <span class="grey">bevat <b>enumeratiewaarde</b></span> | - | - | - | - |
 | bevat <b>enum</b> | 1..* | Binding aan een enum | owned element = UML-EnumerationLiteral | _EnumerationLiteral_ |
 
 #### Metagegevens voor «Extern»
@@ -287,7 +288,7 @@ Externe koppeling packages hebben de volgende aspecten gespecificeerd:
 | <span class="red"><b>Indicatie authentiek</b></span> | 0..1 | Aanduiding of het een authentiek gegeven betreft. |  | _Tagged value_ |
 | <span class="grey"><b>Indicatie afleidbaar</b></span> | - | - | - | - |
 | <span class="grey"><b>Mogelijk geen waarde</b></span> | - | - | - | - |
-| <span class="grey"><b>verwijst naar relatiedoel | 0..* | Binding aan een entiteittype | /target: related Element bij Relationship Element = UML-Class | _association target = Class_ |
+| <span class="grey">verwijst naar <b>relatiedoel | 0..* | Binding aan een entiteittype | /target: related Element bij Relationship Element = UML-Class | _association target = Class_ |
 
 #### Metagegevens voor «Gegevensgroep»
 

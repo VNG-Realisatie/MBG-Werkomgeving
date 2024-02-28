@@ -93,25 +93,25 @@ _Toepassing:_ Koppelvlak (optioneel)
 
 #### Specificatie voor «Padtype»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
 | Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Specificatie voor « EntiteitRelatie »
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
 | Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Specificatie voor «PadRelatie»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
 | Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Specificatie voor «Koppelvlak»
 
-| Aspect | Kardinaliteit | Toelichting | Metaclass UML 2.5 | In EA |
+| **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
 | **Supplier-name** | 0..1 | Naam van het model waar het BSM model van is afgeleid. |  | _Tagged value_ |
 | **Supplier-project** | 0..1 | Projecttype van het model waar het BSM model van is afgeleid. |  | _Tagged value_ |

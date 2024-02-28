@@ -36,7 +36,7 @@ Het hoofdstuk [Metamodel Algemeen](#metamodel-algemeen) bevat de beschrijving va
 
 Het hoofdstuk [Metamodel in UML](#metamodel-in-uml) beschrijft hoe de implementatie van het MBG in [[UML]] er uit ziet. In dit hoofdstuk wordt beschreven hoe het MBG metamodel zich verhoudt tot het UML metamodel, welke uitbreidingen c.q. verbijzonderingen van het UML metamodel zijn aangebracht.
 
-In het hoofdstuk [Afspraken & Regels](#afspraken-regels) ........
+Het hoofdstuk [Afspraken & Regels](#afspraken-regels) gaat in op een aantal afspraken en regels die van toepassing zijn op een BSM.
 In de bijlage [Diagrammen](#diagrammen) vind je een aantal diagrammen die betrekking hebben op het MBG metamodel. Bijlage [Metamodel UitwisselingsGegevens (MUG)](#metamodel-UitwisselingsGegevens-mug) beschrijft het MUG metamodel, een metamodel dat nagenoeg 1 op 1 te mappen is op het MIM en alleen qua naamgeving van de modelelementen en qua metagegevens afwijkt van het MIM metamodel. Om die reden hebben we dit niet in een apart document beschreven. Tenslotte vind je in de bijlagen [Specifieke MBG metagegevens voor Imvertor](#specifieke-mbg-metagegevens-voor-imvertor) en [Specifieke MUG metagegevens voor Imvertor](#specifieke-mug-metagegevens-voor-imvertor) nog de specifiek voor Imvertor gedefinieerde metagegevens.
 
 ## Gebruikswijzer

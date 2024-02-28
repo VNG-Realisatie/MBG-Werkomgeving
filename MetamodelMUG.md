@@ -63,7 +63,7 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Alias</span> | - | - | - | - |
 | <span class="red">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
-| Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment. | Notes |
+| Definitie | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment. | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Informatie-domein</span> | - | - | - | - |
@@ -73,7 +73,7 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | <span class="grey">MIM versie</span> | - | - | - | - |
 | <span class="grey">Relatie-modellerings-type</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-| <span class="red">Release</span> | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het UGM. |  | Tagged value |
+| <span class="red">Release</span> | 1..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het UGM. De releasedatum wordt mede gebruikt om het Basismodel uniek te identificeren in Imvertor. |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
 <!--| <span class="red">Web locatie</span> | 0..1 | ???? |  | Tagged value | -->
  
@@ -130,11 +130,11 @@ Domein packages hebben de volgende aspecten gespecificeerd:
 | <span class="grey">Alias</span> | - | - | - | - |
 | <span class="red">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
-| Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
+| Definitie | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-| <span class="red">Release</span> | 1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
+| <span class="red">Release</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om het Domein uniek te identificeren in Imvertor. |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
 <!-- | <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
 | <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->
@@ -242,10 +242,10 @@ Extern packages hebben de volgende aspecten gespecificeerd:
 |<span class="grey"> Locatie</span> | - | - | - | - |
 | Data locatie | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
-| Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
+| Definitie | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
-| <span class="red">Release</span> | 0..1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». |  | Tagged value |
+| <span class="red">Release</span> | 0..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om het Externe package uniek te identificeren in Imvertor. |  | Tagged value |
 | <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model-element in het gehanteerde versiebeheersysteem. |  | Tagged value |
 | <span class="red">Web locatie</span> | 0..1 | Url van de locatie waar het externe package te vinden is. |  | Tagged value |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
@@ -475,14 +475,14 @@ View packages hebben de volgende aspecten gespecificeerd:
 | Naam | 1 | Algemeen metagegeven. Deze is, indien mogelijk, analoog aan de naamgeving in het externe schema waar de view over gaat, eventueel met een prefix. | name van de metaclass Named element | Name |
 | <span class="grey">Alias</span> | - | - | - | - |
 | <span class="red">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.	 |  | Tagged value |
-| <span class="red">Data locatie</span> | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
+| <span class="red">Data locatie</span> | 1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | Tagged value |
 | <span class="grey">Datum opname</span> | - | - | - | - |
-| Definitie | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | Notes |
+| Definitie | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment | Notes |
 | <span class="grey">Herkomst</span> | - | - | - | - |
 | <span class="grey">Herkomst definitie</span> | - | - | - | - |
 | <span class="grey">Locatie</span> | - | - | - | - |
 | Toelichting | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | Tagged value |
-| <span class="green">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
-<!--| <span class="red">Release</span> | 0..1 | ??? |  | Tagged value |
-| <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
+| <span class="red">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | Tagged value |
+| <span class="red">Release</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van de View. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om de View uniek te identificeren in Imvertor. |  | Tagged value |
+<!--| <span class="red">Ref-release</span> | 0..1 | ??? |  | Tagged value |
 | <span class="red">Ref-version</span> | 0..1 | ??? |  | Tagged value | -->

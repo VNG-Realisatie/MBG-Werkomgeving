@@ -83,7 +83,7 @@ Het beheer van dit metamodel vindt plaats door ….
 
 ## Normreferenties
 
-| # | Naam | Referentie |
+| **#** | **Naam** | **Referentie** |
 | --- | --- | --- |
 | 1. | Unified Modeling Language (UML) | [[UML]] |
 | 2. | OMG Unified Modeling Language TM versie 2.5 | [[OMG]] |

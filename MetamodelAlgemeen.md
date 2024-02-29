@@ -416,6 +416,19 @@ _Bijvoorbeeld:_ 20230404
 
 _Toepassing:_ Koppelvlak (verplicht)
  
+#### Metagegeven: Version
+
+<aside class="definition">
+  <dfn data-lt="objecten">Version</dfn>Het versienummer waaronder het koppelvlak zal worden gepubliceerd.
+</aside>
+
+_Toelichting:_
+Het versienummer wordt uitgedrukt in het volgende formaat ‘x.x.x’.
+
+_Bijvoorbeeld:_ 1.2.0
+
+_Toepassing:_ Koppelvlak (verplicht)
+ 
 #### Metagegeven: Serialisatie
 
 <aside class="definition">

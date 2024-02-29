@@ -172,6 +172,7 @@ Koppelvlak packages worden naar de volgende aspecten gespecificeerd:
 | **Koppelvlak-naam** | 0..1 | Volledige naam van het koppelvlak |  | _Tagged value_ |
 | **project_url** | 0..1 | Url van de bij het koppelvlak horende project repository |  | _Tagged value_ |
 | **release** | 1 | Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak. |  | _Tagged value_ |
+| **Version** | 1 | Het versienummer waaronder het koppelvlak zal worden gepubliceerd. | UML-Property | _Version_ |
 | **Serialisatie** | 1 | Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden. |  | _Tagged value_ |
 
 #### Specificatie voor «Domein»

@@ -51,8 +51,8 @@ niet in het MUG zijn opgenomen hebben geen functie bij de berichtdefinitie.
 
 De MUG stereotypes in de voorgaande paragraaf kennen een aantal metagegevens. In deze paragraaf worden deze per stereotype beschreven.
 Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve daar:
-* waar de relatie met een metagegeven in het MIM erg voor de hand ligt;
-* waar het stereotype niet kan worden gemapt op een stereotype in het MIM.
+* waar het eigenlijk een naamswijziging betreft en de relatie met het metagegeven in het MIM erg voor de hand ligt;
+* waar het stereotype waarvan het deel uitmaakt niet kan worden gemapt op een stereotype in het MIM.
 
 Daarnaast zijn de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes in dezelfde tabellen opgenomen maar uitgegrijsd.
 

@@ -95,19 +95,19 @@ _Toepassing:_ Koppelvlak (optioneel)
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
+| **Is afgeleid** | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Specificatie voor « EntiteitRelatie »
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
+| **Is afgeleid** | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Specificatie voor «PadRelatie»
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
+| **Is afgeleid** | 1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
 
 #### Specificatie voor «Koppelvlak»
 

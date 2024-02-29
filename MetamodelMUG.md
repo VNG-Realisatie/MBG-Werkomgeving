@@ -60,23 +60,23 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| <b>Naam</b> | 1 | Algemeen metagegeven. | name van de metaclass Named element | _Name_ |
 | <span class="grey"><b>URI</b></span> | - | - | - | - |
-| <span class="grey">heeft <b>Constraint</b></span> | - | - | - | - |
-| <span class="grey"><b>Basis-URI</b></span> | - | - | - | - |
+| <b>Naam</b> | 1 | Algemeen metagegeven. | name van de metaclass Named element | _Name_ |
 | <b>Alias</b> | 0..1 | Algemeen metagegeven. | UML-Property	 | _Alias_ |
-| <span class="red"><b>Afkorting</b></span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | _Tagged value_ |
-| <span class="grey"><b>Datum opname</b></span> | - | - | - | - |
-| <b>Definitie</b> | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment. | _Notes_ |
 | <span class="grey"><b>Herkomst</b></span> | - | - | - | - |
+| <b>Definitie</b> | 0..1 | De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel. | Body van de metaclass Comment. | _Notes_ |
 | <span class="grey"><b>Herkomst definitie</b></span> | - | - | - | - |
-| <span class="grey"><b>Informatie-domein</b></span> | - | - | - | - |
+| <b>Toelichting</b> | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
+| <span class="grey"><b>Datum opname</b></span> | - | - | - | - |
 | <span class="grey"><b>Informatie-model type</b></span> | - | - | - | - |
+| <span class="grey"><b>Informatie-domein</b></span> | - | - | - | - |
+| <span class="grey"><b>MIM versie</b></span> | - | - | - | - |
 | <span class="grey"><b>MIM extensie</b></span> | - | - | - | - |
 | <span class="grey"><b>MIM taal</b></span> | - | - | - | - |
-| <span class="grey"><b>MIM versie</b></span> | - | - | - | - |
 | <span class="grey"><b>Relatie-modellerings-type</b></span> | - | - | - | - |
-| <b>Toelichting</b> | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
+| <span class="grey">heeft <b>Constraint</b></span> | - | - | - | - |
+| <span class="grey"><b>Basis-URI</b></span> | - | - | - | - |
+| <span class="red"><b>Afkorting</b></span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | _Tagged value_ |
 | <span class="red"><b>Release</b></span> | 1..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het UGM. De releasedatum wordt mede gebruikt om het Basismodel uniek te identificeren in Imvertor. |  | _Tagged value_ |
 | <span class="red"><b>Versie ID</b></span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
 | <span class="red"><b>Web locatie</b></span> | 0..1 | Url van de locatie waar het model te vinden is. |  | _Tagged value_ |
@@ -88,17 +88,26 @@ Complex datatype classes hebben de volgende aspecten gespecificeerd:
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
+| <span class="grey"><b>URI</b></span> | - | - | - | - |
 | <b>Naam</b> | 1 | Algemeen metagegeven. De naam van het domein package. | name van de metaclass Namedelement | _Name_ |
 | <b>Alias</b> | 0..1 | Algemeen metagegeven. | UML-Property	 | _Alias_ |
-| <span class="grey"><b>Begrip</b></span> | - | - | - | - |
-| <span class="grey"><b>Datum opname</b></span> | - | - | - | - |
-| <b>Definitie</b> | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | _Notes_ |
 | <span class="grey"><b>Herkomst</b></span> | - | - | - | - |
+| <span class="grey"><b>Is gedefinieerd in</b></span> | - | - | - | - |
+| <span class="grey"><b>Begrip</b></span> | - | - | - | - |
+| <b>Definitie</b> | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | _Notes_ |
 | <span class="grey"><b>Herkomst definitie</b></span> | - | - | - | - |
 | <b>Toelichting</b> | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
+| <span class="grey"><b>Datum opname</b></span> | - | - | - | - |
+| <span class="grey"><b>Patroon</b></span> | - | - | - | - |
+| <span class="grey"><b>Formeel patroon</b></span> | - | - | - | - |
 | bevat <b>data element</b> | 0..* | Binding aan een data element, 2 of meer tenzij via generalisatie verkregen. |  | _attribute_ |
-<!--| <b>Formeel Patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
-| <b>Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |-->
+| heeft <b>Constraint</b> | - | - | - | - |
+<!-- Waarom is er op het datatype «Gestructureerd datatype» in het MIM de metatgegevens 'Formeel Patroon' en 'Patroon' gedefinieerd?
+
+| <b>Formeel Patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
+| <b>Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
+
+-->
 
 #### Metagegevens voor «Data element»
 
@@ -106,24 +115,29 @@ Data elementen hebben de volgende aspecten gespecificeerd:
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
+| <span class="grey"><b>URI</b></span> | - | - | - | - |
 | <b>Naam</b> | 1 | Algemeen metagegeven. | name van de metaclass Namedelement | _Name_ |
 | <b>Alias</b> | 0..1 | Algemeen metagegeven. | UML-Property	 | _Alias_ |
-| <span class="grey"><b>Begrip</b></span> | - | - | - | - |
-| <span class="grey"><b>Datum opname</b></span> | - | - | - | - |
-| <b>Definitie</b> | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | _Notes_ |
-| <b>Example</b> | 0..1 | Voorbeeld waarde. |  | _Tagged value_ |
-| <b>Formeel patroon</b> | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
 | <span class="grey"><b>Herkomst</b></span> | - | - | - | - |
+| <span class="grey"><b>Is gedefinieerd in</b></span> | - | - | - | - |
+| <span class="grey"><b>Begrip</b></span> | - | - | - | - |
+| <b>Definitie</b> | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | _Notes_ |
 | <span class="grey"><b>Herkomst definitie</b></span> | - | - | - | - |
-| <b>Kardinaliteit</b> | 1 | Algemeen metagegeven. | lowerValue en upperValue van de metaclass MultiplicityElement | _Multiplicity_ |
-| <b>Lengte | 0..1 | De maximale lengte die een attribuut kan hebben. |  | _Tagged value_ |
-| <span class="red"><b>Maximum waarde (inclusief)</b></span> | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | _Tagged value_ |
-| <span class="red"><b>Minimum lengte</b></span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | _Tagged value_ |
-| <span class="red"><b>Minimum waarde (inclusief)</b></span> | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben. |  | _Tagged value_ |
-| <b>Patroon</b> | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
-| <b>Regels</b> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | _Tagged value_ |
 | <b>Toelichting</b> | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
+| <span class="grey"><b>Datum opname</b></span> | - | - | - | - |
+| <b>Lengte | 0..1 | De maximale lengte die een attribuut kan hebben. |  | _Tagged value_ |
+| <b>Patroon</b> | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
+| <b>Formeel patroon</b> | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
+| <b>Kardinaliteit</b> | 1 | Algemeen metagegeven. | lowerValue en upperValue van de metaclass MultiplicityElement | _Multiplicity_ |
+| <b>Minimum waarde (inclusief)</b> | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben. |  | _Tagged value_ |
+| <span class="grey"><b>Minimum waarde (exclusief)</b></span> | - | - | - | - |
+| <b>Maximum waarde (inclusief)</b>> | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | _Tagged value_ |
+| <span class="grey"><b>Maximum waarde (exclusief)</b></span> | - | - | - | - |
 | heeft <b>datatype</b> | 1 | Binding aan een datatype. | datatype = UML-datatype | _type = datatype_ |
+| <span class="grey">heeft <b>Constraint</b></span> | - | - | - | - |
+| <span class="red"><b>Regels</b></span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | _Tagged value_ |
+| <span class="red"><b>Example</b></span> | 0..1 | Voorbeeld waarde. |  | _Tagged value_ |
+| <span class="red"><b>Minimum lengte</b></span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | _Tagged value_ |
 | <span class="red"><b>Positie</b></span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
 
 #### Metagegevens voor «Domein»
@@ -229,16 +243,19 @@ Enumeration classes hebben de volgende aspecten gespecificeerd:
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
+| <span class="grey"><b>URI</b></span> | - | - | - | - |
 | <b>Naam</b> | 1 | Algemeen metagegeven. | name van de metaclass Named element | _Name_ |
 | <b>Alias</b> | 0..1 | Algemeen metagegeven. | UML-Property	 | _Alias_ |
-| <span class="grey"><b>Begrip</b></span> | - | - | - | - |
-| <span class="grey"><b>Datum opname</b></span> | - | - | - | - |
-| <b>Definitie</b> | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | _Notes_ |
 | <span class="grey"><b>Herkomst</b></span> | - | - | - | - |
+| <span class="grey"><b>Is gedefinieerd in</b></span> | - | - | - | - |
+| <span class="grey"><b>Begrip</b></span> | - | - | - | - |
+| <b>Definitie</b> | 0..1 | De beschrijving van de betekenis van de construct | Body van de metaclass Comment | _Notes_ |
 | <span class="grey"><b>Herkomst definitie</b></span> | - | - | - | - |
 | <b>Toelichting</b> | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
+| <span class="grey"><b>Datum opname</b></span> | - | - | - | - |
 | <span class="grey">bevat <b>enumeratiewaarde</b></span> | - | - | - | - |
 | bevat <b>enum</b> | 1..* | Binding aan een enum | owned element = UML-EnumerationLiteral | _EnumerationLiteral_ |
+| <span class="grey">heeft <b>Constraint</b></span> | - | - | - | - |
 
 #### Metagegevens voor «Extern»
 

@@ -46,7 +46,6 @@ niet in het MUG zijn opgenomen hebben geen functie bij de berichtdefinitie.
 | Codelijst | Tabel-entiteit |
 | - | Intern |
 | Generalisatie | - |
-| Relatierol | - |
 
 ### Metagegevens
 

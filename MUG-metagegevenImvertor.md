@@ -174,13 +174,13 @@ Toepassing: alle modelelementen (optioneel).
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Deze constructie is al dan niet afgeleid van een construct in een "supplier model". Wanneer je niks opgeeft wordt afleiding vastgesteld op basis van het package waarin het voorkomt. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Deze constructie is al dan niet afgeleid van een construct in een "supplier model". Wanneer je niks opgeeft wordt afleiding vastgesteld op basis van het package waarin het voorkomt. |  | _Tagged value_ |
 
 #### Metagegevens voor «Union element»
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| Is afgeleid | 0..1 | Deze constructie is al dan niet afgeleid van een construct in een "supplier model". Wanneer je niks opgeeft wordt afleiding vastgesteld op basis van het package waarin het voorkomt. |  | Tagged value |
+| **Is afgeleid** | 0..1 | Deze constructie is al dan niet afgeleid van een construct in een "supplier model". Wanneer je niks opgeeft wordt afleiding vastgesteld op basis van het package waarin het voorkomt. |  | _Tagged value_ |
 
 #### Metagegevens voor «View»
 

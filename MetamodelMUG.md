@@ -1,19 +1,20 @@
 ## Metamodel UitwisselingsGegevensmodel (MUG)
 
-Het Bericht StructuurModel (BSM) is in feite een extensie op het UitwisselingsGegevensModel (UGM). Het BSM definieert het vehikel 
-waarmee gegevens of een uit te voeren actie naar een endpoint wordt gecommuniceerd en het UGM voorziet in de gegevens die verstuurd 
-dan wel ontvangen worden. Het UGM is gebaseerd op het Metamodel UitwisselingsGegevensmodel (MUG). 
+Het Bericht StructuurModel (BSM) is in feite een extensie op het UitwisselingsGegevensModel (UGM) dat gebaseerd is op het Metamodel 
+UitwisselingsGegevensmodel (MUG). Het BSM definieert het vehikel waarmee gegevens of een uit te voeren actie naar een endpoint wordt 
+gecommuniceerd en het UGM voorziet in de gegevens die verstuurd dan wel ontvangen worden. Een BSM kan dan ook alle constructs  
+van een UGM bevatten behalve 'Basismodel'.
 
 Een UGM is in de basis een vertaling van een Conceptueel Informatie Model (CIM) naar een ander metamodel. De structuur van een UGM kan 
 in principe gelijk zijn aan die van een CIM maar dat is over het algemeen niet het geval. Waar een CIM een beeld geeft van de 
 informatiebehoefte binnen een domein op conceptueel niveau is het UGM een vertaling daarvan naar een technische structuur. 
 
-De in een CIM gebruikte stereotypes kunnen 1 op 1 gemapt worden met de in een UGM gebruikte stereotypes. Om die reden zou een BSM in 
+De in een CIM gebruikte stereotypes kunnen nagenoeg 1 op 1 gemapt worden met de in een UGM gebruikte stereotypes. Om die reden zou een BSM in 
 theorie ook als extensie op een op het MIM gebaseerd CIM kunnen worden gedefinieerd, al ontbreken er dan op de objecten en attributen 
-nog wel diverse tagged values.
+nog wel diverse tagged values. 
 
-In de volgende paragraaf vind je de mapping tussen de stereotypes van het MIM en in de daarop volgende paragraaf per stereotype in het 
-MUG de op de gerelateerde stereotype in het MIM ontbrekende maar voor het BSM bruikbare of zelfs noodzakelijke tagged values.
+In de volgende paragraaf vind je de mapping tussen de stereotypes van het MIM en die van het MUG. In de daarop volgende paragraaf worden per MUG 
+stereotype de op de gerelateerde stereotype in het MIM ontbrekende maar voor het BSM bruikbare of zelfs noodzakelijke tagged values opgesomd.
 
 ### Mapping MIM op MUG stereotypes
 
@@ -54,7 +55,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 * waar het eigenlijk een naamswijziging betreft en de relatie met het metagegeven in het MIM erg voor de hand ligt;
 * waar het stereotype waarvan het deel uitmaakt niet kan worden gemapt op een stereotype in het MIM.
 
-Daarnaast zijn de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes in dezelfde tabellen opgenomen maar uitgegrijsd.
+Daarnaast zijn de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes wel in dezelfde tabellen opgenomen maar uitgegrijsd.
 
 #### Metagegevens voor «Basismodel»
 

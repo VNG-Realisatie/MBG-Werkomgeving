@@ -3,7 +3,7 @@
 Het Bericht StructuurModel (BSM) is in feite een extensie op het UitwisselingsGegevensModel (UGM) dat gebaseerd is op het Metamodel 
 UitwisselingsGegevensmodel (MUG). Het BSM definieert het vehikel waarmee gegevens of een uit te voeren actie naar een endpoint wordt 
 gecommuniceerd en het UGM voorziet in de gegevens die verstuurd dan wel ontvangen worden. Een BSM kan dan ook alle constructs  
-van een UGM bevatten behalve 'Basismodel'.
+van een UGM bevatten behalve 'Basismodel'. Daarvoor wordt in een BSM immers 'Koppelvlak' gebruikt.
 
 Een UGM is in de basis een vertaling van een Conceptueel Informatie Model (CIM) naar een ander metamodel. De structuur van een UGM kan 
 in principe gelijk zijn aan die van een CIM maar dat is over het algemeen niet het geval. Waar een CIM een beeld geeft van de 

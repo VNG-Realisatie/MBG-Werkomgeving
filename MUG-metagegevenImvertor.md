@@ -4,6 +4,18 @@ In dit hoofdstuk worden specifiek voor Imvertor gedefinieerde metagegevens besch
 
 ### Specificatie metagegevens 
 
+#### Imvertor
+
+<aside class="definition">
+  <dfn data-lt="objecten">Imvertor</dfn>De (default) waarde 'model' voor deze property geeft aan dat het pakket een volledig model is dat kan worden verwerkt door de Imvertor-software. Deze waarde is vereist door de Imvertor add-in op Enterprise Architect.
+</aside>
+
+_Toelichting:_
+
+De waarde 'model' voor dit metagegeven maakt het mogelijk om een model te verwerken met Imvertor. Het is tevens de enige waarde voor dit metagegeven en ook de default waarde.
+
+_Toepassing:_ Basismodel (optioneel)
+
 #### Metagegeven: Supplier-name
 
 <aside class="definition">
@@ -62,6 +74,84 @@ _Toelichting:_
 Een UitwisselingsGegevensmodel kan van één SIM worden afgeleid. Indien dit niet het geval is dan heeft dit metagegeven de waarde ‘Nee’. Indien dit de waarde ‘Ja’ heeft, leeg is of niet aanwezig is dan dienen de metagegevens ‘Supplier-name’, ‘Supplier-project’ en ‘Supplier-release’ een waarde te hebben
 
 Toepassing: alle modelelementen (optioneel).
+
+#### Ref-release
+
+<aside class="definition">
+  <dfn data-lt="objecten">Ref-release</dfn>Datum waarmee het model waarnaar wordt verwezen kan worden geïdentificeerd.
+</aside>
+
+_Toelichting:_
+
+Waarde van het metadatagegeven ‘release’ van het model waarnaar wordt verwezen.
+
+Toepassing: De datum wordt uitgedrukt in het volgende formaat ‘jjjjmmdd’.
+
+Bijvoorbeeld: 20230404
+
+Toepassing: Extern en View (optioneel)
+
+#### Ref-version
+
+<aside class="definition">
+  <dfn data-lt="objecten">Ref-version</dfn>Het versienummer waaronder een model waarnaar wordt verwezen wordt gepubliceerd.
+</aside>
+
+_Toelichting:_
+
+Het versienummer wordt uitgedrukt in het volgende formaat ‘x.x.x’.
+
+Bijvoorbeeld: 1.2.0
+
+Toepassing: Extern en View (optioneel)
+
+<!--#### Interne naam
+
+<aside class="definition">
+  <dfn data-lt="objecten">Interne naam</dfn>Nnnnnnnnn
+</aside>
+
+_Toelichting:_
+
+...
+
+Toepassing: ...
+
+#### Intern project
+
+<aside class="definition">
+  <dfn data-lt="objecten">Intern project</dfn>Nnnnnnnnn
+</aside>
+
+_Toelichting:_
+
+...
+
+Toepassing: ...
+
+#### Interne release
+
+<aside class="definition">
+  <dfn data-lt="objecten">Interne release</dfn>Nnnnnnnnn
+</aside>
+
+_Toelichting:_
+
+...
+
+Toepassing: ...  -->
+
+#### Supplier-package-name
+
+<aside class="definition">
+  <dfn data-lt="objecten">Supplier-package-name</dfn>De naam van het model waarnaar wordt verwezen. 
+</aside>
+
+_Toelichting:_
+
+Deze naam wordt opgegeven als deze niet gelijk is aan de naam van het package waar deze tagged value op geplaatst is.
+
+Toepassing: View (optioneel)
  
 ### Metagegevens
 
@@ -135,10 +225,13 @@ Toepassing: alle modelelementen (optioneel).
 
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
-| **Interne naam** | 1 | Naam van het interne model. |  | _Tagged value_ |
+| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
+<!-- Wat is de functie van de metagegevens 'Interne naam', 'Intern project' en 'Interne release'?
+
+| **Interne naam** | 1 | Naam van het interne model. |  | _Tagged value_ | 
 | **Intern project** | 1 | Projecttype van het interne model. |  | _Tagged value_ |
 | **Interne release** | 1 | Waarde van het metadatagegeven ‘release’ van het interne model. |  | _Tagged value_ |
-| **Is afgeleid** | 0..1 | Geeft aan of de constructie al dan niet is afgeleid van een construct in een ‘supplier model’. |  | _Tagged value_ |
+-->
 
 #### Metagegevens voor «Primitief datatype»
 

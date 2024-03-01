@@ -4,7 +4,7 @@
 
 <figure id="MBGKernzonderdetailsenMUG">
   <img src="media/MBG Kern zonder details en MUG.jpg" alt="" />
-  <figcaption/>
+  <figcaption>Overzicht toegepaste UML metaclasses</figcaption>
 </figure>
 
 ### Modelelementen en metagegevens als diagram
@@ -15,12 +15,12 @@ Kern
 
 <figure id="MBGKernmetdetailszonderMUG">
   <img src="media/MBG Kern met details zonder MUG.jpg" alt="" />
-  <figcaption/>
+  <figcaption>Modelelementen en metagegevens als diagram</figcaption>
 </figure>
   
 Packages
  
 <figure id="MBGPackagesmetdetails">
   <img src="media/MBG Packages met details.jpg" alt="" />
-  <figcaption/>
+  <figcaption>Packages</figcaption>
 </figure>

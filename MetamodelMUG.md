@@ -9,7 +9,7 @@ Een UGM is in de basis een vertaling van een Conceptueel Informatie Model (CIM) 
 in principe gelijk zijn aan die van een CIM maar dat is over het algemeen niet het geval. Waar een CIM een beeld geeft van de 
 informatiebehoefte binnen een domein op conceptueel niveau is het UGM een vertaling daarvan naar een technische structuur. 
 
-De in een CIM gebruikte stereotypes kunnen nagenoeg 1 op 1 gemapt worden met de in een UGM gebruikte stereotypes. Om die newen zou een BSM in 
+De in een CIM gebruikte stereotypes kunnen nagenoeg 1 op 1 gemapt worden met de in een UGM gebruikte stereotypes. Om die reden zou een BSM in 
 theorie ook als extensie op een op het MIM gebaseerd CIM kunnen worden gedefinieerd, al ontbreken er dan op de objecten en attributen 
 nog wel diverse tagged values. 
 

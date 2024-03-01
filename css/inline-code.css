@@ -9,11 +9,14 @@ code
 /*  font-family: lucida console;
   font-size: 90%;*/
 }
-span.grey
+span.not-relevant
 {
-  color:#BCBCBC;
+  font-weight: normal;
+  font-style: italic;
+/*  color:#BCBCBC; */
 }
-span.red
+span.new
 {
+  font-weight: bold;
   color:#e00;
 }

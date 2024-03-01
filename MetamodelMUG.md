@@ -602,3 +602,7 @@ View packages hebben de volgende aspecten gespecificeerd:
 | <span class="red"><b>Web locatie</b></span> | 0..1 | Url van de locatie waar de view te vinden is. |  | _Tagged value_ |
 <!--| <span class="red"><b>Ref-release</b></span> | 0..1 | ??? |  | _Tagged value_ |
 | <span class="red"><b>Ref-version</b></span> | 0..1 | ??? |  | _Tagged value_ | -->
+
+### MUG-toolbox
+
+Er is door de MUG beheerder een metamodel profiel gemaakt voor Sparx Enterprise Architect, dat gebruikt kan worden bij het modelleren van een informatiemodel. Dit profiel kan je inladen en daarna kan je kiezen uit de metamodel elementen. Het profiel is faciliterend en zorgt dat (de meeste) MUGM modelelementen die je in een BSM gebruikt automatisch voldoen aan dit metamodel. Dit profiel is te vinden op [MUG profiel - toolbox voor EA](https://vng-realisatie.github.io/Model-Driven-Design-Documentatie/bestanden/VNGR%20MUG+Grouping%20NL-1.0-1.65.2.ea-toolbox.xml).

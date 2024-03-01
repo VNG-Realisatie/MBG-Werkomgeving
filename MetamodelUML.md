@@ -195,7 +195,7 @@ Bericht packages worden naar de volgende aspecten gespecificeerd:
 
 ### MBG-toolbox
 
-Er is door de MBG beheerder een metamodel profiel gemaakt voor Sparx Enterprise Architect, dat gebruikt kan worden bij het modelleren van een informatiemodel. Dit profiel kan je inladen en daarna kan je kiezen uit de metamodel elementen. Het profiel is faciliterend en zorgt dat (de meeste) modelelementen van een BSM automatisch voldoen aan dit metamodel. Dit profiel is te vinden op [MBG profiel - toolbox voor EA](https://vng-realisatie.github.io/Model-Driven-Design-Documentatie/bestanden/VNGR MBG+Grouping NL-1.0-1.65.2.ea-toolbox.xml).
+Er is door de MBG beheerder een metamodel profiel gemaakt voor Sparx Enterprise Architect, dat gebruikt kan worden bij het modelleren van een informatiemodel. Dit profiel kan je inladen en daarna kan je kiezen uit de metamodel elementen. Het profiel is faciliterend en zorgt dat (de meeste) modelelementen van een BSM automatisch voldoen aan dit metamodel. Dit profiel is te vinden op [MBG profiel - toolbox voor EA](https://vng-realisatie.github.io/Model-Driven-Design-Documentatie/bestanden/VNGR%20MBG+Grouping%20NL-1.0-1.65.2.ea-toolbox.xml).
 
 ### Extensie op MBG-toolbox
 

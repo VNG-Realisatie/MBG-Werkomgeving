@@ -77,13 +77,13 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">MIM extensie</span> | - | - | - | - |
 | <span class="not-relevant">MIM taal</span> | - | - | - | - |
 | <span class="not-relevant">Relatie-modellerings-type</span> | - | - | - | - |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 | <span class="not-relevant">Basis-URI</span> | - | - | - | - |
-| <span class="new">**Afkorting**</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | _Tagged value_ |
-| <span class="new">**Release**</span> | 1..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het UGM. De releasedatum wordt mede gebruikt om het Basismodel uniek te identificeren in Imvertor. |  | _Tagged value_ |
-| <span class="new">**Versie ID**</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
-| <span class="new">**Web locatie**</span> | 0..1 | Url van de locatie waar het model te vinden is. |  | _Tagged value_ |
-| <span class="new">**Niveau**</span> | 0..1 | Het niveau is een waarde uit een beperkte set:<br/>"algemeen" betekent dat het model een fundament is van een ander model en moet worden opgenomen. Het modelleert generieke constructies die deel uitmaken van de echte wereld. Dit omvat meestal abstracte object typen. Het kan andere constructen bevatten.<br/>"specifiek" betekent dat het model een bepaald domein beschrijft of een samenhangend deel ervan. |  | _Tagged value_ |
+| <span class="new">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | _Tagged value_ |
+| <span class="new">Release</span> | 1..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het UGM. De releasedatum wordt mede gebruikt om het Basismodel uniek te identificeren in Imvertor. |  | _Tagged value_ |
+| <span class="new">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
+| <span class="new">Web locatie</span> | 0..1 | Url van de locatie waar het model te vinden is. |  | _Tagged value_ |
+| <span class="new">Niveau</span> | 0..1 | Het niveau is een waarde uit een beperkte set:<br/>"algemeen" betekent dat het model een fundament is van een ander model en moet worden opgenomen. Het modelleert generieke constructies die deel uitmaken van de echte wereld. Dit omvat meestal abstracte object typen. Het kan andere constructen bevatten.<br/>"specifiek" betekent dat het model een bepaald domein beschrijft of een samenhangend deel ervan. |  | _Tagged value_ |
 
 <!-- Waarom is er op «Informatiemodel» in het MIM het metatgegeven 'heeft Constraint' gedefinieerd? Wat moet ik me daarbij voorstellen? -->
  
@@ -106,11 +106,12 @@ Complex datatype classes hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">Patroon</span> | - | - | - | - |
 | <span class="not-relevant">Formeel patroon</span> | - | - | - | - |
 | bevat **data element** | 0..* | Binding aan een data element, 2 of meer tenzij via generalisatie verkregen. |  | _attribute_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
+| <span class="new">Positie<span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
 <!-- Waarom is er op het datatype «Gestructureerd datatype» in het MIM de metatgegevens 'Formeel Patroon' en 'Patroon' gedefinieerd?
 
-| **Formeel Patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
-| **Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
+| Formeel Patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
+| Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
 
 -->
 
@@ -130,7 +131,7 @@ Data elementen hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">Herkomst definitie</span> | - | - | - | - |
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | <span class="not-relevant">Datum opname</span> | - | - | - | - |
-| **Lengte | 0..1 | De maximale lengte die een attribuut kan hebben. |  | _Tagged value_ |
+| **Lengte** | 0..1 | De maximale lengte die een attribuut kan hebben. |  | _Tagged value_ |
 | **Patroon** | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
 | **Formeel patroon** | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
 | **Kardinaliteit** | 1 | Algemeen metagegeven. | lowerValue en upperValue van de metaclass MultiplicityElement | _Multiplicity_ |
@@ -139,11 +140,11 @@ Data elementen hebben de volgende aspecten gespecificeerd:
 | **Maximum waarde (inclusief)**> | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | _Tagged value_ |
 | <span class="not-relevant">Maximum waarde (exclusief)</span> | - | - | - | - |
 | heeft **datatype** | 1 | Binding aan een datatype. | datatype = UML-datatype | _type = datatype_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
-| <span class="new">**Regels**</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | _Tagged value_ |
-| <span class="new">**Example**</span> | 0..1 | Voorbeeld waarde. |  | _Tagged value_ |
-| <span class="new">**Minimum lengte**</span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | _Tagged value_ |
-| <span class="new">**Positie**</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
+| <span class="new">Regels</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | _Tagged value_ |
+| <span class="new">Example</span> | 0..1 | Voorbeeld waarde. |  | _Tagged value_ |
+| <span class="new">Minimum lengte</span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | _Tagged value_ |
+| <span class="new">Positie</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
 
 #### Metagegevens voor «Domein»
 
@@ -159,17 +160,17 @@ Domein packages hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">Herkomst definitie</span> | - | - | - | - |
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | <span class="not-relevant">Datum opname</span> | - | - | - | - |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 | <span class="not-relevant">Basis-URI</span> | - | - | - | - |
-| <span class="new">**Afkorting**</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | _Tagged value_ |
-| <span class="new">**Release**</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om het Domein uniek te identificeren in Imvertor. |  | _Tagged value_ |
-| <span class="new">**Versie ID**</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
-| <span class="new">**Web locatie**</span> | 0..1 | Url van de locatie waar het domein te vinden is. |  | _Tagged value_ |
+| <span class="new">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd. |  | _Tagged value_ |
+| <span class="new">Release</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Domein. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om het Domein uniek te identificeren in Imvertor. |  | _Tagged value_ |
+| <span class="new">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
+| <span class="new">Web locatie</span> | 0..1 | Url van de locatie waar het domein te vinden is. |  | _Tagged value_ |
 <!-- Waarom is er op «Domein» in het MUG de metatgegevens 'Ref-release' en 'Ref-version' gedefinieerd? En trouwens ook 'Web locatie'. Kan een domein ook van extern gehaald worden?
      Zo ja, hoeveel constructs hebben we dan wel niet om externe modellen op te halen? Extern, View, Interface, ...
 
-| <span class="new">**Ref-release**</span> | 0..1 | ??? |  | _Tagged value_ |
-| <span class="new">**Ref-version**</span> | 0..1 | ??? |  | _Tagged value_ | -->
+| <span class="new">Ref-release</span> | 0..1 | ??? |  | _Tagged value_ |
+| <span class="new">Ref-version</span> | 0..1 | ??? |  | _Tagged value_ | -->
 
 #### Metagegevens voor «Element»
 
@@ -205,13 +206,13 @@ Elementen hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">Maximum waarde exclusief</span> | - | - | - | - |
 | <span class="not-relevant">Eenheid</span> | - | - | - | - |
 | heeft **datatype** | 1 | Binding aan een datatype. | datatype = UML-datatype | _type = datatype_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 | <span class="not-relevant">Indicatie afleidbaar</span> | - | - | - | - |
-| <span class="new">**Regels**</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | _Tagged value_ |
-| <span class="new">**Indicatie in onderzoek**</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | _Tagged value_ |
-| <span class="new">**Minimum lengte**</span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | _Tagged value_ |
-| <span class="new">**Example**</span> | 0..1 | Voorbeeldwaarde van een property. |  | _Tagged value_ |
-| <span class="new">**Positie**</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
+| <span class="new">Regels</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | _Tagged value_ |
+| <span class="new">Indicatie in onderzoek</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | _Tagged value_ |
+| <span class="new">Minimum lengte</span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | _Tagged value_ |
+| <span class="new">Example</span> | 0..1 | Voorbeeldwaarde van een property. |  | _Tagged value_ |
+| <span class="new">Positie</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
 
 #### Metagegevens voor «Entiteittype»
 
@@ -238,9 +239,9 @@ Entiteittype classes hebben de volgende aspecten gespecificeerd:
 | heeft **relatie** | 0..* | Binding aan een relatie of relatie-entiteit. | owned element = UML-Relationship | _association_ |
 | heeft **externe koppeling** | 0..* | Binding aan een externe koppeling. | owned element = UML-Relationship | _association_ |
 | verwijst naar **supertype** | 0..* | Binding aan een generalisatie (naar een ander objecttype). | owned element = UML-Relationship | _association_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
-| <span class="new">**Endpoint beschikbaar**</span> | 0..1 | Voorziening waarmee kan worden aangegeven dat er voor een entiteit al dan niet een resource endpoint beschikbaar is. |  | _Tagged value_ |
-| <span class="new">**Naam in meervoud**</span> | 0..1 | Voorziening om een entiteit een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een entiteit in een yaml bestand. |  | _Tagged value_ |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
+| <span class="new">Endpoint beschikbaar</span> | 0..1 | Voorziening waarmee kan worden aangegeven dat er voor een entiteit al dan niet een resource endpoint beschikbaar is. |  | _Tagged value_ |
+| <span class="new">Naam in meervoud</span> | 0..1 | Voorziening om een entiteit een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een entiteit in een yaml bestand. |  | _Tagged value_ |
 
 #### Metagegevens voor «Enum»
 
@@ -258,8 +259,8 @@ Enums hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">Herkomst definitie</span> | - | - | - | - |
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | <span class="not-relevant">Datum opname</span> | - | - | - | - |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
-| <span class="new">**Positie**</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
+| <span class="new">Positie</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
 
 #### Metagegevens voor «Enumeration»
 
@@ -277,9 +278,9 @@ Enumeration classes hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">Herkomst definitie</span> | - | - | - | - |
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | <span class="not-relevant">Datum opname</span> | - | - | - | - |
-| <span class="not-relevant">bevat **enumeratiewaarde</span> | - | - | - | - |
+| <span class="not-relevant">bevat enumeratiewaarde</span> | - | - | - | - |
 | bevat **enum** | 1..* | Binding aan een enum | owned element = UML-EnumerationLiteral | _EnumerationLiteral_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 
 #### Metagegevens voor «Extern»
 
@@ -296,13 +297,13 @@ Extern packages hebben de volgende aspecten gespecificeerd:
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | <span class="not-relevant">Datum opname</span> | - | - | - | - |
 | <span class="not-relevant">Locatie</span> | - | - | - | - |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 | <span class="not-relevant">Basis-URI</span> | - | - | - | - |
-| <span class="new">**Beheerder</span> | 0..1 | Naam van de beheerder van het model. |  | _Tagged value_ |
-| <span class="new">**Data locatie</span> | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | _Tagged value_ |
-| <span class="new">**Release**</span> | 0..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om het Externe package uniek te identificeren in Imvertor. |  | _Tagged value_ |
-| <span class="new">**Versie ID**</span> | 0..1 | De identificatie van de versie/revisie van dit model-element in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
-| <span class="new">**Web locatie**</span> | 0..1 | Url van de locatie waar het externe package te vinden is. |  | _Tagged value_ |
+| <span class="new">Beheerder</span> | 0..1 | Naam van de beheerder van het model. |  | _Tagged value_ |
+| <span class="new">Data locatie</span> | 0..1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | _Tagged value_ |
+| <span class="new">Release</span> | 0..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om het Externe package uniek te identificeren in Imvertor. |  | _Tagged value_ |
+| <span class="new">Versie ID</span> | 0..1 | De identificatie van de versie/revisie van dit model-element in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
+| <span class="new">Web locatie</span> | 0..1 | Url van de locatie waar het externe package te vinden is. |  | _Tagged value_ |
 
 #### Metagegevens voor «Externe koppeling»
 
@@ -331,8 +332,8 @@ Externe koppeling packages hebben de volgende aspecten gespecificeerd:
 | **Indicatie authentiek** | 0..1 | Aanduiding of het een authentiek gegeven betreft. |  | _Tagged value_ |
 | <span class="not-relevant">Indicatie afleidbaar</span> | - | - | - | - |
 | <span class="not-relevant">Mogelijk geen waarde</span> | - | - | - | - |
-| <span class="not-relevant">verwijst naar **relatiedoel | 0..* | Binding aan een entiteittype | /target: related Element bij Relationship Element = UML-Class | _association target = Class_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| verwijst naar <span class="not-relevant">relatiedoel | 0..* | Binding aan een entiteittype | /target: related Element bij Relationship Element = UML-Class | _association target = Class_ |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 
 #### Metagegevens voor «Gegevensgroep»
 
@@ -353,12 +354,12 @@ Gegevensgroep classes hebben de volgende aspecten gespecificeerd:
 | **Kardinaliteit** | 1 | Algemeen metagegeven | lowerValue en upperValue van de --metaclass Multiplicity | _Element	Multiplicity_ |
 | **Indicatie authentiek** | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | _Tagged value_ |
 | heeft **groep** | 1 | Binding aan een gegevensgroeptype | owned element = UML-Class | _type = Class_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 | <span class="not-relevant">Eenheid</span> | - | - | - | - |
-| <span class="new">**Indicatie in onderzoek**</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | _Tagged value_ |
-| <span class="new">**Mogelijk geen waarde**</span> | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | _Tagged value_ |
-| <span class="new">**Indicatie formele historie**</span> | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | _Tagged value_ |
-| <span class="new">**Indicatie materiële historie**</span> | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | _Tagged value_ |
+| <span class="new">Indicatie in onderzoek</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | _Tagged value_ |
+| <span class="new">Mogelijk geen waarde</span> | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | _Tagged value_ |
+| <span class="new">Indicatie formele historie</span> | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | _Tagged value_ |
+| <span class="new">Indicatie materiële historie</span> | 0..1 | Voorziening waarmee aangegeven kan worden of materiële historie van toepassing is op de constructie. |  | _Tagged value_ |
 
 #### Metagegevens voor «Groep»
 
@@ -377,10 +378,10 @@ Groepen hebben de volgende aspecten gespecificeerd:
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | <span class="not-relevant">Datum opname</span> | - | - | - | - |
 | **Indicatie authentiek** | 0..1 | Aanduiding of het een authentiek gegeven betreft. |  | _Tagged value_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
-| <span class="new">**Groepnaam**</span> | 0..1 | Voorziening om een groep aangepaste naam te kunnen geven. | _Tagged value_ |
-| <span class="new">**Mogelijk geen waarde**</span> | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | _Tagged value_ |
-| <span class="new">**Regels**</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het construct moet voldoen. |  | _Tagged value_ |
+| heeft <span class="not-relevant">Constraint</span> | - | - | - | - |
+| <span class="new">Groepnaam</span> | 0..1 | Voorziening om een groep aangepaste naam te kunnen geven. | _Tagged value_ |
+| <span class="new">Mogelijk geen waarde</span> | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | _Tagged value_ |
+| <span class="new">Regels</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het construct moet voldoen. |  | _Tagged value_ |
 
 <!-- Waarom is er op «Gegevensgroeptype» in het MIM het metadatagegeven 'Kardinaliteit' gedefinieerd? Dat is op «Groep» toch al gedefinieerd waar het n.m.m. ook thuis hoort. 
      Waarom is daar ook metadatagegeven 'heeft gegevensgroeptype' gedefinieerd? Waarom zou je op een 'Gegevensgroeptype' het datatype 'Gegevensgroeptype' willen definiëren? -->
@@ -416,10 +417,10 @@ Primitieve datatypes hebben de volgende aspecten gespecificeerd:
 | **Lengte** | 0..1 | De maximale lengte die een attribuut kan hebben. |  | _Tagged value_ |
 | **Patroon** | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
 | **Formeel patroon** | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
-| <span class="new">**Maximum waarde (inclusief)**</span> | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | _Tagged value_ |
-| <span class="new">**Minimum lengte**</span> | 0..1 | De minimale lengte die een attribuut moet hebben. | _Tagged value_ |
-| <span class="new">**Minimum waarde (inclusief)**</span> | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben |  | _Tagged value_ |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
+| <span class="new">Maximum waarde (inclusief)</span> | 0..1 | De maximale waarde (inclusief) dat een attribuut mag hebben. |  | _Tagged value_ |
+| <span class="new">Minimum lengte</span> | 0..1 | De minimale lengte die een attribuut moet hebben. | _Tagged value_ |
+| <span class="new">Minimum waarde (inclusief)</span> | 0..1 | De minimale waarde (inclusief) dat een attribuut moet hebben |  | _Tagged value_ |
 
 #### Metagegevens voor «Relatie»
 
@@ -450,13 +451,13 @@ De Relatie associaties hebben de volgende aspecten gespecificeerd:
 | **Indicatie formele historie** | 0..1 | Voorziening waarmee aangegeven kan worden of formele historie van toepassing is op de constructie. |  | _Tagged value_ |
 | **Indicatie authentiek** | 0..1 | Aanduiding of het een authentiek gegeven (attribuutsoort) betreft. |  | _Tagged value_ |
 | **Indicatie afleidbaar** | 1 | Algemeen metagegeven. | isDerived bij UML metaclass Assocation | _isDerived_ |
-| <span class="not-relevant">Mogelijk geen waarde</span> | - | - | - | - |
+| **Mogelijk geen waarde** | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | _Tagged value_ |
 | verwijst naar **relatiedoel** | 0..* | Binding aan een objecttype. | /target: related Element bij Relationship Element = UML-Class | _association target = Class_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 | **Regels** | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het element moet voldoen. |  | _Tagged value_ |
-| <span class="new">**Indicatie in onderzoek**</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | _Tagged value_ |
-| <span class="new">**Target role in meervoud**</span> | 0..1 | Voorziening om de target role een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een relatie in een yaml bestand. |  | _Tagged value_ |
-| <span class="new">**Positie**</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
+| <span class="new">Indicatie in onderzoek</span> | 0..1 | De indicatie of te bevragen is dat er twijfel is of is geweest aan de juistheid van de attribuutwaarde en dat een onderzoek wordt of is uitgevoerd naar de juistheid van de attribuutwaarde. |  | _Tagged value_ |
+| <span class="new">Target role in meervoud</span> | 0..1 | Voorziening om de target role een meervoudsnaam te kunnen geven. Deze wordt gebruikt als propertynaam van een relatie in een yaml bestand. |  | _Tagged value_ |
+| <span class="new">Positie</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
 
 #### Metagegevens voor «Relatie-entiteit»
 
@@ -516,8 +517,8 @@ Tabel elementen hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">Maximumwaarde exclusief</span> | - | - | - | - |
 | <span class="not-relevant">Eenheid</span> | - | - | - | - |
 | heeft **datatype** | 1 | Binding aan een datatype. | datatype = UML-datatype | _type = datatype_ |
-| <span class="new">**Minimum lengte**</span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | _Tagged value_ |
-| <span class="new">**Positie**</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
+| <span class="new">Minimum lengte</span> | 0..1 | De minimale lengte die een attribuut moet hebben. |  | _Tagged value_ |
+| <span class="new">Positie</span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
 
 #### Metagegevens voor «Tabel-entiteit»
 
@@ -538,8 +539,8 @@ Tabel-entiteit classes hebben de volgende aspecten gespecificeerd:
 | <span class="not-relevant">Locatie</span> | - | - | - | - |
 | bevat **tabel element** | 1..* | Binding aan een tabel element. | owned element = UML-property | _attribute_ |
 | verwijst naar **supertype** | 0..* | Binding aan een generalisatie (naar een andere referentie lijst). | owned element = UML-Relationship | _association_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
-| <span class="new">**Web locatie**</span> | 0..1 | Url van de locatie waar de tabel is opgeslagen of geraadpleegd kan worden. |  | _Tagged value_ |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
+| <span class="new">Web locatie</span> | 0..1 | Url van de locatie waar de tabel is opgeslagen of geraadpleegd kan worden. |  | _Tagged value_ |
 
 #### Metagegevens voor «Union»
 
@@ -559,7 +560,7 @@ Union datatypes hebben de volgende aspecten gespecificeerd:
 | heeft **datatypekeuze** | 0..* | Binding van een datatype, in UML via een additionale UML-property met stereotype keuze | owned element = UML-property en deze heeft en datatype | _type_ |
 | heeft **attribuutkeuze **| 0..* | Binding aan een attribuutsoort. | owned element = UML-Property | _attribute_ |
 | heeft **relatiedoelkeuze** | 0..* | Binding aan een relatiesoort. | owned element = UML-Relationship | _association_ |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 
 <!-- Waarom is er op «Keuze» in het MIM niet het metadatagegeven 'URI' gedefinieerd? -->
 
@@ -570,11 +571,12 @@ Union datatypes hebben de volgende aspecten gespecificeerd:
 | **Aspect** | **Kardinaliteit** | **Toelichting** | **Metaclass UML 2.5** | **In EA** |
 | --- | --- | --- | --- | --- |
 | **Naam** | 1 | Algemeen metagegeven | name van de metaclass Named element | _Name_ |
-| **Alias | 0..1 | Algemeen metagegeven. | UML-Property	 | _Alias_ |
+| **Alias** | 0..1 | Algemeen metagegeven. | UML-Property	 | _Alias_ |
 | **Definitie** | 0..1 | De beschrijving van de betekenis van de construct. | Body van de metaclass Comment | _Notes_ |
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | **Patroon** | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
 | **Formeel patroon** | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
+| **Positie** | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
  
 #### Metagegevens voor «View»
 
@@ -591,13 +593,13 @@ View packages hebben de volgende aspecten gespecificeerd:
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | <span class="not-relevant">Datum opname</span> | - | - | - | - |
 | <span class="not-relevant">Locatie</span> | - | - | - | - |
-| <span class="not-relevant">heeft **Constraint</span> | - | - | - | - |
+| <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 | <span class="not-relevant">Basis-URI</span> | - | - | - | - |
-| <span class="new">**Afkorting**</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.	 |  | _Tagged value_ |
-| <span class="new">**Data locatie**</span> | 1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | _Tagged value_ |
-| <span class="new">**Versie ID**</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
-| <span class="new">**Release**</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van de View. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om de View uniek te identificeren in Imvertor. |  | _Tagged value_ |
-| <span class="new">**Web locatie**</span> | 0..1 | Url van de locatie waar de view te vinden is. |  | _Tagged value_ |
+| <span class="new">Afkorting</span> | 0..1 | Afkorting van dit model. Deze afkorting wordt o.a. gebruikt waar informatie over het model wordt gepubliceerd.	 |  | _Tagged value_ |
+| <span class="new">Data locatie</span> | 1 | De locatie waar informatie over de gegevens van een construct te vinden zijn. Wanneer het een external of view package betreft: De verwijzing naar de locatie van het bijbehorende informatiemodel waar dit package een representatie van is. In alle andere gevallen moet het een waardenlijst betreffen. Het gaat dan om de verwijzing naar de plek waar de waarden beschikbaar worden gesteld. De verwijzing heeft de vorm van een URI conform een gekozen URI strategie. |  | _Tagged value_ |
+| <span class="new">Versie ID*/span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
+| <span class="new">Release</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van de View. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om de View uniek te identificeren in Imvertor. |  | _Tagged value_ |
+| <span class="new">Web locatie</span> | 0..1 | Url van de locatie waar de view te vinden is. |  | _Tagged value_ |
 
 ### MUG-toolbox
 

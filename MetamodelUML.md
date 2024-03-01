@@ -203,4 +203,4 @@ Het is niet vereist om dit profiel te gebruiken en het is ook toegestaan om het 
 
 ### Imvertor
 
-Er is een tool Imvertor, die kan controleren of een BSM voldoet aan dit metamodel en zo niet, wat de reden daarvan is. Deze tool is open source en is te vinden op www.imvertor.org.
+Er is een tool Imvertor, die kan controleren of een BSM voldoet aan dit metamodel en zo niet, wat de reden daarvan is. Deze tool is open source en is te vinden op https://armatiek.nl/imvertor-web.html.

@@ -558,7 +558,7 @@ Union datatypes hebben de volgende aspecten gespecificeerd:
 | **Toelichting** | 0..1 | Aanvullende beschrijving van het construct met de bedoeling dat te verduidelijken. |  | _Tagged value_ |
 | <span class="not-relevant">Datum opname</span> | - | - | - | - |
 | heeft **datatypekeuze** | 0..* | Binding van een datatype, in UML via een additionale UML-property met stereotype keuze | owned element = UML-property en deze heeft en datatype | _type_ |
-| heeft **attribuutkeuze **| 0..* | Binding aan een attribuutsoort. | owned element = UML-Property | _attribute_ |
+| heeft **attribuutkeuze** | 0..* | Binding aan een attribuutsoort. | owned element = UML-Property | _attribute_ |
 | heeft **relatiedoelkeuze** | 0..* | Binding aan een relatiesoort. | owned element = UML-Relationship | _association_ |
 | <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 

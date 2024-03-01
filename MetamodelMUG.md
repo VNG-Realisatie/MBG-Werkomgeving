@@ -303,8 +303,6 @@ Extern packages hebben de volgende aspecten gespecificeerd:
 | <span class="new">**Release**</span> | 0..1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van het Externe package. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om het Externe package uniek te identificeren in Imvertor. |  | _Tagged value_ |
 | <span class="new">**Versie ID**</span> | 0..1 | De identificatie van de versie/revisie van dit model-element in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
 | <span class="new">**Web locatie**</span> | 0..1 | Url van de locatie waar het externe package te vinden is. |  | _Tagged value_ |
-<!-- | <span class="new">**Ref-release</span> | 0..1 | ??? |  | _Tagged value_ |
-| <span class="new">**Ref-version</span> | 0..1 | ??? |  | _Tagged value_ | -->
 
 #### Metagegevens voor «Externe koppeling»
 
@@ -600,8 +598,6 @@ View packages hebben de volgende aspecten gespecificeerd:
 | <span class="new">**Versie ID**</span> | 0..1 | De identificatie van de versie/revisie van dit model in het gehanteerde versiebeheersysteem. |  | _Tagged value_ |
 | <span class="new">**Release**</span> | 1 | Datum (in het format yyyymmdd) waarop begonnen is met het realiseren van de betreffende versie van de View. Deze moet gelijk zijn aan of van recenter datum zijn dan de taggedvalue met dezelfde naam op «Basismodel». De releasedatum wordt mede gebruikt om de View uniek te identificeren in Imvertor. |  | _Tagged value_ |
 | <span class="new">**Web locatie**</span> | 0..1 | Url van de locatie waar de view te vinden is. |  | _Tagged value_ |
-<!--| <span class="new">**Ref-release</span> | 0..1 | ??? |  | _Tagged value_ |
-| <span class="new">**Ref-version</span> | 0..1 | ??? |  | _Tagged value_ | -->
 
 ### MUG-toolbox
 

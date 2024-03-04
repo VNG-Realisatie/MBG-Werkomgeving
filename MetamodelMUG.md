@@ -85,8 +85,6 @@ Basismodel packages hebben de volgende aspecten gespecificeerd:
 | <span class="new">Web locatie</span> | 0..1 | Url van de locatie waar het model te vinden is. |  | _Tagged value_ |
 | <span class="new">Niveau</span> | 0..1 | Het niveau is een waarde uit een beperkte set:<br/>"algemeen" betekent dat het model een fundament is van een ander model en moet worden opgenomen. Het modelleert generieke constructies die deel uitmaken van de echte wereld. Dit omvat meestal abstracte object typen. Het kan andere constructen bevatten.<br/>"specifiek" betekent dat het model een bepaald domein beschrijft of een samenhangend deel ervan. |  | _Tagged value_ |
 
-<!-- Waarom is er op «Informatiemodel» in het MIM het metatgegeven 'heeft Constraint' gedefinieerd? Wat moet ik me daarbij voorstellen? -->
- 
 #### Metagegevens voor «Complex datatype»
 
 Complex datatype classes hebben de volgende aspecten gespecificeerd:
@@ -108,8 +106,7 @@ Complex datatype classes hebben de volgende aspecten gespecificeerd:
 | bevat **data element** | 0..* | Binding aan een data element, 2 of meer tenzij via generalisatie verkregen. |  | _attribute_ |
 | <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
 | <span class="new">Positie<span> | 0..1 | De positie van de construct binnen producten waarin deze opeenvolging een rol speelt. |  | _Tagged value_ |
-<!-- Waarom is er op het datatype «Gestructureerd datatype» in het MIM de metatgegevens 'Formeel Patroon' en 'Patroon' gedefinieerd?
-
+<!-- 
 | Formeel Patroon | 0..1 | Formele notatie in de vorm van een reguliere expressie van het gegevenspatroon van een element. |  | _Tagged value_ |
 | Patroon | 0..1 | Beschrijving van het gegevenspatroon van een element. Dit kan de basis zijn voor een reguliere expressie. |  | _Tagged value_ |
 
@@ -383,9 +380,6 @@ Groepen hebben de volgende aspecten gespecificeerd:
 | <span class="new">Mogelijk geen waarde</span> | 0..1 | Indicatie waarmee wordt aangegeven dat het gegeven ook geen waarde kan hebben. |  | _Tagged value_ |
 | <span class="new">Regels</span> | 0..1 | Beschrijving van de niet in andere tagged values vast te leggen regels waaraan het construct moet voldoen. |  | _Tagged value_ |
 
-<!-- Waarom is er op «Gegevensgroeptype» in het MIM het metadatagegeven 'Kardinaliteit' gedefinieerd? Dat is op «Groep» toch al gedefinieerd waar het n.m.m. ook thuis hoort. 
-     Waarom is daar ook metadatagegeven 'heeft gegevensgroeptype' gedefinieerd? Waarom zou je op een 'Gegevensgroeptype' het datatype 'Gegevensgroeptype' willen definiëren? -->
-
 #### Metagegevens voor «Intern»
 
 Interne packages hebben de volgende aspecten gespecificeerd:
@@ -561,8 +555,6 @@ Union datatypes hebben de volgende aspecten gespecificeerd:
 | heeft **attribuutkeuze** | 0..* | Binding aan een attribuutsoort. | owned element = UML-Property | _attribute_ |
 | heeft **relatiedoelkeuze** | 0..* | Binding aan een relatiesoort. | owned element = UML-Relationship | _association_ |
 | <span class="not-relevant">heeft Constraint</span> | - | - | - | - |
-
-<!-- Waarom is er op «Keuze» in het MIM niet het metadatagegeven 'URI' gedefinieerd? -->
 
 #### Metagegevens voor «Union element»
 

@@ -8,10 +8,10 @@ code
   padding: 3px;
 /*  font-family: lucida console;
   font-size: 90%;*/
-},
+}
 span.new
 {
   font-weight: bold;
   color:#e00;
-  background-color: #feffff;
+/*  background-color: #feffff; */
 }

@@ -55,7 +55,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 * waar het eigenlijk een naamswijziging betreft en de relatie met het metagegeven in het MIM erg voor de hand ligt;
 * waar het stereotype waarvan het deel uitmaakt niet kan worden gemapt op een stereotype in het MIM.
 
-Daarnaast zijn de namen van de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes cursief en niet vet in de eerste kolom van dezelfde tabellen opgenomen. De andere kolommen zijn niet daar niet gevuld.
+Daarnaast zijn de namen van de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes cursief in de eerste kolom van dezelfde tabellen opgenomen. De andere kolommen zijn niet daar niet gevuld.
 
 #### Metagegevens voor «Basismodel»
 

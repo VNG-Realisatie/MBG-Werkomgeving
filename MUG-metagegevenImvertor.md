@@ -7,7 +7,7 @@ In dit hoofdstuk worden specifiek voor Imvertor gedefinieerde metagegevens besch
 #### Imvertor
 
 <aside class="definition">
-  <dfn data-lt="objecten">Imvertor</dfn>De (default) waarde 'model' voor deze property geeft aan dat het pakket een volledig model is dat kan worden verwerkt door de Imvertor-software. Deze waarde is vereist door de Imvertor add-in op Enterprise Architect.
+  <dfn data-lt="imvertor">Imvertor</dfn>De (default) waarde 'model' voor deze property geeft aan dat het pakket een volledig model is dat kan worden verwerkt door de Imvertor-software. Deze waarde is vereist door de Imvertor add-in op Enterprise Architect.
 </aside>
 
 _Toelichting:_
@@ -19,7 +19,7 @@ _Toepassing:_ Basismodel (optioneel)
 #### Metagegeven: Supplier-name
 
 <aside class="definition">
-  <dfn data-lt="objecten">Supplier-name</dfn>Naam van het model waar het UGM model van is afgeleid.
+  <dfn data-lt="supplier-name">Supplier-name</dfn>Naam van het model waar het UGM model van is afgeleid.
 </aside>
 
 _Toelichting:_
@@ -33,7 +33,7 @@ _Toepassing:_ Basismodel (optioneel)
 #### Metagegeven: Supplier-project
 
 <aside class="definition">
-  <dfn data-lt="objecten">Supplier-project</dfn>Projecttype van het model waar het UGM model van is afgeleid.
+  <dfn data-lt="supplier-project">Supplier-project</dfn>Projecttype van het model waar het UGM model van is afgeleid.
 </aside>
 
 _Toelichting:_
@@ -47,7 +47,7 @@ _Toepassing:_ Basismodel (optioneel)
 #### Metagegeven: Supplier-release
 
 <aside class="definition">
-  <dfn data-lt="objecten">Supplier-release</dfn>Waarde van het metadatagegeven ‘release’ van het model waar het UGM model van is afgeleid.
+  <dfn data-lt="supplier-release">Supplier-release</dfn>Waarde van het metadatagegeven ‘release’ van het model waar het UGM model van is afgeleid.
 </aside>
 
 _Toelichting:_
@@ -63,7 +63,7 @@ _Toepassing:_ Basismodel (optioneel)
 #### Metagegeven: Is afgeleid
 
 <aside class="definition">
-  <dfn data-lt="objecten">Is afgeleid</dfn>Metagegeven waarmee wordt aangegeven of er een
+  <dfn data-lt="is-afgeleid">Is afgeleid</dfn>Metagegeven waarmee wordt aangegeven of er een
   
 1.	model is waarvan het Berichtstructuurmodel is afgeleid;
 2.	modelelement in een ander model is waarvan het modelelement in het Berichtstructuurmodel is afgeleid.
@@ -78,7 +78,7 @@ Toepassing: alle modelelementen (optioneel).
 #### Ref-release
 
 <aside class="definition">
-  <dfn data-lt="objecten">Ref-release</dfn>Datum waarmee het model waarnaar wordt verwezen kan worden geïdentificeerd.
+  <dfn data-lt="ref-release">Ref-release</dfn>Datum waarmee het model waarnaar wordt verwezen kan worden geïdentificeerd.
 </aside>
 
 _Toelichting:_
@@ -94,7 +94,7 @@ Toepassing: Extern en View (optioneel)
 #### Ref-version
 
 <aside class="definition">
-  <dfn data-lt="objecten">Ref-version</dfn>Het versienummer waaronder een model waarnaar wordt verwezen wordt gepubliceerd.
+  <dfn data-lt="ref-version">Ref-version</dfn>Het versienummer waaronder een model waarnaar wordt verwezen wordt gepubliceerd.
 </aside>
 
 _Toelichting:_
@@ -144,7 +144,7 @@ Toepassing: ...  -->
 #### Supplier-package-name
 
 <aside class="definition">
-  <dfn data-lt="objecten">Supplier-package-name</dfn>De naam van het model waarnaar wordt verwezen. 
+  <dfn data-lt="supplier-package-name">Supplier-package-name</dfn>De naam van het model waarnaar wordt verwezen. 
 </aside>
 
 _Toelichting:_

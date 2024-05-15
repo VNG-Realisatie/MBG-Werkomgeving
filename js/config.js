@@ -13,9 +13,9 @@ let respecConfig = {
   publishVersion: "1.0.0",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
-//  previousMaturity: "IG",
-//  previousPublishDate: "2022-06-24",
-//  previousPublishVersion: "0.0.4",
+  previousMaturity: "CV",
+  previousPublishDate: "2024-03-04",
+  previousPublishVersion: "0.9.0",
   
   title: "MBG - Metamodel BerichtstructuurGegevens",
 //  subtitle: "",

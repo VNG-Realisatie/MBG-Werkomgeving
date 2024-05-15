@@ -352,7 +352,7 @@ We onderkennen een aantal specifieke metagegevens op het niveau van de packages.
 #### Metagegeven: Naam
 
 <aside class="definition">
-  <dfn data-lt="objecten">Naam</dfn>Korte identificatie van een koppelvlak of beschrijving van een package als definitie van diens functie of inhoud.
+  <dfn data-lt="objecten">Naam (Packages)</dfn>Korte identificatie van een koppelvlak of beschrijving van een package als definitie van diens functie of inhoud.
 </aside>
 
 _Toelichting:_
@@ -457,7 +457,7 @@ zijn. Zo is een berichtcode altijd verplicht voor de berichttype modelelementen.
 #### Metagegeven: Naam
 
 <aside class="definition">
-  <dfn data-lt="objecten">Naam</dfn>De naam van een modelelement.
+  <dfn data-lt="objecten">Naam (Modelelementen)</dfn>De naam van een modelelement.
 </aside>
 
 _Toelichting:_

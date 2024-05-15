@@ -8,9 +8,9 @@ let respecConfig = {
   specType: "ST",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "CV",
-  publishDate: "2024-03-04",
-  publishVersion: "0.9.0",
+  specStatus: "IG",
+  publishDate: "2024-05-15",
+  publishVersion: "1.0.0",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
 //  previousMaturity: "IG",

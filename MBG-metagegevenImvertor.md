@@ -70,7 +70,7 @@ _Toepassing:_ alle modelelementen uitgezonderd Koppelvlak en Interface (verplich
 #### Metagegeven: toelichting opnemen vanaf
 
 <aside class="definition">
-  <dfn data-lt="toelichting-opnemen-vanaf-mng">toelichting opnemen vanaf (MBG)</dfn>Het hoogste modelniveau op basis waarvan de documentatie wordt gegenereerd.
+  <dfn data-lt="toelichting-opnemen-vanaf">toelichting opnemen vanaf</dfn>Het hoogste modelniveau op basis waarvan de documentatie wordt gegenereerd.
 </aside>
 
 _Toelichting:_

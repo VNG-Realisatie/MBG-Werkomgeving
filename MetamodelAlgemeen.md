@@ -129,7 +129,7 @@ per bericht aangegeven wat die gevolgen zijn.
 #### Getberichttype
 
 <aside class="definition">
-  <dfn data-lt="objecten">Getberichttype</dfn>De typering van het berichttype waarmee resources kunnen worden opgehaald.
+  <dfn data-lt="getberichttype">Getberichttype</dfn>De typering van het berichttype waarmee resources kunnen worden opgehaald.
 </aside>
 
 _Toelichting:_
@@ -140,7 +140,7 @@ Classes van dit type hebben verplicht 2 relaties van het type EntiteitRelatie he
 #### Postberichttype
 
 <aside class="definition">
-  <dfn data-lt="objecten">Postberichttype</dfn>De typering van het berichttype waarmee resources kunnen worden aangemaakt.
+  <dfn data-lt="postberichttype">Postberichttype</dfn>De typering van het berichttype waarmee resources kunnen worden aangemaakt.
 </aside>
 
 _Toelichting:_ 
@@ -152,7 +152,7 @@ Een Entiteittype dat m.b.v. de tweede verbonden wordt met het Postberichttype ma
 #### Putberichttype
 
 <aside class="definition">
-  <dfn data-lt="objecten">Putberichttype</dfn>De typering van het berichttype waarmee bestaande resources kunnen worden vervangen of 
+  <dfn data-lt="putberichttype">Putberichttype</dfn>De typering van het berichttype waarmee bestaande resources kunnen worden vervangen of 
  nieuwe kunnen worden aangemaakt.
 </aside>
 
@@ -165,7 +165,7 @@ Entiteittype dat m.b.v. de tweede verbonden wordt met het Postberichttype mag le
 #### Patchberichttype
 
 <aside class="definition">
-  <dfn data-lt="objecten">Patchberichttype</dfn>De typering van het berichttype waarmee properties van resources kunnen worden aangepast.
+  <dfn data-lt="patchberichttype">Patchberichttype</dfn>De typering van het berichttype waarmee properties van resources kunnen worden aangepast.
 </aside>
  
 _Toelichting:_
@@ -177,7 +177,7 @@ Entiteittype dat m.b.v. de tweede verbonden wordt met het Postberichttype mag le
 #### Deleteberichttype
 
 <aside class="definition">
-  <dfn data-lt="objecten">Deleteberichttype</dfn>De typering van het berichttype waarmee resources kunnen worden verwijderd.
+  <dfn data-lt="deleteberichttype">Deleteberichttype</dfn>De typering van het berichttype waarmee resources kunnen worden verwijderd.
 </aside>
 
 _Toelichting:_
@@ -188,7 +188,7 @@ Classes van dit type hebben verplicht 2 relaties van het type EntiteitRelatie, �
 ### Padtype
 
 <aside class="definition">
-  <dfn data-lt="objecten">Padtype</dfn>Het Padtype definieert een relatief path naar een individueel endpoint.
+  <dfn data-lt="padtype">Padtype</dfn>Het Padtype definieert een relatief path naar een individueel endpoint.
 </aside>
 
 _Toelichting:_
@@ -203,7 +203,7 @@ Classes van dit type hebben 1 verplichte relatie van het type 'Padrelatie'.
 ### Interface
 
 <aside class="definition">
-  <dfn data-lt="objecten">Interface</dfn>Een Interface definieert een berichttype op een hoger abstractie niveau.
+  <dfn data-lt="interface">Interface</dfn>Een Interface definieert een berichttype op een hoger abstractie niveau.
 </aside>
 
 _Toelichting:_
@@ -222,7 +222,7 @@ Diagram: [Kern](#kern)
 ### Generalisatie
 
 <aside class="definition">
-  <dfn data-lt="objecten">Generalisatie tussen Berichttype en Interface</dfn>De typering van het hiërarchische verband tussen een meer 
+  <dfn data-lt="generalisatie">Generalisatie tussen Berichttype en Interface</dfn>De typering van het hiërarchische verband tussen een meer 
  generiek en een meer specifiek modelelement van hetzelfde soort, waarbij het meer specifieke modelelement eigenschappen van het meer 
  generieke modelelement overerft. Dit verband is alleen gedefinieerd voor generalisaties tussen Berichttypes en Interfaces.
 </aside>
@@ -234,7 +234,7 @@ De generalisatie relatie geeft aan dat bepaalde eigenschappen van een interface 
 ### EntiteitRelatie
 
 <aside class="definition">
-  <dfn data-lt="objecten">EntiteitRelatie</dfn>Modelelement waarmee verschillende relaties tussen de berichtdefinitie en de resource waar 
+  <dfn data-lt="entiteitrelatie">EntiteitRelatie</dfn>Modelelement waarmee verschillende relaties tussen de berichtdefinitie en de resource waar 
  het bericht betrekking op heeft kunnen worden gemodelleerd.
 </aside>
 
@@ -249,7 +249,7 @@ en 1 Entiteittype verbonden zijn maar een Entiteittype kan wel meerdere Entiteit
 ### PadRelatie
 
 <aside class="definition">
-  <dfn data-lt="objecten">PadRelatie</dfn>Modelelement waarmee de relatie tussen de berichtdefinitie en het Padtype dat het bericht identificeert 
+  <dfn data-lt="padrelatie">PadRelatie</dfn>Modelelement waarmee de relatie tussen de berichtdefinitie en het Padtype dat het bericht identificeert 
  kan worden gemodelleerd.
 </aside>
 
@@ -262,7 +262,7 @@ relatie heeft altijd de naam ‘pad’.
 ## Packages
 
 <aside class="definition">
-  <dfn data-lt="objecten">Package</dfn>Een package is een benoemde en begrensde verzameling/groepering van modelelementen.
+  <dfn data-lt="package">Package</dfn>Een package is een benoemde en begrensde verzameling/groepering van modelelementen.
 </aside>
 
 Diagram: [Groepering](#groepering)
@@ -298,7 +298,7 @@ De drie package-typen worden hieronder uitgelegd.
 ### Koppelvlak
 
 <aside class="definition">
-  <dfn data-lt="objecten">Koppelvlak</dfn>De groepering van alle modelelementen waaruit het Koppelvlak is opgebouwd. Het Koppelvlak als geheel.
+  <dfn data-lt="koppelvlak">Koppelvlak</dfn>De groepering van alle modelelementen waaruit het Koppelvlak is opgebouwd. Het Koppelvlak als geheel.
 </aside>
 
 _Toelichting:_
@@ -312,7 +312,7 @@ Een koppelvlak kan optioneel een aantal Domein packages hebben als subpackage, w
 van het domein bevatten.
 
 <aside class="definition">
-  <dfn data-lt="objecten">Domein</dfn>Een groepering van constructies die een semantisch samenhangend gedeelte van een koppelvlak beschrijven welke met de in het koppelvlak beschreven 
+  <dfn data-lt="domein">Domein</dfn>Een groepering van constructies die een semantisch samenhangend gedeelte van een koppelvlak beschrijven welke met de in het koppelvlak beschreven 
 berichten kunnen worden uitgewisseld.
 </aside>
 
@@ -326,7 +326,7 @@ kunnen 1 op 1 overgenomen zijn van een Uitwisselingsgegevensmodel (UGM) maar kun
 Een koppelvlak bevat een of meer Bericht packages als subpackage.
 
 <aside class="definition">
-  <dfn data-lt="objecten">Bericht</dfn>Een groepering van constructies die de modelelementen van een of meerdere gerelateerde berichten clustert.
+  <dfn data-lt="bericht">Bericht</dfn>Een groepering van constructies die de modelelementen van een of meerdere gerelateerde berichten clustert.
 </aside>
 
 _Toelichting:_
@@ -352,7 +352,7 @@ We onderkennen een aantal specifieke metagegevens op het niveau van de packages.
 #### Metagegeven: Naam
 
 <aside class="definition">
-  <dfn data-lt="objecten">Naam (Packages)</dfn>Korte identificatie van een koppelvlak of beschrijving van een package als definitie van diens functie of inhoud.
+  <dfn data-lt="naam-packages">Naam (Packages)</dfn>Korte identificatie van een koppelvlak of beschrijving van een package als definitie van diens functie of inhoud.
 </aside>
 
 _Toelichting:_
@@ -366,7 +366,7 @@ _Toepassing:_ Alle packages (verplicht)
 #### Metagegeven: beheerder-email
 
 <aside class="definition">
-  <dfn data-lt="objecten">beheerder-email</dfn>Het e-Mail adres van de persoon of organisatie die het koppelvlak beheert.
+  <dfn data-lt="beheerder-email">beheerder-email</dfn>Het e-Mail adres van de persoon of organisatie die het koppelvlak beheert.
 </aside>
 
 _Toelichting:_
@@ -379,7 +379,7 @@ _Toepassing:_ Koppelvlak (optioneel)
 #### Metagegeven: Koppelvlak-naam
 
 <aside class="definition">
-  <dfn data-lt="objecten">Koppelvlak-naam</dfn>Volledige naam van een koppelvlak.
+  <dfn data-lt="koppelvlak-naam">Koppelvlak-naam</dfn>Volledige naam van een koppelvlak.
 </aside>
 
 _Toelichting:_
@@ -392,7 +392,7 @@ _Toepassing:_ Koppelvlak (verplicht)
 #### Metagegeven: project_url
 
 <aside class="definition">
-  <dfn data-lt="objecten">project_url</dfn>Url van de bij het koppelvlak horende project repository.
+  <dfn data-lt="project-url">project_url</dfn>Url van de bij het koppelvlak horende project repository.
 </aside>
 
 _Toelichting:_
@@ -406,7 +406,7 @@ _Toepassing:_ Koppelvlak (optioneel)
 #### Metagegeven: release
 
 <aside class="definition">
-  <dfn data-lt="objecten">release</dfn>Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak.
+  <dfn data-lt="release">release</dfn>Datum waarop begonnen is met het realiseren van de betreffende versie van het koppelvlak.
 </aside>
 
 _Toelichting:_
@@ -419,7 +419,7 @@ _Toepassing:_ Koppelvlak (verplicht)
 #### Metagegeven: Version
 
 <aside class="definition">
-  <dfn data-lt="objecten">Version</dfn>Het versienummer waaronder het koppelvlak zal worden gepubliceerd.
+  <dfn data-lt="version">Version</dfn>Het versienummer waaronder het koppelvlak zal worden gepubliceerd.
 </aside>
 
 _Toelichting:_
@@ -432,7 +432,7 @@ _Toepassing:_ Koppelvlak (verplicht)
 #### Metagegeven: Serialisatie
 
 <aside class="definition">
-  <dfn data-lt="objecten">Serialisatie</dfn>Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden.
+  <dfn data-lt="serialisatie">Serialisatie</dfn>Definieert de vorm waarnaar het koppelvlak geserialiseerd moet worden.
 </aside>
 
 _Toelichting:_
@@ -457,7 +457,7 @@ zijn. Zo is een berichtcode altijd verplicht voor de berichttype modelelementen.
 #### Metagegeven: Naam
 
 <aside class="definition">
-  <dfn data-lt="objecten">Naam (Modelelementen)</dfn>De naam van een modelelement.
+  <dfn data-lt="naam-modelelementen">Naam (Modelelementen)</dfn>De naam van een modelelement.
 </aside>
 
 _Toelichting:_
@@ -476,7 +476,7 @@ _Toepassing:_ alle modelelementen behalve Generalisatie (verplicht).
 #### Metagegeven: berichtcode
 
 <aside class="definition">
-  <dfn data-lt="objecten">berichtcode</dfn>Code ter typering van een bericht.
+  <dfn data-lt="berichtcode">berichtcode</dfn>Code ter typering van een bericht.
 </aside>
 
 _Toelichting:_
@@ -488,7 +488,7 @@ _Toepassing:_ Alle van Berichttype afgeleide modelelementen (verplicht).
 #### Metagegeven: tag
 
 <aside class="definition">
-  <dfn data-lt="objecten">tag</dfn>Naam waarmee een aantal berichten kan worden gegroepeerd.
+  <dfn data-lt="tag">tag</dfn>Naam waarmee een aantal berichten kan worden gegroepeerd.
 </aside>
 
 _Toelichting:_
@@ -500,7 +500,7 @@ _Toepassing:_ Alle van Berichttype afgeleide modelelementen (optioneel).
 #### Metagegeven: servicename
 
 <aside class="definition">
-  <dfn data-lt="objecten">servicename</dfn>OperationId van een OAS3 service.
+  <dfn data-lt="servicename">servicename</dfn>OperationId van een OAS3 service.
 </aside>
 
 _Toelichting:_
@@ -514,7 +514,7 @@ _Toepassing:_ Alle van Berichttype afgeleide modelelementen (verplicht).
 #### Metagegeven: custom_path_facet
 
 <aside class="definition">
-  <dfn data-lt="objecten">custom_path_facet</dfn>Niet af te leiden deel van het path.
+  <dfn data-lt="custom-path-facet">custom_path_facet</dfn>Niet af te leiden deel van het path.
 </aside>
 
 _Toelichting:_
@@ -528,7 +528,7 @@ _Toepassing:_ Padtype (optioneel).
 #### Metagegeven: Positie
 
 <aside class="definition">
-  <dfn data-lt="objecten">Positie</dfn>Positie die een construct inneemt t.o.v. constructs op hetzelfde niveau.
+  <dfn data-lt="positie">Positie</dfn>Positie die een construct inneemt t.o.v. constructs op hetzelfde niveau.
 </aside>
 
 _Toelichting:_
@@ -553,7 +553,7 @@ De bindingen zijn ook in diagram vorm te lezen aan het begin van dit hoofdstuk, 
 Verkorte schrijfwijze: PadRelatie
 
 <aside class="definition">
-  <dfn data-lt="objecten">heeft padrelatie</dfn>De binding van een Berichttype aan een Padtype middels een Padrelatie.
+  <dfn data-lt="heeft-padrelatie">heeft padrelatie</dfn>De binding van een Berichttype aan een Padtype middels een Padrelatie.
 </aside>
 
 _Toelichting:_
@@ -566,7 +566,7 @@ _Toepassing:_ Alle Berichttype modelelementen en Padtype.
 Verkorte schrijfwijze: EntiteitRelatie
 
 <aside class="definition">
-  <dfn data-lt="objecten">heeft entiteitrelatie</dfn>De binding van een Berichttype aan een Entiteittype uit het MUG middels een EntiteitRelatie.
+  <dfn data-lt="heeft-entiteitrelatie">heeft entiteitrelatie</dfn>De binding van een Berichttype aan een Entiteittype uit het MUG middels een EntiteitRelatie.
 </aside>
 
 _Toelichting:_
@@ -579,7 +579,7 @@ _Toepassing:_ Alle Entiteittype modelelementen uit het MUG en alle Berichttype m
 Verkorte schrijfwijze: supertype
 
 <aside class="definition">
-  <dfn data-lt="objecten">verwijst naar supertype</dfn>De binding van een supertype aan een subtype middels een generalisatie.
+  <dfn data-lt="verwijst-naar-supertype">verwijst naar supertype</dfn>De binding van een supertype aan een subtype middels een generalisatie.
 </aside>
 
 _Toelichting:_

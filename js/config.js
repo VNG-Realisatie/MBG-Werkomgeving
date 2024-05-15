@@ -61,7 +61,7 @@ let respecConfig = {
         },
         "OMG": {
             title: "Object Management Group Unified Modeling Language TM",
-            href: "http://www.omg.org/spec/UML/2.5",
+            href: "https://www.omg.org/spec/UML/2.5",
             version: "2.5",
             status: "BG-FINAL",
             publisher: "Object Management Group (OMG)",

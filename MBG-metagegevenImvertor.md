@@ -7,7 +7,7 @@ In dit hoofdstuk worden specifiek voor Imvertor gedefinieerde metagegevens besch
 #### Metagegeven: Supplier-name
 
 <aside class="definition">
-  <dfn data-lt="objecten">Supplier-name</dfn>Naam van het model waar het BSM model van is afgeleid.
+  <dfn data-lt="objecten">Supplier-name </dfn>Naam van het model waar het BSM model van is afgeleid.
 </aside>
 
 _Toelichting:_
@@ -20,7 +20,7 @@ _Toepassing:_ Koppelvlak (optioneel)
 #### Metagegeven: Supplier-project
 
 <aside class="definition">
-  <dfn data-lt="objecten">Supplier-project</dfn>DProjecttype van het model waar het BSM model van is afgeleid.
+  <dfn data-lt="objecten">Supplier-project </dfn>Projecttype van het model waar het BSM model van is afgeleid.
 </aside>
 
 _Toelichting:_
@@ -33,7 +33,7 @@ _Toepassing:_ Koppelvlak (optioneel)
 #### Metagegeven: Supplier-release
 
 <aside class="definition">
-  <dfn data-lt="objecten">Supplier-release</dfn>Waarde van het metadatgegeven ‘release’ van het model waar het BSM model van is afgeleid.
+  <dfn data-lt="objecten">Supplier-release </dfn>Waarde van het metadatgegeven ‘release’ van het model waar het BSM model van is afgeleid.
 </aside>
 
 _Toelichting:_
@@ -49,7 +49,7 @@ _Toepassing:_ Koppelvlak (optioneel)
 #### Metagegeven: Is afgeleid
 
 <aside class="definition">
-  <dfn data-lt="objecten">Is afgeleid</dfn>Metagegeven waarmee wordt aangegeven of er een
+  <dfn data-lt="objecten">Is afgeleid </dfn>Metagegeven waarmee wordt aangegeven of er een
 
 1.	model is waarvan het Berichtstructuurmodel is afgeleid;
 2.	modelelement in een ander model is waarvan het modelelement in het Berichtstructuurmodel is afgeleid.
@@ -70,7 +70,7 @@ _Toepassing:_ alle modelelementen uitgezonderd Koppelvlak en Interface (verplich
 #### Metagegeven: toelichting opnemen vanaf
 
 <aside class="definition">
-  <dfn data-lt="objecten">toelichting opnemen vanaf</dfn>Het hoogste modelniveau op basis waarvan de documentatie wordt gegenereerd.
+  <dfn data-lt="objecten">toelichting opnemen vanaf </dfn>Het hoogste modelniveau op basis waarvan de documentatie wordt gegenereerd.
 </aside>
 
 _Toelichting:_

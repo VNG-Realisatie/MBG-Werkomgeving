@@ -91,3 +91,4 @@ Het beheer van dit metamodel vindt plaats door ….
 <aside class='note' title="Versienummer normreferenties">
 De versies van de genoemde referenties zijn bewust niet opgenomen, zodat het mogelijk is om gebruik te maken van nieuwere versies van deze referenties. Wanneer er nieuwe versies uitkomen van de genoemde normreferenties dan wordt er gecheckt of MBG hier nog mee in lijn is. Wanneer dit niet zo is, dan wordt er aan gewerkt om dit weer met elkaar in lijn te brengen, zodat MBG 'upward compatible' is en blijft.
 </aside>
+

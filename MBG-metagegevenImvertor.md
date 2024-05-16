@@ -7,7 +7,7 @@ In dit hoofdstuk worden specifiek voor Imvertor gedefinieerde metagegevens besch
 #### Metagegeven: Supplier-name
 
 <aside class="definition">
-  <dfn data-lt="supplier-name-mbg">Supplier-name (MBG)</dfn>Naam van het model waar het BSM model van is afgeleid.
+  <dfn data-lt="supplier-name-mbg">Supplier-name</dfn>Naam van het model waar het BSM model van is afgeleid.
 </aside>
 
 _Toelichting:_

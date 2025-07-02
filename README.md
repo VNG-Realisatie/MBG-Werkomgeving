@@ -1,3 +1,8 @@
+| Eigenaar | Ingevuld door |
+| --- | --- |
+| Kennis centrum Architectuur | Robert Melskens |
+<hr/>
+
 # MBG-Werkomgeving
 
 Dit is de repository van het Metamodel BerichtstructuurGegevens (MBG). Hierin staat de werkversie van het MBG. 
